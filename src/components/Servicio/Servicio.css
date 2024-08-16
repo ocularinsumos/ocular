@@ -1,6 +1,6 @@
 .tituloServicio{
     letter-spacing: -2px;
-    color: #605f4b;
+    color: #000;
     font-weight: 400;
     font-style: italic;
     font-family: "Playfair Display";
@@ -8,12 +8,12 @@
   
   
   .servicio-imagen {
-    box-shadow: -23px 25px 0px 5px #605f4b;
+    box-shadow: -23px 25px 0px 5px #007BC7;
   }
   
   
   
   .textoServicio{
-    color: #494839;
+    color: #007BC7;
   }
   

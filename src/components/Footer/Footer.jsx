@@ -6,6 +6,7 @@ import Links from "../Constantes/Links";
 import { useForm } from 'react-hook-form';
 import { usePathname } from "next/navigation";
 import Contactusform from "../Contact/Contactus";
+import Swal from "sweetalert2";
 
 export default function Footer() {
   const path = usePathname()
@@ -26,7 +27,11 @@ export default function Footer() {
       });      
       if (response.status === 200) {
         setIsSuccess(true);
-        alert('Correo enviado exitosamente');
+        Swal.fire({
+          title: `tu mensaje ha sido enviado correctamente.`,
+          icon: 'success',
+          confirmButtonText: 'Ok',
+        });
         reset();
       } else {
         setIsSuccess(false);

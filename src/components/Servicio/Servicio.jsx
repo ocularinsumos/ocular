@@ -17,7 +17,7 @@ export default function Servicio({ titulo, texto, imagen, texto2, texto3 }) {
           <p className="textoServicio py-6">{texto}</p>
           <p className="textoServicio ">{texto2}</p>
           {texto3? <p className="textoServicio pt-6">{texto3}</p>: null}
-          <a href={enviar} className="bg-[#605f4b] hover:bg-[#424234] active:bg-[#2b2b2b] text-white mx-auto mt-8 px-4 py-2 rounded-lg text-center inline-block"  target="_blank" >¡Contáctame ahora!</a>
+          <a href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-auto mt-8 px-4 py-2 rounded-lg text-center inline-block"  target="_blank" >¡Contáctame ahora!</a>
         </div>
       </div>
     </div>

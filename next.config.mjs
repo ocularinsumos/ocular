@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['localhost','carolopezbravo.com'], // Agrega dominios adicionales si es necesario
+        domains: ['localhost','ocualrinsumosquirurgicos.com'], // Agrega dominios adicionales si es necesario
         unoptimized: true
       },
 };

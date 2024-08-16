@@ -21,14 +21,17 @@ export default async function handler(req, res) {
             const mailData = {
                 from: SENDER,
                 to: TO,
-                subject: `Mensaje desde website 'Ocular' motivo: ${req.body.input4}`,
-                html: `
+                subject: req.body.Newsletter?`Mensaje desde website 'Ocular' motivo: ${req.body.Newsletter}`:`Mensaje desde website 'Ocular' motivo: ${req.body.input4}`,
+                html: !req.body.Newsletter?`
                     <p>La Persona ha hecho contacto desde el sitio web:</p>
                     <p>Nombre: ${req.body.input1}</p>
                     <p>Email: ${req.body.input2}</p>
                     <p>Motivo: ${req.body.input4}</p>
                     <p>Mensaje: ${req.body.input3}</p>
-                `,
+                `:`
+                    <p>La Persona ha hecho contacto desde el sitio web:</p>
+                    <p>Quiere que la agreguen a la Base de datos para notificaciones:</p>
+                    <p>email: ${req.body.email}</p>`
             };
 
             const info = await transporter.sendMail(mailData);
