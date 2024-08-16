@@ -38,7 +38,7 @@ export default function Navbar() {
                 <div className="flex flex-1 items-center justify-start">
                   <div className="flex flex-shrink-0 items-center ml-5 md:ml-0 mr-10 md:pl-0">
                     <Link href="/">
-                      <img loading='lazy' width={200} height={80} src='images/logos/OcularNav.webp' alt="logo de Caro" className=""/>
+                      <img loading='lazy' src='images/logos/OcularNav.webp' alt="Ocular" className=" w-36 lg:w-44"/>
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">
