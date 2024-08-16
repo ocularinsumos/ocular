@@ -3,18 +3,28 @@ import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import logo from '../../public/favicon.ico'
-import { Inter } from "next/font/google";
 import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
 
 const RootLayout = (props) => {
-  const { children, ...customMeta } = props;
+  const { children } = props;
   const meta = {
     title: "OCULAR INSUMOS QUIRURGICOS",
-    description: "Instructora para sanar con amor - Sanación Energética",
+    description: "Insumos quirurgicos para cirugias oftalmologicas",
     type: "website",
-    ...customMeta,
+    viewport: 'width=device-width, initial-scale=1',
+    themeColor: '#451F49',
+    charSet: 'UTF-8',
+    icon: '/favicon.ico',
+    keywords: [
+      'insumos', 'insumos quirúrgicos', 'oftalmología', 'cirugía oftalmológica', 'cirugía', 
+      'cirugía de cataratas', 'retina', 'cataratas', 'equipos oftalmológicos', 'material quirúrgico', 
+      'instrumentos oftalmológicos', 'lentes intraoculares', 'vitrectomía', 'microcirugía ocular', 
+      'facoemulsificación', 'láser oftalmológico', 'insumos para cirugía refractiva', 
+      'quirófano oftalmológico', 'desprendimiento de retina', 'glaucoma', 
+      'insumos para cirugía de glaucoma', 'insumos para cirugía de retina', 
+      'insumos para cirugía de córnea', 'anestesia oftalmológica'
+    ]
   };
 
   return (
@@ -30,9 +40,9 @@ const RootLayout = (props) => {
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={logo} />
       </Head>
-      <body className={inter.className}>
+      <body className=''>
           <Navbar />
-          <main id="skip" className="bg-background-tertiary">
+          <main id="skip" className="bg-background-tertiary ">
             {children}
           </main>
           <Footer />
