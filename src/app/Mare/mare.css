@@ -1,0 +1,81 @@
+.relative {
+  position: relative;
+}
+
+.tit {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.programa {
+  line-height: 1;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Fondo negro semi-transparente para cubrir la imagen */
+  display: flex;
+  align-items: center; /* Centrar contenido verticalmente */
+  justify-content: center; /* Centrar contenido horizontalmente */
+}
+
+.over-text {
+  width: 100%;
+  text-align: center;
+  color: white; /* Texto blanco para contraste */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+
+.tex {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center; /* Equivalent to text-start */
+  color: #1e293b; /* Equivalent to text-slate-800 */
+}
+
+.aprender{
+  line-height: 1;
+  color: #9c9c80;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.listaMare{
+  font-size: 1.3rem;
+  line-height: 25px;
+  font-weight: 300;
+  font-family: "Lato";
+}
+.mareP{
+  line-height: 1;
+  font-size: 64px;
+  color:#9c9c80;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .over-text {
+    top: 210px;
+    gap:0px
+  }
+  .tit2 {
+    margin-top: 120px;
+  }
+  .mareP{
+    font-size: 40px;
+  }
+
+}

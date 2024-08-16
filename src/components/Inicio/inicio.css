@@ -1,0 +1,10 @@
+#inicio {
+    scroll-margin-top: 100px; /* Ajusta este valor a la altura de tu navbar */
+  }
+  
+  /* Agregar esta parte para asegurarse de que se comporte adecuadamente en todos los tamaños de pantalla */
+  @media (min-width: 768px) {
+    #inicio {
+      scroll-margin-top: 165px; /* Ajusta este valor a la altura de tu navbar en pantallas más grandes */
+    }
+  }

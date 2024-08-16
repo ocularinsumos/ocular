@@ -1,0 +1,28 @@
+.titl{
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #605f4b;
+    font-weight: 400;
+    text-align: center;
+}
+
+.subTitle{
+    line-height: 80px;
+    color: #9c9e80;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Playfair Display";
+    text-align: center;
+    }
+
+    #servicios {
+        scroll-margin-top: 100px; /* Ajusta este valor a la altura de tu navbar */
+      }
+      
+      /* Agregar esta parte para asegurarse de que se comporte adecuadamente en todos los tamaños de pantalla */
+      @media (min-width: 768px) {
+        #servicios {
+          scroll-margin-top: 170px; /* Ajusta este valor a la altura de tu navbar en pantallas más grandes */
+        }
+      }
+      

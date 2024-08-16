@@ -1,0 +1,20 @@
+#comentarios {
+    scroll-margin-top: 70px; /* Ajusta este valor a la altura de tu navbar */
+  }
+
+.card{
+    min-height: 220px;
+}
+  
+  /* Agregar esta parte para asegurarse de que se comporte adecuadamente en todos los tamaños de pantalla */
+@media (min-width: 768px) {
+    #comentarios {
+      scroll-margin-top: 60px; /* Ajusta este valor a la altura de tu navbar en pantallas más grandes */
+    }
+}
+
+@media (max-width: 400px) {
+  .card{
+    min-height: 412px;
+  }
+}

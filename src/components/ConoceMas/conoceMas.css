@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .title {
+    flex: 1;
+  }
+  
+  .image {
+    flex: 0 0 auto;
+    margin-left: 1rem;
+    margin-top: 6px;
+    width: 200px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text {
+    text-align: justify;
+  }
+  
+  .nombre{
+      letter-spacing: -1px;
+      color: #605f4b;
+      font-weight: 400;
+      font-style: italic;
+      font-family: "Playfair Display";
+  }
+  .creadora{
+      letter-spacing: -1px;
+      color: #605f4b;
+      font-weight: 400;
+      font-family: "Playfair Display";
+  }
+
+  .text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem; /* Equivalent to text-2xl */
+    max-width: 42rem; /* Equivalent to max-w-2xl */
+    text-align: left; /* Equivalent to text-start */
+    margin: auto;
+    color: #1e293b; /* Equivalent to text-slate-800 */
+  }
+  .text2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem; /* Equivalent to text-2xl */
+    text-align: left; /* Equivalent to text-start */
+    margin: auto;
+    color: #1e293b; /* Equivalent to text-slate-800 */
+  }
+
+  .image-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap:35px;
+  }
+  
+  @media (min-width: 850px) {
+    .image-text-wrapper {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
+  
+  @media (min-width: 850px) {
+    .image-text-wrapper {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
+  
