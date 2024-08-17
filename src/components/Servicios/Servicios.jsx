@@ -8,7 +8,7 @@ export default function Servicios() {
         <div id="servicios">
             <div className="my-10 md:my-20 text-center">
               <h2 className="titl text-7xl">{texto.productos.titulo}</h2>
-              <h3 className={`text-4xl md:text-[60px] text-text-primary font-medium px-2 mx-auto md:pt-6 ${robotoCondensed.className}`}>
+              <h3 className={`text-4xl md:text-[60px] text-text-primary font-medium px-2 mx-auto pt-3 ${robotoCondensed.className}`}>
               {texto.productos.subtitulo}</h3>
             </div>
             <div className="flex justify-evenly my-10 md:px-0 flex-wrap md:mx-10">
