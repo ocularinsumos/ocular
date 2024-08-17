@@ -2,13 +2,14 @@ import React from "react";
 import Link from "next/link";
 import texto from "../Constantes/texto";
 import "./servicios.css";
-
+import { robotoCondensed } from "@/Utils/fonts";
 export default function Servicios() {
   return (
         <div id="servicios">
             <div className="my-10 md:my-20 text-center">
               <h2 className="titl text-7xl">{texto.productos.titulo}</h2>
-              <h3 className="text-5xl md:text-[90px] text-text-primary px-2  mx-auto p-2">{texto.productos.subtitulo}</h3>
+              <h3 className={`text-4xl md:text-[60px] text-text-primary font-medium px-2 mx-auto md:pt-6 ${robotoCondensed.className}`}>
+              {texto.productos.subtitulo}</h3>
             </div>
             <div className="flex justify-evenly my-10 md:px-0 flex-wrap md:mx-10">
               {texto.servicios.map((servicios, i) => (
