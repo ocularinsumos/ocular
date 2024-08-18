@@ -70,8 +70,7 @@ const texto = {
       }
     ],
     footer:{
-      btnSubs:'SUSCRÍBETE',
-      placeholder:'Email'
+      info:'24 Años en el mercado de Insumos Quirurgicos para Profesionales y Particulares',
     }
 };
 

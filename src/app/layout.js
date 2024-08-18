@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import logo from '../../public/favicon.ico'
-import '@/styles/globals.css';
+import './globals.css';
 
 
 const RootLayout = (props) => {
@@ -42,7 +42,7 @@ const RootLayout = (props) => {
       </Head>
       <body className=''>
           <Navbar />
-          <main id="skip" className="">
+          <main id="skip">
             {children}
           </main>
           <Footer />
