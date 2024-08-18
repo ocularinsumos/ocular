@@ -5,7 +5,7 @@ import { robotoCondensed } from "@/Utils/fonts";
 export default function SobreMi() {
   return (
     <section className="p-10">
-      <h2 className={`text-text-primary text-3xl ${robotoCondensed.className} m-4 items-center text-center`}>{texto.nosotros.titulo}</h2>
+      <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>{texto.nosotros.titulo}</h2>
       <p className="text-text-secondary text-lg">{texto.nosotros.descripcion}</p>
       <br />
       <div id="nosotros" className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start ">

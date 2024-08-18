@@ -44,7 +44,7 @@ const PreguntasFrecuentes = () => {
     <div className="bg-gray-50 py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " style={{textAlign:"-webkit-center"}}>
       <div className="max-w-screen-md" >
         <div id="accordion-open" data-accordion="open">
-          <h2 className={`mb-10 text-3xl md:text-4xl text-center tracking-tight ${robotoCondensed.className} text-text-primary`}>Preguntas frecuentes</h2>
+          <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>Preguntas frecuentes</h2>
           {faqData.map((faq) => (
             <div key={faq.id} className="mb-4 border border-gray-200 rounded-xl">
               <h2 id={`accordion-open-heading-${faq.id}`}>
