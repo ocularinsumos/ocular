@@ -42,7 +42,7 @@ const RootLayout = (props) => {
       </Head>
       <body className=''>
           <Navbar />
-          <main id="skip" className="bg-background-tertiary ">
+          <main id="skip" className="">
             {children}
           </main>
           <Footer />

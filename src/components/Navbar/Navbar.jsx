@@ -49,6 +49,7 @@ export default function Navbar() {
                         src="images/logos/OcularNav.webp"
                         alt="Ocular"
                         className=" w-36 lg:w-44"
+                        style={{ filter: 'drop-shadow(10px 10px 40px rgba(255, 255, 255))' }} 
                       />
                     </Link>
                   </div>

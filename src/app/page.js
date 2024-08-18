@@ -17,8 +17,8 @@ export default function HomePage() {
         <Mare />
         <SobreMi />
         {/* <Comentarios /> */}
-        <PreguntasFrecuentes />
         <Ubicacion />
+        <PreguntasFrecuentes />
         <VolverArriba />
         <BotonWsp codigoPais={userData.codigoPais} contact={userData.contact} text={userData.textBoton}/>
       </>

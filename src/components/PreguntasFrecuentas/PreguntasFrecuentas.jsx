@@ -41,7 +41,7 @@ const PreguntasFrecuentes = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " style={{textAlign:"-webkit-center"}}>
+    <div className="bg-background-secondary py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " style={{textAlign:"-webkit-center"}}>
       <div className="max-w-screen-md" >
         <div id="accordion-open" data-accordion="open">
           <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>Preguntas frecuentes</h2>
