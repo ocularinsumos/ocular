@@ -91,7 +91,7 @@ const Contactusform = () => {
             <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
                 <button 
                     type="button"
-                    className="flex justify-center text-base w-full rounded-full bg-transparent border border-bgpink text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink" 
+                    className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink" 
                     onClick={openModal}
                     aria-label="Abrir formulario de contacto"
                 >

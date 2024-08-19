@@ -5,7 +5,7 @@ import "./servicios.css";
 import { robotoCondensed } from "@/Utils/fonts";
 export default function Servicios() {
   return (
-        <div id="servicios">
+        <div id="productos">
             <div className="my-10 md:my-20 text-center">
               <h2 className="titl text-7xl">{texto.productos.titulo}</h2>
               <h3 className={`text-3xl md:text-[60px] text-text-primary px-2 mx-auto pt-3 ${robotoCondensed.className}`}>

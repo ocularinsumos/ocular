@@ -12,12 +12,12 @@ export default function Footer() {
   <div className="absolute inset-0 bg-primary opacity-85" />
   <div className="relative mx-auto max-w-screen-xl text-center">
     <Link href="#" className="flex justify-center items-center text-2xl font-semibold text-gray-900">
-      <img src="/images/logos/ocularFooter.webp" style={{ filter: 'drop-shadow(0px 0px 100px rgba(255, 255, 255))' }}  alt="Logo de Empresa" title="Logo de Empresa" />
+      <img src="/images/logos/ocularFooter.webp" width={200} style={{ filter: 'drop-shadow(0px 0px 100px rgba(255, 255, 255))' }}  alt="Logo de Empresa" title="Logo de Empresa" aria-label="logo de la empresa" />
     </Link>
     <p className="my-6 text-gray-300">{texto.footer.info}</p>
-    <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900">
+    <ul className="flex flex-col gap-4 md:flex-row justify-center items-center mb-6 text-gray-900">
       {Links.map((item) => (
-        <li key={item.name}><Link href={item.href} className="mr-4 hover:underline md:mr-6 text-text-tertiary">{item.name.toLocaleUpperCase()}</Link></li>
+        <li key={item.name}><Link href={item.href} className=" mr-4 hover:underline md:mr-6 text-text-tertiary">{item.name.toLocaleUpperCase()}</Link></li>
       ))}
       <li className="mr-4 hover:underline md:mr-6 text-text-tertiary font-normal">
         <Contactusform />

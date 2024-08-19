@@ -15,7 +15,7 @@ const RootLayout = (props) => {
     viewport: 'width=device-width, initial-scale=1',
     themeColor: '#451F49',
     charSet: 'UTF-8',
-    icon: '/favicon.ico',
+    icon: './favicon.ico',
     keywords: [
       'insumos', 'insumos quirúrgicos', 'oftalmología', 'cirugía oftalmológica', 'cirugía', 
       'cirugía de cataratas', 'retina', 'cataratas', 'equipos oftalmológicos', 'material quirúrgico', 
