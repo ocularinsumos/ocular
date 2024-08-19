@@ -1,10 +1,11 @@
 'use client';
+import './globals.css';
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import logo from '../../public/favicon.ico'
-import './globals.css';
-
+import VolverArriba from "@/components/VolverArriba/VolverArriba";
+import userData from "@/components/Constantes/userData";
+import BotonWsp from "@/components/BotonWSP/BotonWsp";
 
 const RootLayout = (props) => {
   const { children } = props;
@@ -15,7 +16,7 @@ const RootLayout = (props) => {
     viewport: 'width=device-width, initial-scale=1',
     themeColor: '#451F49',
     charSet: 'UTF-8',
-    icon: './favicon.ico',
+    icon: '/favicon.ico',
     keywords: [
       'insumos', 'insumos quirúrgicos', 'oftalmología', 'cirugía oftalmológica', 'cirugía', 
       'cirugía de cataratas', 'retina', 'cataratas', 'equipos oftalmológicos', 'material quirúrgico', 
@@ -33,19 +34,25 @@ const RootLayout = (props) => {
       <meta name="description" content={meta.description} />
       <Head>
         <meta name="robots" content="follow, index" />
-        <link rel="shortcut icon" href={meta.image} />
+        <link rel="shortcut icon" href={meta.icon} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={logo} />
+        <meta property="og:image" content={meta.icon} />
       </Head>
       <body className=''>
-          <Navbar />
+          <nav>
+            <Navbar />
+          </nav>
           <main id="skip">
             {children}
           </main>
-          <Footer />
+          <footer>
+            <Footer />
+            <VolverArriba />
+            <BotonWsp codigoPais={userData.codigoPais} contact={userData.contact} text={userData.textBoton}/>
+          </footer>
       </body>
     </html>
   );

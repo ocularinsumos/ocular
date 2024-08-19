@@ -41,7 +41,7 @@ export default function Navbar() {
                 <div className="flex flex-1 items-center justify-start">
                   <div className="flex flex-shrink-0 items-center  mr-10 ">
                     <Link href="/" className="">
-                      <img loading="lazy" src="/images/logos/OcularNav.webp" alt="Ocular"  className=" w-36 lg:w-44 py-8" style={{ filter: 'drop-shadow(10px 10px 40px rgba(255, 255, 255))' }} aria-label="Logo Ocular"  />
+                      <img src="/images/logos/ocularNav.webp" alt="Ocular"  className="py-4" style={{ filter: 'drop-shadow(10px 10px 40px rgba(255, 255, 255))' }} aria-label="Logo Ocular" width={160}  height={'auto'} />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">
