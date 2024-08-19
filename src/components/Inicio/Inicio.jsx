@@ -31,7 +31,7 @@ const Carousel = () => {
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {slides.map((slide, index) => (
             <div key={index} className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0"}`}>
-              <img src={slide} className="block w-full h-full object-cover opacity-60" alt={`Slide ${index + 1}`} />
+              <img src={slide} className="block w-full h-full object-cover opacity-30" alt={`Slide ${index + 1}`} />
             </div>
           ))}
 
@@ -45,7 +45,7 @@ const Carousel = () => {
         </div>
 
         {/* Indicators */}
-        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <div className="absolute z-10 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           {slides.map((_, index) => (
             <button key={index} type="button" className={`w-3 h-3 rounded-full ${index === activeIndex ? "bg-white" : "bg-gray-400"}`} aria-label={`Slide ${index + 1}`} onClick={() => goToSlide(index)} />
           ))}
