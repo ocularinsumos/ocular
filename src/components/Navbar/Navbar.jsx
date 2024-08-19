@@ -40,8 +40,7 @@ export default function Navbar() {
       <Disclosure 
         as="nav" 
         className={classNames(
-          "fixed top-0 left-0 right-0 sm:py-0 md:py-4 border-neutral-200 backdrop-blur-sm z-20 transition-colors duration-300", 
-          isScrolled ? "bg-primary text-text-tertiary backdrop-blur-none" : "bg-transparent text-text-primary"
+          "fixed top-0 left-0 right-0 sm:py-0 md:py-4 border-neutral-200 z-20 transition-colors duration-300 bg-primary text-text-tertiary backdrop-blur-none" 
         )}
       >
         {({ open }) => (
@@ -61,8 +60,7 @@ export default function Navbar() {
                           key={item.name} 
                           href={generateHref(null, item.href)} 
                           className={classNames(
-                            activeLink === item.href ? "font-latoRegular relative inline-block group" : "relative inline-block group",
-                            isScrolled ? "text-text-tertiary" : "text-text-primary"
+                            activeLink === item.href ? "font-latoRegular relative inline-block group" : "relative inline-block group text-text-tertiary" 
                           )} 
                           aria-current={activeLink === item.href ? "page" : undefined} 
                           onClick={() => handleLinkClick(item.href)} 
@@ -83,8 +81,8 @@ export default function Navbar() {
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-1">
                       <span className="sr-only">Open main menu</span>
                       {open 
-                        ? (<XMarkIcon className={classNames("block h-6 w-6", isScrolled ? "text-text-tertiary" : "text-text-primary")} aria-label="close menu" />) 
-                        : (<Bars3Icon className={classNames("block h-6 w-6", isScrolled ? "text-text-tertiary" : "text-text-primary")} aria-label="open menu" />)}
+                        ? (<XMarkIcon className={classNames("block h-6 w-6 text-text-tertiary" )} aria-label="close menu" />) 
+                        : (<Bars3Icon className={classNames("block h-6 w-6 text-text-tertiary" )} aria-label="open menu" />)}
                     </Disclosure.Button>
                   </div>
                 </div>
