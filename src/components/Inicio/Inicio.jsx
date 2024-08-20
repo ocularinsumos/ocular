@@ -28,7 +28,7 @@ const Carousel = () => {
   return (
     <section id='inicio' className="bg-black">
       <div className="relative w-full">
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative min-h-screen overflow-hidden rounded-lg md:h-96">
           {slides.map((slide, index) => (
             <div key={index} className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0"}`}>
               <img src={slide} className="block w-full h-full object-cover opacity-30" alt={`Slide ${index + 1}`} />

@@ -5,7 +5,7 @@ import { robotoCondensed } from "@/Utils/fonts";
 export default function SobreMi() {
   return (
     <section id="nosotros" className="relative z-10"> 
-      <article  className="p-4 max-w-[780px] mx-auto">
+      <article  className="p-4 max-w-[780px] mx-auto mb-8 pb-8 md:pb-24 xl:pb-36">
         <h2 className={`text-text-primary text-3xl m-4 items-center text-center ${robotoCondensed.className}`}>{texto.nosotros.titulo}</h2>
         <p className="text-text-secondary text-lg">{texto.nosotros.descripcion}</p>
         <br />
@@ -17,12 +17,12 @@ export default function SobreMi() {
           </div>
           <img loading="lazy" width={100} style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }} className="hidden md:block md:w-full p-6 place-self-center z-10" src="images/sobreMi/ojo.webp" alt="ojo del logo" aria-description="ojo del logo" />
         </div>
-
-        {/* Curva ondulada SVG */}
       </article>
-        <svg viewBox="0 0 1440 150" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-[-20px] sm:bottom-[-40px] w-full md:bottom-[-40px] md:right-0 md:w-[70%] lg:bottom-[-40px] lg:right-0 lg:w-[50%] ">
-          <path d="M0 0H1440V50C1200 150 600 150 0 50V0Z" fill="#F3F5F5" />
-        </svg>
+      
+      {/* Curva ondulada SVG */}
+      <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute opacity-20 bottom-[-30px] md:bottom-[-35px] left-0 w-full h-auto">
+        <path d="M0,64L60,80C120,96,240,128,360,160C480,192,600,224,720,213.3C840,203,960,149,1080,128C1200,107,1320,117,1380,122.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" fill="#007BC7" />
+      </svg>
     </section>
   );
 }

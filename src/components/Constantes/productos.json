@@ -1,0 +1,52 @@
+[
+    {
+        "id": "cataratas",
+        "img": "images/servicios/1.webp",
+        "icon": "images/servicios/catarata.webp",
+        "title": "CATARATAS",
+        "href": "/cataratas",
+        "texto": "Informacion sobre cataratas",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto."
+    },
+    {
+        "id": "cornea",
+        "img": "images/servicios/1.webp",
+        "icon": "images/servicios/cornea.webp",
+        "title": "cornea",
+        "href": "/cornea",
+        "texto": "Informacion sobre cornea",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto."
+    },
+    {
+        "id": "pterigion",
+        "img": "images/servicios/1.webp",
+        "icon": "images/servicios/pterigion.webp",
+        "title": "pterigion",
+        "href": "/pterigion",
+        "texto": "Informacion sobre pterigion",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto."
+    },
+    {
+        "id": "retina",
+        "img": "images/servicios/1.webp",
+        "icon": "images/servicios/retina.webp",
+        "title": "retina",
+        "href": "/retina",
+        "texto": "Informacion sobre retina",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto."
+    },
+    {
+        "id": "glaucoma",
+        "img": "images/servicios/1.webp",
+        "icon": "images/servicios/glaucoma.webp",
+        "title": "glaucoma",
+        "href": "/glaucoma",
+        "texto": "Informacion sobre glaucoma",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto."
+    }
+]

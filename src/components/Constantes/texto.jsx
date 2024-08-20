@@ -8,40 +8,8 @@ const texto = {
       titulo:'Productos',
       subtitulo:'Amplia variedad'
     },
-    servicios:[
-        {
-          img: 'images/servicios/1.webp',
-          title: "CATARATAS",
-          title2: "",
-          href:"/cataratas"
-        },
-        {
-          img: 'images/servicios/1.webp',
-          title: "RETINA",
-          title2: "",
-          href:"/retina"
-        },
-        {
-          img: 'images/servicios/1.webp',
-          title: "GLAUCOMA",
-          title2: "",
-          href:"/glaucoma"
-        },
-        {
-          img: 'images/servicios/1.webp',
-          title: "CORNEA",
-          title2: "",
-          href:"/cornea"
-        },
-        {
-          img: 'images/servicios/1.webp',
-          title: "PTERIGION",
-          title2: "",
-          href:"/pterigion"
-        },
-      ],
     nosotros:{
-      titulo:'Ocular Insumos Quirurgicos',
+      titulo:'Nosotros',
       descripcion:'Comienza en el año 2000 con el objetivo de brindar el mejor servicio de asesoramiento y venta de insumos quirúrgicos del mercado oftalmológico en la actualidad brinda tecnología, versatilidad y servicios a profesionales y particulares de todo el país con la garantía de los productos en las distintas etapas de uso.',
       mision:'Nuestro compromiso es lograr la mayor satisfacción hacia el profesional acompañándolo en su crecimiento cubriendo sus necesidades y apoyándolo en sus objetivos para el futuro en síntesis ocular es una empresa que día a día crece con la solvencia, eficacia y resultados que ofrecemos a nuestros profesionales y clientes que nos eligen una y otra vez.',
       valores:'Creemos en lo que hacemos y por eso nos comprometemos a ayudar a más personas como usted todos los días. Para asegurarnos de que el proceso sea lo más transparente posible, existen variedad de productos elija a nuestro equipo para que le diseñe una solución verdaderamente única.'
