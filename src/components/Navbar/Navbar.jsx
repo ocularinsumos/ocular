@@ -98,7 +98,7 @@ export default function Navbar() {
                     className={classNames(
                       "block p-4 text-base font-medium border-b border-[#807f6c] hover:text-text-secondary",
                       activeLink === item.href ? "bg-blue-300 text-text-secondary" : "",
-                      isScrolled ? "text-text-tertiary" : "text-text-primary"
+                      // isScrolled ? "text-text-tertiary" : "text-text-primary"
                     )} 
                     aria-current={activeLink === item.href ? "page" : undefined} 
                     onClick={() => handleLinkClick(item.href)} 
