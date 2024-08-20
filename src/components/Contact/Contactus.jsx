@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 import { IoClose } from 'react-icons/io5';
 import texto from '../Constantes/texto';
 
-const Contactusform = () => {
+const Contactusform = ({ className = '' }) => {
     let [isOpen, setIsOpen] = useState(false);
 
     const [inputValues, setInputValues] = useState({
@@ -74,7 +74,6 @@ const Contactusform = () => {
             }
         }
     };
-    
 
     const isDisabled = Object.values(inputValues).some((value) => value === '');
 
@@ -88,10 +87,10 @@ const Contactusform = () => {
 
     return (
         <>
-            <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
+            <div className={`flex items-center ${className}`}>
                 <button 
                     type="button"
-                    className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink" 
+                    className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink"
                     onClick={openModal}
                     aria-label="Abrir formulario de contacto"
                 >
@@ -152,7 +151,7 @@ const Contactusform = () => {
                                                 width={200}
                                                 height={'auto'}
                                             />
-                                            <p className="mb-6 lg:mb-16 mt-4 font-light text-center text-text-secondary sm:text-xl">{texto.contacto.title}</p>
+                                            <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>{texto.contacto.title}</p>
                                         </div>
                                         <form className="space-y-8" onSubmit={handleSubmit}>
                                             <div>
@@ -170,8 +169,7 @@ const Contactusform = () => {
                                                 />
                                             </div>
                                             <div>
-                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">{texto.contacto.email}
-                                                </label>
+                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">{texto.contacto.email}</label>
                                                 <input
                                                     id="email"
                                                     name="input2"
@@ -189,7 +187,7 @@ const Contactusform = () => {
                                                     htmlFor="options"
                                                     className="block mb-2 text-sm font-medium text-text-primary"
                                                 >
-                                                {texto.contacto.motivo}
+                                                    {texto.contacto.motivo}
                                                 </label>
                                                 <select
                                                     id="options"
@@ -211,7 +209,7 @@ const Contactusform = () => {
                                                     htmlFor="message"
                                                     className="block mb-2 text-sm font-medium text-text-primary"
                                                 >
-                                                {texto.contacto.msj}
+                                                    {texto.contacto.msj}
                                                 </label>
                                                 <textarea
                                                     id="message"

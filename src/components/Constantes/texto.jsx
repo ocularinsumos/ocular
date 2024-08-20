@@ -1,4 +1,9 @@
 const texto = {
+    TopBanner:{
+      texto1:'Hola como estas',
+      texto2:'¡Oferta especial! 20% de descuento en todos nuestros productos por tiempo limitado.',
+      texto3:'estamos probando textos random'
+    },
     inicio: {
         titulo:'Somos OCULAR',
         subtitulo:'Creemos en lo que hacemos y nos apasiona.',

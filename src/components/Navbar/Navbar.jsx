@@ -39,15 +39,14 @@ export default function Navbar() {
     <div className="py-8 md:py-11 bg-gray-400">
       <Disclosure 
         as="nav" 
-        className={classNames(
-          "fixed top-0 left-0 right-0 sm:py-0 md:py-4 border-neutral-200 z-20 transition-colors duration-300 bg-primary text-text-tertiary backdrop-blur-none" 
+        className={classNames("fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-secondary text-text-tertiary backdrop-blur-none shadow-lg" 
         )}
       >
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8">
-              <div className="relative flex h-16 items-center justify-between">
-                <div className="flex flex-1 items-center justify-start">
+              <div className="relative flex h-16 items-center justify-start md:justify-around">
+                <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
                     <Link href="/" className="">
                       <img src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={'auto'} />
@@ -60,7 +59,7 @@ export default function Navbar() {
                           key={item.name} 
                           href={generateHref(null, item.href)} 
                           className={classNames(
-                            activeLink === item.href ? "font-latoRegular relative inline-block group" : "relative inline-block group text-text-tertiary" 
+                            activeLink === item.href ? "font-latoRegular relative inline-block group" : "relative inline-block group text-text-link font-bold" 
                           )} 
                           aria-current={activeLink === item.href ? "page" : undefined} 
                           onClick={() => handleLinkClick(item.href)} 
@@ -73,7 +72,7 @@ export default function Navbar() {
                           {item.name.toLocaleUpperCase()}
                         </Link>
                       ))}
-                      <Contactusform />
+                      <Contactusform className="text-navbar-style font-bold" />
                     </div>
                   </div>
                   <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
@@ -81,8 +80,8 @@ export default function Navbar() {
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-1">
                       <span className="sr-only">Open main menu</span>
                       {open 
-                        ? (<XMarkIcon className={classNames("block h-6 w-6 text-text-tertiary" )} aria-label="close menu" />) 
-                        : (<Bars3Icon className={classNames("block h-6 w-6 text-text-tertiary" )} aria-label="open menu" />)}
+                        ? (<XMarkIcon className={classNames("block h-6 w-6 text-text-link" )} aria-label="close menu" />) 
+                        : (<Bars3Icon className={classNames("block h-6 w-6 text-text-link" )} aria-label="open menu" />)}
                     </Disclosure.Button>
                   </div>
                 </div>
@@ -107,8 +106,8 @@ export default function Navbar() {
                     {item.name.toLocaleUpperCase()}
                   </Disclosure.Button>
                 ))}
-                <div className="flex w-full text-start font-semibold">
-                  <Contactusform />
+                <div className="flex w-full text-start font-bold">
+                  <Contactusform className="text-navbar-style-menu" />
                 </div>
               </div>
             </Disclosure.Panel>

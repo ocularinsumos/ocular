@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import VolverArriba from "@/components/VolverArriba/VolverArriba";
 import userData from "@/components/Constantes/userData";
 import BotonWsp from "@/components/BotonWSP/BotonWsp";
+import TopBanner from '@/components/TopBanner/TopBanner';
 
 const RootLayout = (props) => {
   const { children } = props;
@@ -42,6 +43,7 @@ const RootLayout = (props) => {
         <meta property="og:image" content={meta.icon} />
       </Head>
       <body className=''>
+          <TopBanner/>
           <nav>
             <Navbar />
           </nav>

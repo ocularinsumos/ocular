@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textColor: {
+        'footer-style': '#FFFFFF',
+        'navbar-style': '#007BC7',
+        'navbar-style-menu': '#FFFFFF'
+      },
+      fontSize: {
+        'footer-style': '1rem',
+        'navbar-style': '1rem',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

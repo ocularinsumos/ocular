@@ -20,7 +20,7 @@ export default function Footer() {
         <li key={item.name}><Link href={item.href} className=" mr-4 hover:underline md:mr-6 text-text-tertiary">{item.name.toLocaleUpperCase()}</Link></li>
       ))}
       <li className="mr-4 hover:underline md:mr-6 text-text-tertiary font-normal">
-        <Contactusform />
+        <Contactusform className="text-footer-style" />
       </li>
       {texto.sociales.map((red) => (
         <Link key={red.name} href={red.href} target="_blank">
