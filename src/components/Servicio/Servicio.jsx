@@ -11,7 +11,7 @@ export default function Servicio({ titulo, texto, imagen, texto2,texto3, icono }
       </div>
       <div className="flex flex-col justify-between text-center px-6 md:px-6 pt-10 lg:pr-10">
         <div>
-          <div className="flex">
+          <div className="flex justify-center align-middle items-center">
             <h1 className="text-4xl text-black font-light italic font-playfair tracking-[-2px]">{titulo.toUpperCase()}</h1>
             {icono && (
               <img  loading="lazy" src={icono} className="w-fit px-2" width={60} height="auto" alt={`Icono de ${titulo}`} />
