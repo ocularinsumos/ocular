@@ -31,7 +31,7 @@ export default function Footer() {
       ))}
     </ul>
     <Link href='https://programundo.dev' >
-      <small className="text-sm text-gray-300 sm:text-center">© 2024 <a href="#" className="hover:underline">MATIGON</a>. All Rights Reserved.</small>
+      <small className="text-sm text-gray-300 sm:text-center">© 2024 - MATIGON. All Rights Reserved.</small>
     </Link>
   </div>
 </footer>

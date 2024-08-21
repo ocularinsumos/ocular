@@ -8,7 +8,7 @@ export default function ProductosPage() {
   const foundProduct = productos.find(
     (prod) => prod.id.toLowerCase() === path.replace('/', '').toLowerCase()
   );
-  console.log(foundProduct)
+//  console.log(foundProduct)
 
   if (!foundProduct) {
     return <p>Product not found.</p>; 
