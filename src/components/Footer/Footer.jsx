@@ -30,7 +30,9 @@ export default function Footer() {
         </Link>
       ))}
     </ul>
-    <span className="text-sm text-gray-300 sm:text-center">© 2024 <a href="#" className="hover:underline">MATIGON</a>. All Rights Reserved.</span>
+    <Link href='https://programundo.dev' >
+      <small className="text-sm text-gray-300 sm:text-center">© 2024 <a href="#" className="hover:underline">MATIGON</a>. All Rights Reserved.</small>
+    </Link>
   </div>
 </footer>
   );

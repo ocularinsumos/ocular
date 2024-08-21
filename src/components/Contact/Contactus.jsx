@@ -19,6 +19,7 @@ const Contactusform = ({ className = '' }) => {
     const alert = () => {
         Swal.fire({
             title: `${inputValues.input1}, tu mensaje ha sido enviado correctamente.`,
+            confirmButtonAriaLabel,
             text: `Pronto se comunicarán contigo al siguiente email, ${inputValues.input2}`,
             icon: 'success',
             confirmButtonText: 'Ok',
@@ -28,6 +29,7 @@ const Contactusform = ({ className = '' }) => {
     const alertLoading = () => {
         Swal.fire({
             title: 'Aguarde un momento',
+            icon:'info',
             text: 'Tu mensaje se está enviando...',
             showConfirmButton: false,
         });
@@ -37,6 +39,7 @@ const Contactusform = ({ className = '' }) => {
         Swal.fire({
             text: `${inputValues.input2}, No es un correo electrónico válido`,
             icon: 'error',
+            confirmButtonAriaLabel,
             confirmButtonText: 'Ok',
         });
     };

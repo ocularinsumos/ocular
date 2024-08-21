@@ -14,13 +14,13 @@ export default function Servicio({ titulo, texto, imagen, texto2,texto3, icono }
           <div className="flex justify-center align-middle items-center">
             <h1 className="text-4xl text-black font-light italic font-playfair tracking-[-2px]">{titulo.toUpperCase()}</h1>
             {icono && (
-              <img  loading="lazy" src={icono} className="w-fit px-2" width={60} height="auto" alt={`Icono de ${titulo}`} />
+              <img  loading="lazy" src={icono} className="w-fit px-2" width={60} height="auto" alt={`Icono de ${titulo}`} aria-label={`Icono de ${titulo}`} />
             )}
           </div>
           <p className="py-6 text-[#007BC7]">{texto}</p>
           <p className="text-text-primary">{texto2}</p>
           {texto3 ? <p className="pt-6 text-text-primary">{texto3}</p> : null}
-          <a href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-auto mt-8 px-4 py-2 rounded-lg text-center inline-block" target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto">¡Contáctar ahora!</a>
+          <a href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-auto mt-8 px-4 py-2 rounded-lg text-center inline-block" target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto">{userData.textoProductos}</a>
         </div>
       </div>
     </div>

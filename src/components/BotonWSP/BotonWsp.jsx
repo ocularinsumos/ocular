@@ -13,7 +13,7 @@ import userData from "../Constantes/userData";
 
 // export default userData;
 
-const BotonWsp = ({ text, contact, codigoPais }) => {
+const BotonWsp = ({ text}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {

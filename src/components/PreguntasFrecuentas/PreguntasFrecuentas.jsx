@@ -1,6 +1,7 @@
 'use client'
 import { robotoCondensed } from "@/Utils/fonts";
 import React, { useState } from "react";
+import texto from "../Constantes/texto";
 
 const PreguntasFrecuentes = () => {
   const [accordionOpen, setAccordionOpen] = useState({
@@ -8,30 +9,6 @@ const PreguntasFrecuentes = () => {
     2: false,
     3: false,
   });
-  const faqData = [
-    {
-      id: 1,
-      question: "¿Como realizamos el envio?",
-      answer:
-        "Realizamos el envío a través de servicios de mensajería confiables y rápidos. Nos aseguramos de que tu producto llegue en las mejores condiciones y en el menor tiempo posible.",
-      linkText: "Más información sobre nuestros envíos",
-      linkUrl: "./docs/envios.pdf",
-    },
-    {
-      id: 2,
-      question: "¿Que garantía tiene el producto?",
-      answer:
-        "Todos nuestros productos tienen una garantía completa de satisfacción. Estamos comprometidos con la calidad y ofrecemos garantía contra defectos de fabricación.",
-      linkText: "Consulta nuestra política de garantía",
-      linkUrl: "./docs/garantia.pdf",
-    },
-    {
-      id: 3,
-      question: "¿Qué medios de pago utilizamos?",
-      answer:
-        "Aceptamos una variedad de métodos de pago seguros, incluyendo tarjetas de crédito/débito y servicios de pago en línea.",
-    },
-  ];
 
   const toggleAccordion = (accordionId) => {
     setAccordionOpen((prevState) => ({
@@ -44,8 +21,8 @@ const PreguntasFrecuentes = () => {
     <div className="bg-background-secondary py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " style={{textAlign:"-webkit-center"}}>
       <div className="max-w-screen-md" >
         <div id="accordion-open" data-accordion="open">
-          <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>Preguntas frecuentes</h2>
-          {faqData.map((faq) => (
+          <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>{texto.preguntas.titulo}</h2>
+          {texto.faqData.map((faq) => (
             <div key={faq.id} className="mb-4 border border-gray-200 rounded-xl">
               <h2 id={`accordion-open-heading-${faq.id}`}>
                 <button type="button" className="flex items-center justify-between w-full p-4 font-medium text-gray-600 bg-gray-50 rounded-t-xl focus:outline-none" onClick={() => toggleAccordion(faq.id)}

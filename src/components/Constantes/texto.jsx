@@ -1,8 +1,8 @@
 const texto = {
     TopBanner:{
-      texto1:'Hola como estas',
+      texto1:'Expertos en Insumos Oftalmologicos',
       texto2:'¡Oferta especial! 20% de descuento en todos nuestros productos por tiempo limitado.',
-      texto3:'estamos probando textos random'
+      texto3:'Insumos para cirugias Oculares'
     },
     inicio: {
         titulo:'Somos OCULAR',
@@ -44,7 +44,34 @@ const texto = {
     ],
     footer:{
       info:'24 Años en el mercado de Insumos Quirurgicos para Profesionales y Particulares',
-    }
+    },
+    preguntas:{
+      titulo:'Preguntas frecuentes',
+    },
+    faqData: [
+      {
+        id: 1,
+        question: "¿Como realizamos el envio?",
+        answer:
+          "Realizamos el envío a través de servicios de mensajería confiables y rápidos. Nos aseguramos de que tu producto llegue en las mejores condiciones y en el menor tiempo posible.",
+        linkText: "Más información sobre nuestros envíos",
+        linkUrl: "./docs/envios.pdf",
+      },
+      {
+        id: 2,
+        question: "¿Que garantía tiene el producto?",
+        answer:
+          "Todos nuestros productos tienen una garantía completa de satisfacción. Estamos comprometidos con la calidad y ofrecemos garantía contra defectos de fabricación.",
+        linkText: "Consulta nuestra política de garantía",
+        linkUrl: "./docs/garantia.pdf",
+      },
+      {
+        id: 3,
+        question: "¿Qué medios de pago utilizamos?",
+        answer:
+          "Aceptamos una variedad de métodos de pago seguros, incluyendo tarjetas de crédito/débito y servicios de pago en línea.",
+      },
+    ]
 };
 
 export default texto;

@@ -11,8 +11,8 @@ function TopBanner() {
   }, []);
 
   return (
-    <section className="bg-primary text-white py-1 px-6 text-center w-full fixed top-0 z-30">
-      <p className="text-xs md:text-lg font-semibold">{bannerText}</p> 
+    <section className="bg-primary min-h-10 lg:min-h-5 content-center text-white py-1 px-6 text-center w-full fixed top-0 z-30">
+      <p className="text-xs md:text-base lg:text-lg font-semibold">{bannerText}</p> 
     </section>
   );
 }

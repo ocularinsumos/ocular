@@ -2,8 +2,8 @@
     {
         "id": "cataratas",
         "img": "images/servicios/1.webp",
-        "icono": "images/servicios/catarata.webp",
-        "title": "CATARATAS",
+        "icono": "images/servicios/cataratas.webp",
+        "title": "cataratas",
         "href": "/cataratas",
         "texto": "Informacion sobre cataratas",
         "texto2": "texto sobre eso",

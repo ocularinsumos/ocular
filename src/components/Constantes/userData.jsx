@@ -3,6 +3,7 @@ const userData = {
     contact: 91152371300,
     email:'ocularinsumos@gmail.com',
     textBoton:"¡Contáctame!",
+    textoProductos:'¡Consultar ahora!',
     textoPredefinido :"Hola, me gustaria consultar sobre, "
 };
 

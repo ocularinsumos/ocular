@@ -39,7 +39,7 @@ export default function Navbar() {
     <div className="py-8 md:py-11 bg-gray-400">
       <Disclosure 
         as="nav" 
-        className={classNames("fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-secondary text-text-tertiary backdrop-blur-none shadow-lg" 
+        className={classNames("fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-link  backdrop-blur-none shadow-lg" 
         )}
       >
         {({ open }) => (
@@ -67,7 +67,7 @@ export default function Navbar() {
                         >
                           <span className={classNames(
                             "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
-                            activeLink === item.href ? "scale-x-100 inset-x-0" : "scale-x-0 group-hover:scale-x-100 inset-x-1"
+                            activeLink === item.href ? "scale-x-100 inset-x-0 " : "  scale-x-0 group-hover:scale-x-100 inset-x-1"
                           )}></span>
                           {item.name.toLocaleUpperCase()}
                         </Link>
