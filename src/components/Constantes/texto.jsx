@@ -11,7 +11,8 @@ const texto = {
     },
     productos:{
       titulo:'Productos',
-      subtitulo:'Amplia variedad'
+      subtitulo:'Amplia variedad',
+      btnVolver:'Volver'
     },
     nosotros:{
       titulo:'Nosotros',
