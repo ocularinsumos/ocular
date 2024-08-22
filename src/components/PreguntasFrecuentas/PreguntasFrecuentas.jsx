@@ -2,6 +2,7 @@
 import { robotoCondensed } from "@/Utils/fonts";
 import React, { useState } from "react";
 import texto from "../Constantes/texto";
+import Link from "next/link";
 
 const PreguntasFrecuentes = () => {
   const [accordionOpen, setAccordionOpen] = useState({
@@ -43,14 +44,14 @@ const PreguntasFrecuentes = () => {
                   <p className="mb-2 text-gray-700">{faq.answer}</p>
                   {faq.linkText && (
                     <p className="mb-2 text-gray-700">
-                      <a href={faq.linkUrl} className="text-blue-600 hover:underline" target="_blank" >{faq.linkText}</a>
+                      <Link href={faq.linkUrl} className="text-blue-600 hover:underline" target="_blank" >{faq.linkUrl?faq.linkText:''}</Link>
                     </p>
                   )}
                   {faq.additionalInfo && (
                     <div>
                       <p className="mb-2 text-gray-700">{faq.additionalInfo[0].text}</p>
                       <ul className="pl-4 text-gray-700 list-disc">{faq.additionalInfo[0].links.map((link, index) => (
-                          <li key={index}><a href={link.url} className="text-blue-600 hover:underline" >{link.text}</a> </li>
+                          <li key={index}><Link href={link.url} className="text-blue-600 hover:underline" >{link.text}</Link> </li>
                         ))}
                       </ul>
                     </div>

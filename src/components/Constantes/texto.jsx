@@ -48,30 +48,89 @@ const texto = {
     preguntas:{
       titulo:'Preguntas frecuentes',
     },
-    faqData: [
+    faqData : [
       {
         id: 1,
-        question: "¿Como realizamos el envio?",
+        question: "¿Qué tipo de lente intraocular necesito para una cirugía de cataratas?",
         answer:
-          "Realizamos el envío a través de servicios de mensajería confiables y rápidos. Nos aseguramos de que tu producto llegue en las mejores condiciones y en el menor tiempo posible.",
-        linkText: "Más información sobre nuestros envíos",
-        linkUrl: "./docs/envios.pdf",
+          "El tipo de lente intraocular adecuado depende de las necesidades visuales del paciente. Ofrecemos lentes monofocales, multifocales y tóricos, cada uno con características específicas. Consulta con tu oftalmólogo para determinar cuál es el mejor para vos.",
+        linkText: "Ver más sobre nuestros lentes intraoculares",
+        linkUrl: "./docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf",
       },
       {
         id: 2,
-        question: "¿Que garantía tiene el producto?",
+        question: "¿Cómo garantizan la calidad de los insumos para cirugía oftalmológica?",
         answer:
-          "Todos nuestros productos tienen una garantía completa de satisfacción. Estamos comprometidos con la calidad y ofrecemos garantía contra defectos de fabricación.",
-        linkText: "Consulta nuestra política de garantía",
-        linkUrl: "./docs/garantia.pdf",
+          "Todos nuestros productos pasan por rigurosos controles de calidad y están aprobados por las principales agencias reguladoras. Trabajamos solo con proveedores confiables para asegurar la mejor calidad en cada insumo.",
+        linkText: "Más información sobre nuestra garantía de calidad",
+        linkUrl: "./docs/ANMAT - Ocular.pdf",
       },
       {
         id: 3,
-        question: "¿Qué medios de pago utilizamos?",
+        question: "¿Ofrecen envío rápido para insumos de emergencia?",
         answer:
-          "Aceptamos una variedad de métodos de pago seguros, incluyendo tarjetas de crédito/débito y servicios de pago en línea.",
+          "Sí, contamos con opciones de envío rápido para atender emergencias quirúrgicas. Los pedidos realizados antes de las 2 p.m. se envían el mismo día, asegurando que lleguen a tiempo para tus necesidades.",
+        linkText: "Consulta nuestras opciones de envío",
+        linkUrl: "",
+      },
+      {
+        id: 4,
+        question: "¿Qué insumos son esenciales para realizar una cirugía de glaucoma?",
+        answer:
+          "Para una cirugía de glaucoma exitosa, es fundamental contar con microinstrumentos precisos, soluciones viscoelásticas y lentes quirúrgicos de alta calidad. Ofrecemos una gama completa de insumos diseñados para asegurar la mejor atención a los pacientes con glaucoma.",
+        linkText: "Explora nuestros insumos para cirugía de glaucoma",
+        linkUrl: "",
+      },
+      {
+        id: 5,
+        question: "¿Qué características debe tener una solución viscoelástica para cirugía de retina?",
+        answer:
+          "Las soluciones viscoelásticas para cirugía de retina deben tener una alta viscosidad y elasticidad para proteger las estructuras oculares durante la cirugía. Disponemos de productos con estas características, diseñados para maximizar la seguridad y el éxito quirúrgico.",
+        linkText: "Conoce nuestras soluciones viscoelásticas",
+        linkUrl: "",
+      },
+      {
+        id: 6,
+        question: "¿Pueden asesorarme sobre qué insumos son los más adecuados para mi clínica?",
+        answer:
+          "Sí, ofrecemos asesoría personalizada para ayudarte a seleccionar los insumos más adecuados según las necesidades de tu clínica. Nuestro equipo está capacitado para guiarte en cada paso del proceso de compra.",
+        linkText: "Contáctanos para asesoría personalizada",
+        linkUrl: "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0",
+      },
+      {
+        id: 7,
+        question: "¿Cómo puedo pedir un presupuesto de insumos para cirugía de cataratas?",
+        answer:
+          "Para solicitar un presupuesto de insumos para cirugía de cataratas, envía la receta por WhatsApp incluyendo el nombre y apellido del solicitante. Nuestro equipo te responderá con un presupuesto detallado lo antes posible.",
+        linkText: "Contáctanos por WhatsApp",
+        linkUrl: "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0",
+      },
+      {
+        id: 8,
+        question: "¿Cómo puedo solicitar asesoramiento sobre insumos para mi clínica?",
+        answer:
+          "Si necesitas asesoramiento sobre los insumos más adecuados para tu clínica, envíanos un mensaje detallando tus necesidades. Nuestro equipo de expertos te ofrecerá una guía personalizada y recomendaciones específicas.",
+        linkText: "Solicita asesoramiento personalizado",
+        linkUrl: "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0",
+      },
+      {
+        id: 9,
+        question: "¿Cómo se retira el insumo y como es la facturación de los productos?",
+        answer:
+          "Puedes retirar los insumos quirúrgicos oftalmológicos de nuestra sucursal o elegir entre dos opciones de envío: podemos enviar el producto directamente al paciente o a la clínica. Para tu comodidad, también ofrecemos facturación electrónica para todas las compras. Al completar tu pedido, recibirás un correo con el detalle de la facturación y la confirmación del envío.",
+        linkText: "Ver más sobre envío y facturación",
+        linkUrl: "./docs/Envios - Ocular.pdf",
+      },
+      {
+        id: 10,
+        question: "¿Cómo puedo solicitar asesoramiento sobre insumos para mi cirugía de la vista?",
+        answer:
+          "Para solicitar asesoramiento sobre insumos específicos para tu cirugía, contacta a nuestro equipo de expertos a través del formulario en nuestra web, por correo electrónico o whatsApp. Adjunta tu receta Proporciona detalles sobre el tipo de cirugía y tus requisitos, y te ofreceremos recomendaciones personalizadas.",
+        linkText: "Contáctanos para asesoramiento sobre cirugía de la vista",
+        linkUrl: "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0",
       },
     ]
+    
 };
 
 export default texto;
