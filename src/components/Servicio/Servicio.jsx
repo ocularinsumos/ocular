@@ -1,5 +1,8 @@
 import React from "react";
 import userData from "../Constantes/userData";
+import textoProductos from "../Constantes/texto";
+import Link from "next/link";
+
 
 export default function Servicio({ titulo, texto, imagen, texto2,texto3, icono }) {
   const enviar = `https://wa.me/+${userData.codigoPais}${userData.contact}?text=${encodeURIComponent(`${userData.textoPredefinido}}`)}`;
@@ -20,7 +23,10 @@ export default function Servicio({ titulo, texto, imagen, texto2,texto3, icono }
           <p className="py-6 text-[#007BC7]">{texto}</p>
           <p className="text-text-primary">{texto2}</p>
           {texto3 ? <p className="pt-6 text-text-primary">{texto3}</p> : null}
-          <a href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-auto mt-8 px-4 py-2 rounded-lg text-center inline-block" target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto">{userData.textoProductos}</a>
+          <div className="mx-auto">
+            <Link href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto">{userData.textoProductos}</Link>
+            <Link href='/#productos' className="bg-primary hover:bg-primary-hover active:bg-primary-active md:hidden text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" aria-label={textoProductos.productos.btnVolver}>{textoProductos.productos.btnVolver}</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -37,11 +37,7 @@ export default function Navbar() {
 
   return (
     <div className="py-8 md:py-11 bg-gray-400">
-      <Disclosure 
-        as="nav" 
-        className={classNames("fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary  backdrop-blur-none shadow-lg" 
-        )}
-      >
+      <Disclosure as="nav" className={classNames(`fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary  backdrop-blur-none shadow-lg ${isScrolled?'shadow-blue-200':''} `)}>
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8">
