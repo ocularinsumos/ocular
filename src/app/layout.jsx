@@ -1,12 +1,12 @@
 'use client';
 import './globals.css';
 import Head from "next/head";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
-import VolverArriba from "@/components/VolverArriba/VolverArriba";
-import userData from "@/components/Constantes/userData";
-import BotonWsp from "@/components/BotonWSP/BotonWsp";
-import TopBanner from '@/components/TopBanner/TopBanner';
+import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
+import VolverArriba from "../components/VolverArriba/VolverArriba";
+import userData from "../components/Constantes/userData";
+import BotonWsp from "../components/BotonWSP/BotonWsp";
+import TopBanner from '../components/TopBanner/TopBanner';
 
 const RootLayout = (props) => {
   const { children } = props;

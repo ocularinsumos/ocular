@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto Condensed', 'sans-serif'],
+      },
       textColor: {
         'footer-style': '#FFFFFF',
         'navbar-style': '#007BC7',
