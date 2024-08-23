@@ -1,10 +1,17 @@
 import React from "react";
 import texto from '../Constantes/texto';
+import {useTranslations} from 'next-intl';
+
+
 
 export default function SobreMi() {
+  const t = useTranslations('HomePage');
+
   return (
     <section id="nosotros" className="relative z-10"> 
       <article className="p-4 max-w-[780px] mx-auto mb-8 pb-8 md:pb-24 xl:pb-36">
+      <h1>{t('title')}</h1>
+
         <h2 className="text-text-primary text-3xl m-4 items-center text-center font-roboto">{texto.nosotros.titulo}</h2>
         <p className="text-text-secondary text-lg">{texto.nosotros.descripcion}</p>
         <br />

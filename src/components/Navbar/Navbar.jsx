@@ -6,12 +6,16 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { generateHref } from "@/Utils/generateHref";
 import Contactusform from "../Contact/Contactus";
+import {useTranslations} from 'next-intl';
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const t = useTranslations('HomePage');
   const [activeLink, setActiveLink] = useState(""); 
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -63,7 +67,8 @@ export default function Navbar() {
                           onClick={() => handleLinkClick(item.href)} 
                           aria-label={item.name}
                         >
-                          <span className={classNames(
+                        <h1>{t('title')}</h1>
+                        <span className={classNames(
                             "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
                             activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
                           )}></span>
