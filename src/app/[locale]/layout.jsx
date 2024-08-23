@@ -10,7 +10,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 
 const RootLayout = async (props) => {
-  const { children,params } = props;
+  const { children,params: {locale} } = props;
   const meta = {
     title: "OCULAR INSUMOS QUIRURGICOS",
     description: "Insumos quirurgicos para cirugias oftalmologicas",
@@ -32,7 +32,7 @@ const RootLayout = async (props) => {
   const messages = await getMessages();
 
   return (
-    <html lang="es">
+    <html lang={locale}>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <Head>
