@@ -12,7 +12,7 @@ export default function Productos() {
       </div>
       <div className="flex justify-around my-10 md:px-0 flex-wrap md:mx-5">
         {productos.map((servicio, i) => (
-          <Link href={`/${servicio.id}`} key={i} className="flex flex-col shadow-md items-center text-center w-48 md:w-36 lg:w-44 xl:w-60 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-[50px] py-2 shadow-blue-200">
+          <Link href={`/${servicio.id}`} key={i} className="flex flex-col shadow-md items-center text-center w-40 md:w-36 lg:w-44 xl:w-60 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-[50px] py-2 shadow-blue-200">
             <img loading="lazy" width={150} height={150} src={servicio.img} alt={servicio.title} className="w-fit px-2 rounded-[50px]"/>
             <h2 className="text-black mt-6">{servicio.title.toUpperCase()}</h2>
           </Link>
