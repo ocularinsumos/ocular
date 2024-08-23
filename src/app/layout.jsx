@@ -36,13 +36,13 @@ const RootLayout = (props) => {
       <meta name="description" content={meta.description} />
       <Head>
         <meta name="robots" content="follow, index" />
-        <link rel="shortcut icon" href={meta.icon} />
+        <link rel="shortcut icon" href='/favicon.ico' />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.icon} />
-        <link rel="manifest" href={meta.manifest} />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <body className=''>
           <TopBanner/>
