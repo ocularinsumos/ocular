@@ -13,6 +13,7 @@ const RootLayout = (props) => {
   const meta = {
     title: "OCULAR INSUMOS QUIRURGICOS",
     description: "Insumos quirurgicos para cirugias oftalmologicas",
+    manifest: "/manifest.json",
     type: "website",
     viewport: 'width=device-width, initial-scale=1',
     themeColor: '#451F49',
@@ -41,6 +42,7 @@ const RootLayout = (props) => {
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.icon} />
+        <link rel="manifest" href={meta.manifest} />
       </Head>
       <body className=''>
           <TopBanner/>
