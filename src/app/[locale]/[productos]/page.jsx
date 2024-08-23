@@ -1,5 +1,5 @@
 'use client'
-import productos from "../../components/Constantes/productos.json";
+import productos from "../../../components/Constantes/productos.json";
 import Servicio from "@/components/Servicio/Servicio";
 import { usePathname } from "next/navigation";
 
