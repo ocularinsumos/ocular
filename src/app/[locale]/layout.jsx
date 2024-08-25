@@ -1,15 +1,15 @@
-'use client';
 import './globals.css';
 import Head from "next/head";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
-import VolverArriba from "../components/VolverArriba/VolverArriba";
-import userData from "../components/Constantes/userData";
-import BotonWsp from "../components/BotonWSP/BotonWsp";
-import TopBanner from '../components/TopBanner/TopBanner';
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import VolverArriba from "../../components/VolverArriba/VolverArriba";
+import BotonWsp from "../../components/BotonWSP/BotonWsp";
+import TopBanner from '../../components/TopBanner/TopBanner';
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
 
-const RootLayout = (props) => {
-  const { children } = props;
+const RootLayout = async (props) => {
+  const { children,params: {locale} } = props;
   const meta = {
     title: "OCULAR INSUMOS QUIRURGICOS",
     description: "Insumos quirurgicos para cirugias oftalmologicas",
@@ -29,9 +29,10 @@ const RootLayout = (props) => {
       'insumos para cirugía de córnea', 'anestesia oftalmológica'
     ]
   };
+  const messages = await getMessages();
 
   return (
-    <html lang="es">
+    <html lang={locale}>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <Head>
@@ -45,6 +46,7 @@ const RootLayout = (props) => {
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <body className=''>
+      <NextIntlClientProvider messages={messages}>
           <TopBanner/>
           <nav>
             <Navbar />
@@ -55,8 +57,9 @@ const RootLayout = (props) => {
           <footer>
             <Footer />
             <VolverArriba />
-            <BotonWsp codigoPais={userData.codigoPais} contact={userData.contact} text={userData.textBoton}/>
+            <BotonWsp />
           </footer>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
