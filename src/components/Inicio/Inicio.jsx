@@ -1,10 +1,10 @@
 'use client'
 import { useState, useEffect } from 'react';
-// import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 
 const Carousel = (inicio) => {
-  // const t = useTranslations('inicio')
+  const t = useTranslations('inicio')
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -58,8 +58,8 @@ const Carousel = (inicio) => {
           {/* Text overlay */}
           <div className="absolute inset-0 flex justify-center items-center bottom-16 text-white z-10">
             <div className="text-center">
-              <p className="text-[40px] md:text-[62px] tracking-tight text-customBeige leading-none font-playfair-regular-italic"><strong>{inicio.titulo}</strong></p>
-              <p className="text-[20px] md:text-[22px] tracking-wide text-customBeige font-light font-lato">{inicio.subtitulo}</p>
+              <p className="text-[40px] md:text-[62px] tracking-tight text-customBeige leading-none font-playfair-regular-italic"><strong>{t('titulo')}</strong></p>
+              <p className="text-[20px] md:text-[22px] tracking-wide text-customBeige font-light font-lato">{t('subtitulo')}</p>
             </div>
           </div>
         </div>

@@ -168,12 +168,12 @@
       "texto3": "more text."
     },
     {
-      "id": "vitrectomia",
+      "id": "pterigion",
       "img": "images/servicios/1.webp",
-      "icono": "images/servicios/vitrectomia.webp",
-      "title": "Vitrectomy",
-      "href": "/vitrectomia",
-      "texto": "Information about vitrectomy",
+      "icono": "images/servicios/pterigion.webp",
+      "title": "pterigion",
+      "href": "/pterigion",
+      "texto": "Information about pterigion",
       "texto2": "text about that",
       "texto3": "more text."
     },

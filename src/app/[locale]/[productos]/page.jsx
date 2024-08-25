@@ -8,9 +8,9 @@ export default function ProductosPage() {
   const pathId = usePathname().split('/')[2]?.toLowerCase();
   console.log(pathId)
   const foundProduct = useMessages().producto.find(
-    (prod) => prod.id.toLowerCase() === `/${pathId}` || pathId
+    (prod) => prod.id.toLowerCase() === `/${pathId}` || prod.id.toLowerCase() === pathId
    )
-   
+   console.log(foundProduct)
    if (!foundProduct) {
      return <p>Product not found.</p>; 
    }
