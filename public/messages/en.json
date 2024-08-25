@@ -1,5 +1,201 @@
 {
-    "HomePage": {
-      "title": "Hello world!"
+  "TopBanner": {
+    "texto1": "Experts in Ophthalmological Supplies",
+    "texto2": "Special Offer! 20% off on all our products for a limited time.",
+    "texto3": "Supplies for Ocular Surgeries"
+  },
+  "inicio": {
+    "titulo": "We are OCULAR",
+    "subtitulo": "We believe in what we do and are passionate about it.",
+    "descripcion": "We have 23 years in the market of Surgical Supplies for Professionals and Individuals."
+  },
+  "productos": {
+    "titulo": "Products",
+    "subtitulo": "Wide variety",
+    "btnVolver": "Back"
+  },
+  "nosotros": {
+    "titulo": "About Us",
+    "descripcion": "It began in the year 2000 with the goal of providing the best advisory and sales service for surgical supplies in the ophthalmological market. Today, it offers technology, versatility, and services to professionals and individuals throughout the country with the guarantee of products in various stages of use.",
+    "mision": "Our commitment is to achieve the greatest satisfaction for the professional, accompanying their growth, meeting their needs, and supporting their future goals. In summary, Ocular is a company that grows day by day with the solvency, efficiency, and results that we offer to our professionals and clients who choose us time and again.",
+    "valores": "We believe in what we do and that is why we are committed to helping more people like you every day. To ensure that the process is as transparent as possible, there is a variety of products to choose from. Choose our team to design a truly unique solution for you."
+  },
+  "contacto": {
+    "btn": "CONTACT",
+    "title": "Contact us here or reach out via WhatsApp",
+    "nombre": "Name",
+    "email": "Your Email",
+    "motivo": "Reason",
+    "opciones": {
+      "opc1": "Select an option",
+      "opc2": "Inquiry",
+      "opc3": "Prices",
+      "opc4": "Brands",
+      "opc5": "Shipping"
+    },
+    "msj": "Message",
+    "btnEnv": "SEND"
+  },
+  "sociales": [
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/ocularinsumosquirurgicos/",
+      "icon": "images/redesSociales/instagra.webp"
     }
-  }
+  ],
+  "footer": {
+    "info": "24 years in the market of Surgical Supplies for Professionals and Individuals"
+  },
+  "preguntas": {
+    "titulo": "Frequently Asked Questions"
+  },
+  "faqData": [
+    {
+      "id": 1,
+      "question": "What type of intraocular lens do I need for cataract surgery?",
+      "answer": "The appropriate intraocular lens type depends on the patient's visual needs. We offer monofocal, multifocal, and toric lenses, each with specific characteristics. Consult with your ophthalmologist to determine which is best for you.",
+      "linkText": "Learn more about our intraocular lenses",
+      "linkUrl": "./docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
+    },
+    {
+      "id": 2,
+      "question": "How do you guarantee the quality of supplies for ophthalmic surgery?",
+      "answer": "All our products undergo rigorous quality controls and are approved by major regulatory agencies. We only work with reliable suppliers to ensure the best quality in every supply.",
+      "linkText": "More information about our quality guarantee",
+      "linkUrl": "./docs/ANMAT - Ocular.pdf"
+    },
+    {
+      "id": 3,
+      "question": "Do you offer fast shipping for emergency supplies?",
+      "answer": "Yes, we offer fast shipping options to meet surgical emergencies. Orders placed before 2 p.m. are shipped the same day, ensuring they arrive in time for your needs.",
+      "linkText": "Check out our shipping options",
+      "linkUrl": ""
+    },
+    {
+      "id": 4,
+      "question": "What supplies are essential for performing glaucoma surgery?",
+      "answer": "For successful glaucoma surgery, precise microinstruments, viscoelastic solutions, and high-quality surgical lenses are essential. We offer a full range of supplies designed to ensure the best care for patients with glaucoma.",
+      "linkText": "Explore our supplies for glaucoma surgery",
+      "linkUrl": ""
+    },
+    {
+      "id": 5,
+      "question": "What characteristics should a viscoelastic solution have for retinal surgery?",
+      "answer": "Viscoelastic solutions for retinal surgery should have high viscosity and elasticity to protect ocular structures during surgery. We have products with these characteristics, designed to maximize safety and surgical success.",
+      "linkText": "Learn about our viscoelastic solutions",
+      "linkUrl": ""
+    },
+    {
+      "id": 6,
+      "question": "Can you advise me on the most suitable supplies for my clinic?",
+      "answer": "Yes, we offer personalized advice to help you select the most suitable supplies according to your clinic's needs. Our team is trained to guide you through every step of the purchasing process.",
+      "linkText": "Contact us for personalized advice",
+      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+    },
+    {
+      "id": 7,
+      "question": "How can I request a quote for cataract surgery supplies?",
+      "answer": "To request a quote for cataract surgery supplies, send the prescription via WhatsApp, including the name and surname of the requester. Our team will respond with a detailed quote as soon as possible.",
+      "linkText": "Contact us via WhatsApp",
+      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+    },
+    {
+      "id": 8,
+      "question": "How can I request advice on supplies for my clinic?",
+      "answer": "If you need advice on the most suitable supplies for your clinic, send us a message detailing your needs. Our team of experts will offer you personalized guidance and specific recommendations.",
+      "linkText": "Request personalized advice",
+      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+    },
+    {
+      "id": 9,
+      "question": "How do I pick up the supply and how is the billing done?",
+      "answer": "You can pick up the ophthalmic surgical supplies from our branch or choose between two shipping options: we can send the product directly to the patient or to the clinic. For your convenience, we also offer electronic billing for all purchases. Upon completing your order, you will receive an email with the billing details and shipping confirmation.",
+      "linkText": "Learn more about shipping and billing",
+      "linkUrl": "./docs/Envios - Ocular.pdf"
+    },
+    {
+      "id": 10,
+      "question": "How can I request advice on supplies for my eye surgery?",
+      "answer": "To request advice on specific supplies for your surgery, contact our team of experts via the form on our website, by email, or WhatsApp. Attach your prescription, provide details about the type of surgery and your requirements, and we will offer personalized recommendations.",
+      "linkText": "Contact us for eye surgery advice",
+      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+    }
+  ],
+  "userData": {
+    "codigoPais": "54",
+    "contact": "91152371300",
+    "email": "ocularinsumos@gmail.com",
+    "textBoton": "Contact me!",
+    "textoProductos": "Inquire now!",
+    "textoPredefinido": "Hello, I would like to inquire about, "
+  },
+  "Links": [
+    {
+      "name": "Home",
+      "href": "#inicio",
+      "current": false
+    },
+    {
+      "name": "Products",
+      "href": "#productos",
+      "current": false
+    },
+    {
+      "name": "About Us",
+      "href": "#nosotros",
+      "current": false
+    }
+  ],
+  "producto": [
+    {
+      "id": "cataratas",
+      "img": "images/servicios/1.webp",
+      "icono": "images/servicios/cataratas.webp",
+      "title": "cataracts",
+      "href": "/cataratas",
+      "texto": "Information about cataracts",
+      "texto2": "text about that",
+      "texto3": "more text."
+    },
+    {
+      "id": "cornea",
+      "img": "images/servicios/1.webp",
+      "icono": "images/servicios/cornea.webp",
+      "title": "Corneal Surgery",
+      "href": "/cornea",
+      "texto": "Information about Corneal Surgery",
+      "texto2": "text about that",
+      "texto3": "more text."
+    },
+    {
+      "id": "vitrectomia",
+      "img": "images/servicios/1.webp",
+      "icono": "images/servicios/vitrectomia.webp",
+      "title": "Vitrectomy",
+      "href": "/vitrectomia",
+      "texto": "Information about vitrectomy",
+      "texto2": "text about that",
+      "texto3": "more text."
+    },
+    {
+      "id": "retina",
+      "img": "images/servicios/1.webp",
+      "icono": "images/servicios/retina.webp",
+      "title": "Retinal Surgery",
+      "href": "/retina",
+      "texto": "Information about Retinal Surgery",
+      "texto2": "text about that",
+      "texto3": "more text."
+    },
+    {
+      "id": "glaucoma",
+      "img": "images/servicios/1.webp",
+      "icono": "images/servicios/glaucoma.webp",
+      "title": "Glaucoma",
+      "href": "/glaucoma",
+      "texto": "Information about glaucoma",
+      "texto2": "text about that",
+      "texto3": "more text."
+    }
+  ]
+}
