@@ -1,13 +1,14 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import texto from '../Constantes/texto';
+import { useTranslations } from 'next-intl';
 
 function TopBanner() {
-  const [bannerText, setBannerText] = useState(texto.TopBanner.texto1);
+  const t = useTranslations('TopBanner')
+  const [bannerText, setBannerText] = useState(t('texto1'));
 
   useEffect(() => {
     const number = Math.floor(Math.random() * 3) + 1;
-    setBannerText(texto.TopBanner[`texto${number}`]);
+    setBannerText(t(`texto${number}`));
   }, []);
 
   return (

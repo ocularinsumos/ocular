@@ -4,12 +4,16 @@ import PreguntasFrecuentes from "@/components/PreguntasFrecuentas/PreguntasFrecu
 import Ubicacion from "@/components/Ubicacion/Ubicacion";
 import VideoPublicidad from "@/components/Video/VideoPublicidad";
 import Productos from "@/components/Productos/Productos";
+import {getMessages} from 'next-intl/server';
 
-export default function HomePage() {
+
+export default async function HomePage() {
+  const messages = await getMessages();
+
   return (
       <>
-        <Inicio />
-        <Productos /> 
+        <Inicio inicio={messages.inicio}/>
+        <Productos producto={messages.producto} texto={messages.productos}/> 
         <VideoPublicidad />
         <SobreMi />
         <Ubicacion />

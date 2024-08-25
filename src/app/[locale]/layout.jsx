@@ -3,7 +3,6 @@ import Head from "next/head";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import VolverArriba from "../../components/VolverArriba/VolverArriba";
-import userData from "../../components/Constantes/userData";
 import BotonWsp from "../../components/BotonWSP/BotonWsp";
 import TopBanner from '../../components/TopBanner/TopBanner';
 import {NextIntlClientProvider} from 'next-intl';
@@ -56,7 +55,7 @@ const RootLayout = async (props) => {
           <footer>
             <Footer />
             <VolverArriba />
-            <BotonWsp codigoPais={userData.codigoPais} contact={userData.contact} text={userData.textBoton}/>
+            <BotonWsp />
           </footer>
         </NextIntlClientProvider>
       </body>

@@ -1,25 +1,23 @@
 import React from "react";
-import texto from '../Constantes/texto';
 import {useTranslations} from 'next-intl';
 
 
 
 export default function SobreMi() {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('nosotros');
 
   return (
     <section id="nosotros" className="relative z-10"> 
       <article className="p-4 max-w-[780px] mx-auto mb-8 pb-8 md:pb-24 xl:pb-36">
-      <h1>{t('title')}</h1>
 
-        <h2 className="text-text-primary text-3xl m-4 items-center text-center font-roboto">{texto.nosotros.titulo}</h2>
-        <p className="text-text-secondary text-lg">{texto.nosotros.descripcion}</p>
+        <h2 className="text-text-primary text-3xl m-4 items-center text-center font-roboto">{t('titulo')}</h2>
+        <p className="text-text-secondary text-lg">{t('descripcion')}</p>
         <br />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div className="flex flex-col items-center text-start md:text-start md:items-start">
-            <p className="text-text-secondary text-lg indent-6">{texto.nosotros.mision}</p>
+            <p className="text-text-secondary text-lg indent-6">{t('mision')}</p>
             <br />
-            <p className="text-text-secondary text-lg indent-6">{texto.nosotros.valores}</p>
+            <p className="text-text-secondary text-lg indent-6">{t('valores')}</p>
           </div>
           <img loading="lazy" width={100} style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }} className="hidden md:block md:w-full p-6 place-self-center z-10" src="images/sobreMi/ojo.webp" alt="ojo del logo" aria-label="ojo del logo" />
         </div>

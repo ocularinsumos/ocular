@@ -1,12 +1,11 @@
 "use client";
 import Link from "next/link";
-import Links from "../Constantes/Links";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { generateHref } from "@/Utils/generateHref";
 import Contactusform from "../Contact/Contactus";
-import {useTranslations} from 'next-intl';
+import { useMessages } from "next-intl";
 
 
 
@@ -14,8 +13,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
-  const t = useTranslations('HomePage');
+export default function Navbar(contacto) {
+  const Links = useMessages().Links
   const [activeLink, setActiveLink] = useState(""); 
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -67,7 +66,6 @@ export default function Navbar() {
                           onClick={() => handleLinkClick(item.href)} 
                           aria-label={item.name}
                         >
-                        <h1>{t('title')}</h1>
                         <span className={classNames(
                             "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
                             activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
@@ -75,7 +73,7 @@ export default function Navbar() {
                           {item.name.toLocaleUpperCase()}
                         </Link>
                       ))}
-                      <Contactusform className="text-navbar-style font-bold" />
+                      <Contactusform className="text-navbar-style font-bold" contacto={contacto}/>
                     </div>
                   </div>
                   <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
@@ -109,7 +107,7 @@ export default function Navbar() {
                   </Disclosure.Button>
                 ))}
                 <div className="flex w-full text-start font-bold">
-                  <Contactusform className="text-navbar-style-menu" />
+                  <Contactusform className="text-navbar-style-menu" contacto={contacto} />
                 </div>
               </div>
             </Disclosure.Panel>

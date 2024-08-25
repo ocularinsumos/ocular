@@ -4,9 +4,10 @@ import { Fragment, useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { IoClose } from 'react-icons/io5';
-import texto from '../Constantes/texto';
+import { useTranslations } from 'next-intl';
 
 const Contactusform = ({ className = '' }) => {
+    const t = useTranslations('contacto')
     let [isOpen, setIsOpen] = useState(false);
 
     const [inputValues, setInputValues] = useState({
@@ -98,7 +99,7 @@ const Contactusform = ({ className = '' }) => {
                     onClick={openModal}
                     aria-label="Abrir formulario de contacto"
                 >
-                    {texto.contacto.btn}
+                    {t('btn')}
                 </button>
                 <div className="hidden md:block">
                     <button 
@@ -107,7 +108,7 @@ const Contactusform = ({ className = '' }) => {
                         onClick={openModal}
                         aria-label="Abrir formulario de contacto"
                     >
-                        {texto.contacto.btn}
+                    {t('btn')}
                     </button>
                 </div>
             </div>
@@ -155,11 +156,11 @@ const Contactusform = ({ className = '' }) => {
                                                 width={200}
                                                 height={'auto'}
                                             />
-                                            <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>{texto.contacto.title}</p>
+                                            <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>{t('title')}</p>
                                         </div>
                                         <form className="space-y-8" onSubmit={handleSubmit}>
                                             <div>
-                                                <label id='nombreForm' htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">{texto.contacto.nombre}</label>
+                                                <label id='nombreForm' htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">{t('nombre')}</label>
                                                 <input
                                                     id="text"
                                                     name="input1"
@@ -168,12 +169,12 @@ const Contactusform = ({ className = '' }) => {
                                                     type="text"
                                                     required
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder="Nombre..."
+                                                    placeholder={`${t('nombre')}...`}
                                                     aria-label="Ingresar nombre"
                                                 />
                                             </div>
                                             <div>
-                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">{texto.contacto.email}</label>
+                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">{t('email')}</label>
                                                 <input
                                                     id="email"
                                                     name="input2"
@@ -182,7 +183,7 @@ const Contactusform = ({ className = '' }) => {
                                                     type="email"
                                                     required
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder="tu_email@email.com"
+                                                    placeholder={`${t('email')}@email.com`}
                                                     aria-label="Ingresar correo electrónico"
                                                 />
                                             </div>
@@ -191,7 +192,7 @@ const Contactusform = ({ className = '' }) => {
                                                     htmlFor="options"
                                                     className="block mb-2 text-sm font-medium text-text-primary"
                                                 >
-                                                    {texto.contacto.motivo}
+                                                    {t('motivo')}
                                                 </label>
                                                 <select
                                                     id="options"
@@ -201,11 +202,11 @@ const Contactusform = ({ className = '' }) => {
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     aria-label="Seleccionar motivo de contacto"
                                                 >
-                                                    <option value="otro" disabled>{texto.contacto.opciones.opc1}</option>
-                                                    <option value="consulta">{texto.contacto.opciones.opc2}</option>
-                                                    <option value="precios">{texto.contacto.opciones.opc3}</option>
-                                                    <option value="marca">{texto.contacto.opciones.opc4}</option>
-                                                    <option value="envios">{texto.contacto.opciones.opc5}</option>
+                                                    <option value="otro" disabled>{t('opciones.opc1')}</option>
+                                                    <option value="consulta">{t('opciones.opc2')}</option>
+                                                    <option value="precios">{t('opciones.opc3')}</option>
+                                                    <option value="marca">{t('opciones.opc4')}</option>
+                                                    <option value="envios">{t('opciones.opc5')}</option>
                                                 </select>
                                             </div>
                                             <div className="sm:col-span-2">
@@ -213,7 +214,7 @@ const Contactusform = ({ className = '' }) => {
                                                     htmlFor="message"
                                                     className="block mb-2 text-sm font-medium text-text-primary"
                                                 >
-                                                    {texto.contacto.msj}
+                                                    {t('msj')}
                                                 </label>
                                                 <textarea
                                                     id="message"
@@ -231,7 +232,7 @@ const Contactusform = ({ className = '' }) => {
                                                 className="py-2 px-5 text-sm bg-primary font-medium w-full text-center text-text-tertiary rounded-lg bg-red hover:bg-primary-hover"
                                                 aria-label="Enviar formulario"
                                             >
-                                                {texto.contacto.btnEnv}
+                                                {t('btnEnv')}
                                             </button>
                                         </form>
                                     </div>

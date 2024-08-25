@@ -1,10 +1,11 @@
 'use client'
 import { robotoCondensed } from "@/Utils/fonts";
 import React, { useState } from "react";
-import texto from "../Constantes/texto";
 import Link from "next/link";
+import { useMessages } from "next-intl";
 
 const PreguntasFrecuentes = () => {
+  const t = useMessages()
   const [accordionOpen, setAccordionOpen] = useState({
     1: false,
     2: false,
@@ -22,8 +23,8 @@ const PreguntasFrecuentes = () => {
     <div className="bg-background-secondary py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " style={{textAlign:"-webkit-center"}}>
       <div className="max-w-screen-md" >
         <div id="accordion-open" data-accordion="open">
-          <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>{texto.preguntas.titulo}</h2>
-          {texto.faqData.map((faq) => (
+          <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>{t.preguntas.titulo}</h2>
+          {t.faqData.map((faq) => (
             <div key={faq.id} className="mb-4 border border-gray-200 rounded-xl">
               <h2 id={`accordion-open-heading-${faq.id}`}>
                 <button type="button" className="flex items-center justify-between w-full p-4 font-medium text-gray-600 bg-gray-50 rounded-t-xl focus:outline-none" onClick={() => toggleAccordion(faq.id)}

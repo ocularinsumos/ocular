@@ -1,17 +1,16 @@
 'use client'
-import productos from "../../../components/Constantes/productos.json";
 import Servicio from "@/components/Servicio/Servicio";
+import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export default function ProductosPage() {
-   const path = usePathname();
-   // Asegúrate de que el path esté en el formato correcto para buscar en el JSON
-   const pathId = path.replace('/', '').toLowerCase().split('/')[1];
-   console.log(pathId)
-   const foundProduct = productos.find(
-     (prod) => prod.id.toLowerCase() === pathId,
-    )
-    console.log(foundProduct)
+
+  const pathId = usePathname().split('/')[2]?.toLowerCase();
+  
+  const foundProduct = useMessages().producto.find(
+    (prod) => prod.id.toLowerCase() === pathId
+   )
+   
    if (!foundProduct) {
      return <p>Product not found.</p>; 
    }

@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import texto from "../Constantes/texto";
-import Links from "../Constantes/Links";
 import Contactusform from "../Contact/Contactus";
+import { useMessages } from "next-intl";
 
 export default function Footer() {
+  const t = useMessages()
 
 
   return (
@@ -14,18 +14,18 @@ export default function Footer() {
     <Link href="#" className="flex justify-center items-center text-2xl font-semibold text-gray-900">
       <img src="/images/logos/ocularFooter.webp" width={200} style={{ filter: 'drop-shadow(0px 0px 100px rgba(255, 255, 255))' }}  alt="Logo de Empresa" title="Logo de Empresa" aria-label="logo de la empresa" />
     </Link>
-    <p className="my-6 text-gray-300">{texto.footer.info}</p>
+    <p className="my-6 text-gray-300">{t.footer.info}</p>
     <ul className="flex flex-col gap-4 md:flex-row justify-center items-center mb-6 text-gray-900">
-      {Links.map((item) => (
+      {t.Links.map((item) => (
         <li key={item.name}><Link href={item.href} className=" mr-4 hover:underline md:mr-6 text-text-tertiary">{item.name.toLocaleUpperCase()}</Link></li>
       ))}
       <li className="mr-4 hover:underline md:mr-6 text-text-tertiary font-normal">
         <Contactusform className="text-footer-style" />
       </li>
-      {texto.sociales.map((red) => (
-        <Link key={red.name} href={red.href} target="_blank">
+      {t.sociales.map((red,index) => (
+        <Link key={index} href={red.href} target="_blank">
           <div className="w-14 h-9 p-2 hover:opacity-75 rounded-full flex items-center">
-            {red.icon}
+            <img loading='lazy' src={red.icon} alt={red.name} />
           </div>
         </Link>
       ))}
