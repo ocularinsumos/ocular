@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { generateHref } from "@/Utils/generateHref";
 import Contactusform from "../Contact/Contactus";
 import { useMessages } from "next-intl";
+import LanguageSelector from "./SelectIdioma/SelectIdioma";
 
 
 
@@ -37,7 +38,7 @@ export default function Navbar(contacto) {
   const handleLinkClick = (href) => {
     setActiveLink(href);
   };
-
+  
   return (
     <div className="py-8 md:py-11 bg-gray-400">
       <Disclosure as="nav" className={classNames(`fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary  backdrop-blur-none shadow-lg ${isScrolled?'shadow-blue-200':''} `)}>
@@ -59,21 +60,22 @@ export default function Navbar(contacto) {
                           href={generateHref(null, item.href)} 
                           className={classNames(
                             activeLink === item.href 
-                              ? "relative inline-block group text-lg font-semibold text-text-secondary"  // Aquí aplicas el aumento de tamaño del texto
+                            ? "relative inline-block group text-lg font-semibold text-text-secondary"  // Aquí aplicas el aumento de tamaño del texto
                               : "relative inline-block group text-text-link font-bold"  // Mantén el tamaño normal para los enlaces no seleccionados
-                          )} 
+                            )} 
                           aria-current={activeLink === item.href ? "page" : undefined} 
                           onClick={() => handleLinkClick(item.href)} 
                           aria-label={item.name}
-                        >
+                          >
                         <span className={classNames(
-                            "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
-                            activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
-                          )}></span>
+                          "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
+                          activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
+                        )}></span>
                           {item.name.toLocaleUpperCase()}
                         </Link>
                       ))}
                       <Contactusform className="text-navbar-style font-bold" contacto={contacto}/>
+                      <LanguageSelector />
                     </div>
                   </div>
                   <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
@@ -91,6 +93,7 @@ export default function Navbar(contacto) {
 
             <Disclosure.Panel className="md:hidden z-50">
               <div className="space-y-1 px-4 pt-2 pb-3 min-h-screen border-t border-[#807f6c] bg-primary">
+                <LanguageSelector  />
                 {Links.map((item) => (
                   <Disclosure.Button 
                     key={item.name} 
@@ -106,9 +109,11 @@ export default function Navbar(contacto) {
                     {item.name.toLocaleUpperCase()}
                   </Disclosure.Button>
                 ))}
-                <div className="flex w-full text-start font-bold">
+                <div className="flex w-full text-start font-bold ">
                   <Contactusform className="text-navbar-style-menu" contacto={contacto} />
+                  
                 </div>
+                  
               </div>
             </Disclosure.Panel>
           </>
