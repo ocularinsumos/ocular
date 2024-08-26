@@ -2,7 +2,7 @@
     {
         "id": "cataratas",
         "img": "images/servicios/1.webp",
-        "icono": "images/servicios/cataratas.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
         "title": "cataratas",
         "href": "/cataratas",
         "texto": "Informacion sobre cataratas",
@@ -12,7 +12,7 @@
     {
         "id": "cornea",
         "img": "images/servicios/1.webp",
-        "icono": "images/servicios/cornea.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
         "title": "cornea",
         "href": "/cornea",
         "texto": "Informacion sobre cornea",
@@ -22,7 +22,7 @@
     {
         "id": "pterigion",
         "img": "images/servicios/1.webp",
-        "icono": "images/servicios/pterigion.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/pterigion_cmvtjm.webp",
         "title": "pterigion",
         "href": "/pterigion",
         "texto": "Informacion sobre pterigion",
@@ -32,7 +32,7 @@
     {
         "id": "retina",
         "img": "images/servicios/1.webp",
-        "icono": "images/servicios/retina.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
         "title": "retina",
         "href": "/retina",
         "texto": "Informacion sobre retina",
@@ -42,7 +42,7 @@
     {
         "id": "glaucoma",
         "img": "images/servicios/1.webp",
-        "icono": "images/servicios/glaucoma.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
         "title": "glaucoma",
         "href": "/glaucoma",
         "texto": "Informacion sobre glaucoma",

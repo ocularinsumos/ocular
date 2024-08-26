@@ -148,54 +148,380 @@
   ],
   "producto": [
     {
-      "id": "cataratas",
-      "img": "images/servicios/1.webp",
-      "icono": "images/servicios/cataratas.webp",
-      "title": "cataratas",
-      "href": "/cataratas",
-      "texto": "Informacion sobre cataratas",
-      "texto2": "texto sobre eso",
-      "texto3": "mas texto."
+        "id": "cataratas",
+        "img": "images/servicios/1.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
+        "title": "cataratas",
+        "href": "/cataratas",
+        "texto": "Informacion sobre cataratas",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto.",
+        "productos":[
+          {
+            "nombre":"VISCOELASTICO 2% AUROVISC",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+            "marca":"Aurolab",
+            "codigo":"2000",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"VISCOELASTICO 3% OPHLINE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
+            "marca":"i+Med",
+            "codigo":"2001",
+            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM."
+          },
+          {
+            "nombre":"AZUL TRIPAN AUROBLUE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+            "marca":"Aurolab",
+            "codigo":"2003",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "marca":"MANI",
+            "codigo":"2000",
+            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON"
+          },
+          {
+            "nombre":"LENTE AUROFLEX ASFERICA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600SQ",
+            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LIO ARTISAN MIOPIA 206",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
+            "marca":"Ophtec",
+            "codigo":"206",
+            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC"
+          },
+          {
+            "nombre":"BISTURIE 2,8MM AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+            "marca":"Aurolab",
+            "codigo":"206",
+            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE AUROFLEX EV GOLD",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600AY",
+            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE CAMARA ANTERIOR",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+            "marca":"Aurolab",
+            "codigo":"A5530",
+            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB"
+          }
+        ]
     },
     {
-      "id": "cornea",
-      "img": "images/servicios/1.webp",
-      "icono": "images/servicios/cornea.webp",
-      "title": "cornea",
-      "href": "/cornea",
-      "texto": "Informacion sobre cornea",
-      "texto2": "texto sobre eso",
-      "texto3": "mas texto."
+        "id": "cornea",
+        "img": "images/servicios/1.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
+        "title": "cornea",
+        "href": "/cornea",
+        "texto": "Informacion sobre cornea",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto.",
+        "productos":[
+          {
+            "nombre":"VISCOELASTICO 2% AUROVISC",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+            "marca":"Aurolab",
+            "codigo":"2000",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"VISCOELASTICO 3% OPHLINE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
+            "marca":"i+Med",
+            "codigo":"2001",
+            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM."
+          },
+          {
+            "nombre":"AZUL TRIPAN AUROBLUE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+            "marca":"Aurolab",
+            "codigo":"2003",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "marca":"MANI",
+            "codigo":"2000",
+            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON"
+          },
+          {
+            "nombre":"LENTE AUROFLEX ASFERICA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600SQ",
+            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LIO ARTISAN MIOPIA 206",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
+            "marca":"Ophtec",
+            "codigo":"206",
+            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC"
+          },
+          {
+            "nombre":"BISTURIE 2,8MM AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+            "marca":"Aurolab",
+            "codigo":"206",
+            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE AUROFLEX EV GOLD",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600AY",
+            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE CAMARA ANTERIOR",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+            "marca":"Aurolab",
+            "codigo":"A5530",
+            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB"
+          }
+        ]
     },
     {
-      "id": "pterigion",
-      "img": "images/servicios/1.webp",
-      "icono": "images/servicios/pterigion.webp",
-      "title": "pterigion",
-      "href": "/pterigion",
-      "texto": "Informacion sobre pterigion",
-      "texto2": "texto sobre eso",
-      "texto3": "mas texto."
+        "id": "pterigion",
+        "img": "images/servicios/1.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/pterigion_cmvtjm.webp",
+        "title": "pterigion",
+        "href": "/pterigion",
+        "texto": "Informacion sobre pterigion",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto.",
+        "productos":[
+          {
+            "nombre":"VISCOELASTICO 2% AUROVISC",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+            "marca":"Aurolab",
+            "codigo":"2000",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"VISCOELASTICO 3% OPHLINE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
+            "marca":"i+Med",
+            "codigo":"2001",
+            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM."
+          },
+          {
+            "nombre":"AZUL TRIPAN AUROBLUE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+            "marca":"Aurolab",
+            "codigo":"2003",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "marca":"MANI",
+            "codigo":"2000",
+            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON"
+          },
+          {
+            "nombre":"LENTE AUROFLEX ASFERICA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600SQ",
+            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LIO ARTISAN MIOPIA 206",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
+            "marca":"Ophtec",
+            "codigo":"206",
+            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC"
+          },
+          {
+            "nombre":"BISTURIE 2,8MM AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+            "marca":"Aurolab",
+            "codigo":"206",
+            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE AUROFLEX EV GOLD",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600AY",
+            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE CAMARA ANTERIOR",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+            "marca":"Aurolab",
+            "codigo":"A5530",
+            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB"
+          }
+        ]
     },
     {
-      "id": "retina",
-      "img": "images/servicios/1.webp",
-      "icono": "images/servicios/retina.webp",
-      "title": "retina",
-      "href": "/retina",
-      "texto": "Informacion sobre retina",
-      "texto2": "texto sobre eso",
-      "texto3": "mas texto."
+        "id": "retina",
+        "img": "images/servicios/1.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
+        "title": "retina",
+        "href": "/retina",
+        "texto": "Informacion sobre retina",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto.",
+        "productos":[
+          {
+            "nombre":"VISCOELASTICO 2% AUROVISC",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+            "marca":"Aurolab",
+            "codigo":"2000",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"VISCOELASTICO 3% OPHLINE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
+            "marca":"i+Med",
+            "codigo":"2001",
+            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM."
+          },
+          {
+            "nombre":"AZUL TRIPAN AUROBLUE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+            "marca":"Aurolab",
+            "codigo":"2003",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "marca":"MANI",
+            "codigo":"2000",
+            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON"
+          },
+          {
+            "nombre":"LENTE AUROFLEX ASFERICA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600SQ",
+            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LIO ARTISAN MIOPIA 206",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
+            "marca":"Ophtec",
+            "codigo":"206",
+            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC"
+          },
+          {
+            "nombre":"BISTURIE 2,8MM AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+            "marca":"Aurolab",
+            "codigo":"206",
+            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE AUROFLEX EV GOLD",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600AY",
+            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE CAMARA ANTERIOR",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+            "marca":"Aurolab",
+            "codigo":"A5530",
+            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB"
+          }
+        ]
     },
     {
-      "id": "glaucoma",
-      "img": "images/servicios/1.webp",
-      "icono": "images/servicios/glaucoma.webp",
-      "title": "glaucoma",
-      "href": "/glaucoma",
-      "texto": "Informacion sobre glaucoma",
-      "texto2": "texto sobre eso",
-      "texto3": "mas texto."
+        "id": "glaucoma",
+        "img": "images/servicios/1.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
+        "title": "glaucoma",
+        "href": "/glaucoma",
+        "texto": "Informacion sobre glaucoma",
+        "texto2": "texto sobre eso",
+        "texto3": "mas texto.",
+        "productos":[
+          {
+            "nombre":"VISCOELASTICO 2% AUROVISC",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+            "marca":"Aurolab",
+            "codigo":"2000",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"VISCOELASTICO 3% OPHLINE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
+            "marca":"i+Med",
+            "codigo":"2001",
+            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM."
+          },
+          {
+            "nombre":"AZUL TRIPAN AUROBLUE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+            "marca":"Aurolab",
+            "codigo":"2003",
+            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML"
+          },
+          {
+            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "marca":"MANI",
+            "codigo":"2000",
+            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON"
+          },
+          {
+            "nombre":"LENTE AUROFLEX ASFERICA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600SQ",
+            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LIO ARTISAN MIOPIA 206",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
+            "marca":"Ophtec",
+            "codigo":"206",
+            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC"
+          },
+          {
+            "nombre":"BISTURIE 2,8MM AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+            "marca":"Aurolab",
+            "codigo":"206",
+            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE AUROFLEX EV GOLD",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+            "marca":"Aurolab",
+            "codigo":"FH5600AY",
+            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB"
+          },
+          {
+            "nombre":"LENTE CAMARA ANTERIOR",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+            "marca":"Aurolab",
+            "codigo":"A5530",
+            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB"
+          }
+        ]
     }
   ]
+
 }

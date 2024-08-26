@@ -150,7 +150,7 @@
     {
       "id": "cataratas",
       "img": "images/servicios/1.webp",
-      "icono": "images/servicios/cataratas.webp",
+      "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
       "title": "cataracts",
       "href": "/cataratas",
       "texto": "Information about cataracts",
@@ -160,7 +160,7 @@
     {
       "id": "cornea",
       "img": "images/servicios/1.webp",
-      "icono": "images/servicios/cornea.webp",
+      "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
       "title": "Corneal Surgery",
       "href": "/cornea",
       "texto": "Information about Corneal Surgery",
@@ -170,7 +170,7 @@
     {
       "id": "pterigion",
       "img": "images/servicios/1.webp",
-      "icono": "images/servicios/pterigion.webp",
+      "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/pterigion_cmvtjm.webp",
       "title": "pterigion",
       "href": "/pterigion",
       "texto": "Information about pterigion",
@@ -179,8 +179,8 @@
     },
     {
       "id": "retina",
-      "img": "images/servicios/1.webp",
-      "icono": "images/servicios/retina.webp",
+      "img": "mages/servicios/1.webp",
+      "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
       "title": "Retinal Surgery",
       "href": "/retina",
       "texto": "Information about Retinal Surgery",
@@ -190,7 +190,7 @@
     {
       "id": "glaucoma",
       "img": "images/servicios/1.webp",
-      "icono": "images/servicios/glaucoma.webp",
+      "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
       "title": "Glaucoma",
       "href": "/glaucoma",
       "texto": "Information about glaucoma",
