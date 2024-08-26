@@ -40,7 +40,7 @@
     {
       "name": "instagram",
       "href": "https://www.instagram.com/ocularinsumosquirurgicos/",
-      "icon": "<img loading='lazy' src='images/redesSociales/instagra.webp' alt='Instagram' />"
+      "icon": "/images/redesSociales/instagra.webp"
     }
   ],
   "footer": {

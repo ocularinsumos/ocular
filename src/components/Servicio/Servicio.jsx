@@ -41,7 +41,7 @@ export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono,
           <h2 className="md:mb-2 text-base md:text-2xl font-bold tracking-tight text-gray-300">{item.nombre}</h2>
           <p className="md:mb-2 text-xs lg:text-base font-normal text-gray-300">{item.descripcion}</p>
           <p className="md:mb-2 text-sm md:text-base font-normal text-gray-300">{item.marca}</p>
-          <small className="text-xs md:text-sm font-normal text-gray-300">{item.codigo}</small>
+          <small className="text-xs md:text-sm font-normal text-gray-300">cod: {item.codigo}</small>
         </div>
       </li>
     ))}
