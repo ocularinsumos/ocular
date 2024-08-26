@@ -1,15 +1,7 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 import withPWA from 'next-pwa';
 
-// Crear la configuración para next-intl
-const withNextIntl = createNextIntlPlugin();
-
-// Crear la configuración para next-pwa
-const pwaConfig = withPWA({
-  dest: 'public',
-});
-
-// Crear la configuración de Next.js y combinar con next-intl y next-pwa
+// Crear la configuración de Next.js
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -25,6 +17,14 @@ const nextConfig = {
     ];
   },
 };
+
+// Crear la configuración para next-pwa
+const pwaConfig = withPWA({
+  dest: 'public',
+});
+
+// Crear la configuración para next-intl
+const withNextIntl = createNextIntlPlugin();
 
 // Exportar la configuración combinada con next-intl y next-pwa
 export default withNextIntl(pwaConfig(nextConfig));
