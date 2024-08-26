@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -8,14 +8,12 @@ import Contactusform from "../Contact/Contactus";
 import { useMessages } from "next-intl";
 import LanguageSelector from "./SelectIdioma/SelectIdioma";
 
-
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar(contacto) {
-  const Links = useMessages().Links
+  const Links = useMessages().Links;
   const [activeLink, setActiveLink] = useState(""); 
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -26,8 +24,6 @@ export default function Navbar(contacto) {
       const currentScrollPos = window.pageYOffset;
       setIsVisible(currentScrollPos <= prevScrollPos);
       setPrevScrollPos(currentScrollPos);
-
-      // Verifica si el usuario ha hecho scroll para cambiar el fondo y el color del texto
       setIsScrolled(currentScrollPos > 0);
     };
 
@@ -54,32 +50,35 @@ export default function Navbar(contacto) {
                   </div>
                   <div className="hidden md:flex md:ml-6">
                     <div className="flex space-x-5 items-center">
-                      {Links.map((item) => (
-                        <Link 
-                          key={item.name} 
-                          href={generateHref(null, item.href)} 
-                          className={classNames(
-                            activeLink === item.href 
-                            ? "relative inline-block group text-lg font-semibold text-text-secondary"  // Aquí aplicas el aumento de tamaño del texto
-                              : "relative inline-block group text-text-link font-bold"  // Mantén el tamaño normal para los enlaces no seleccionados
+                      {Links.map((item) => {
+                        const href = generateHref(null, item.href);
+                        if (!href) return null; // Don't render if href is undefined
+                        return (
+                          <Link 
+                            key={item.name} 
+                            href={href} 
+                            className={classNames(
+                              activeLink === item.href 
+                              ? "relative inline-block group text-lg font-semibold text-text-secondary"
+                              : "relative inline-block group text-text-link font-bold"
                             )} 
-                          aria-current={activeLink === item.href ? "page" : undefined} 
-                          onClick={() => handleLinkClick(item.href)} 
-                          aria-label={item.name}
+                            aria-current={activeLink === item.href ? "page" : undefined} 
+                            onClick={() => handleLinkClick(item.href)} 
+                            aria-label={item.name}
                           >
-                        <span className={classNames(
-                          "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
-                          activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
-                        )}></span>
-                          {item.name.toLocaleUpperCase()}
-                        </Link>
-                      ))}
+                            <span className={classNames(
+                              "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
+                              activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
+                            )}></span>
+                            {item.name.toLocaleUpperCase()}
+                          </Link>
+                        );
+                      })}
                       <Contactusform className="text-navbar-style font-bold" contacto={contacto}/>
                       <LanguageSelector />
                     </div>
                   </div>
                   <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
-                    {/* Botón de menú móvil */}
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-1">
                       <span className="sr-only">Open main menu</span>
                       {open 
@@ -94,26 +93,29 @@ export default function Navbar(contacto) {
             <Disclosure.Panel className="md:hidden z-50">
               <div className="space-y-1 px-4 pt-2 pb-3 min-h-screen border-t border-[#807f6c] bg-primary">
                 <LanguageSelector  />
-                {Links.map((item) => (
-                  <Disclosure.Button 
-                    key={item.name} 
-                    as="a" 
-                    className={classNames(
-                      "block p-4 text-base font-medium border-b border-[#807f6c] hover:text-text-secondary",
-                      activeLink === item.href ? " text-text-secondary" : "",
-                    )} 
-                    aria-current={activeLink === item.href ? "page" : undefined} 
-                    onClick={() => handleLinkClick(item.href)} 
-                    aria-label={item.name} 
-                  >
-                    {item.name.toLocaleUpperCase()}
-                  </Disclosure.Button>
-                ))}
+                {Links.map((item) => {
+                  const href = generateHref(null, item.href);
+                  if (!href) return null; // Don't render if href is undefined
+                  return (
+                    <Disclosure.Button 
+                      key={item.name} 
+                      as={Link} 
+                      href={href} 
+                      className={classNames(
+                        "block p-4 text-base font-medium border-b border-[#807f6c] hover:text-text-secondary",
+                        activeLink === item.href ? " text-text-secondary" : ""
+                      )} 
+                      aria-current={activeLink === item.href ? "page" : undefined} 
+                      onClick={() => handleLinkClick(item.href)} 
+                      aria-label={item.name}
+                    >
+                      {item.name.toLocaleUpperCase()}
+                    </Disclosure.Button>
+                  );
+                })}
                 <div className="flex w-full text-start font-bold ">
                   <Contactusform className="text-navbar-style-menu" contacto={contacto} />
-                  
                 </div>
-                  
               </div>
             </Disclosure.Panel>
           </>
