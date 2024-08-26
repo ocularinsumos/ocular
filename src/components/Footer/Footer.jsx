@@ -16,20 +16,27 @@ export default function Footer() {
     </Link>
     <p className="my-6 text-gray-300">{t.footer.info}</p>
     <ul className="flex flex-col gap-4 md:flex-row justify-center items-center mb-6 text-gray-900">
-      {t.Links.map((item) => (
-        <li key={item.name}><Link href={item.href} className=" mr-4 hover:underline md:mr-6 text-text-tertiary">{item.name.toLocaleUpperCase()}</Link></li>
-      ))}
-      <li className="mr-4 hover:underline md:mr-6 text-text-tertiary font-normal">
-        <Contactusform className="text-footer-style" />
-      </li>
-      {t.sociales.map((red,index) => (
-        <Link key={index} href={red.href} target="_blank">
-          <div className="w-14 h-9 p-2 hover:opacity-75 rounded-full flex items-center">
-            <img loading='lazy' src={red.icon} alt={red.name} />
-          </div>
-        </Link>
-      ))}
-    </ul>
+  {t.Links.map((item) => (
+    <li key={item.name}>
+      <Link href={item.href} className="mr-4 hover:underline md:mr-6 text-text-tertiary" aria-label={item.name}>
+        {item.name.toLocaleUpperCase()}
+      </Link>
+    </li>
+  ))}
+  <li className="mr-4 hover:underline md:mr-6 text-text-tertiary font-normal">
+    <Contactusform className="text-footer-style" aria-label='Contacto'/>
+  </li>
+  {t.sociales.map((red, index) => (
+    <li key={index}>
+      <Link href={red.href} target="_blank">
+        <div className="w-14 h-9 p-2 hover:opacity-75 rounded-full flex items-center">
+          <img loading="lazy" src={red.icon} alt={red.name} aria-label={red.name}/>
+        </div>
+      </Link>
+    </li>
+  ))}
+</ul>
+
     <Link href='https://programundo.dev' >
       <small className="text-sm text-gray-300 sm:text-center">© 2024 - MATIGON. All Rights Reserved.</small>
     </Link>
