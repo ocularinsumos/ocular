@@ -144,6 +144,11 @@
       "name": "About Us",
       "href": "#nosotros",
       "current": false
+    },
+    {
+      "name": "Location",
+      "href": "#ubicacion",
+      "current": false
     }
   ],
   "producto": [
