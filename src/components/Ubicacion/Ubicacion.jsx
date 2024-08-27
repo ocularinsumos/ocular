@@ -48,8 +48,7 @@ const Ubicacion = () => {
         </div>
         <div>
           <p className="max-w-sm mt-12 mb-4 text-slate-800">
-            ¿Tenes algo que decir? Estoy aquí para ayudarte. Completa el
-            formulario, envía un correo o escribime por hatsapp.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto, laborum, voluptatum voluptas, voluptates quia temporibus assumenda repudiandae voluptatibus odit eos perferendis aliquid eum illo sapiente sequi dignissimos tempora excepturi.
           </p>
         </div>
       </div>
