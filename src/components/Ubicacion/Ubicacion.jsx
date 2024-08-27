@@ -43,7 +43,7 @@ const Ubicacion = () => {
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800">
             <FaWhatsapp className="w-5 h-5 text-primary" />
-            <a href={''}>WhatsApp</a>
+            <a href={`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`}>WhatsApp</a>
           </div>
         </div>
         <div>
