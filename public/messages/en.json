@@ -1,8 +1,8 @@
 {
   "TopBanner": {
-    "texto1": "Experts in Ophthalmological Supplies",
-    "texto2": "Special Offer! 20% off on all our products for a limited time.",
-    "texto3": "Supplies for Ocular Surgeries"
+    "texto1": "Call us (+54) 011 - 5237-1300",
+    "texto2": "Call us (+54) 011 - 5237-1300",
+    "texto3": "Call us (+54) 011 - 5237-1300"
   },
   "inicio": {
     "titulo": "We are OCULAR",
@@ -55,14 +55,14 @@
       "question": "What type of intraocular lens do I need for cataract surgery?",
       "answer": "The appropriate intraocular lens type depends on the patient's visual needs. We offer monofocal, multifocal, and toric lenses, each with specific characteristics. Consult with your ophthalmologist to determine which is best for you.",
       "linkText": "Learn more about our intraocular lenses",
-      "linkUrl": "./docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
+      "linkUrl": "/docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
     },
     {
       "id": 2,
       "question": "How do you guarantee the quality of supplies for ophthalmic surgery?",
       "answer": "All our products undergo rigorous quality controls and are approved by major regulatory agencies. We only work with reliable suppliers to ensure the best quality in every supply.",
       "linkText": "More information about our quality guarantee",
-      "linkUrl": "./docs/ANMAT - Ocular.pdf"
+      "linkUrl": "/docs/ANMAT_Ocular.pdf"
     },
     {
       "id": 3,
@@ -111,7 +111,7 @@
       "question": "How do I pick up the supply and how is the billing done?",
       "answer": "You can pick up the ophthalmic surgical supplies from our branch or choose between two shipping options: we can send the product directly to the patient or to the clinic. For your convenience, we also offer electronic billing for all purchases. Upon completing your order, you will receive an email with the billing details and shipping confirmation.",
       "linkText": "Learn more about shipping and billing",
-      "linkUrl": "./docs/Envios - Ocular.pdf"
+      "linkUrl": "/docs/Envios_Ocular.pdf"
     },
     {
       "id": 10,

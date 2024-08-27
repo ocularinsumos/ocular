@@ -1,8 +1,8 @@
 {
   "TopBanner": {
-    "texto1": "Expertos en Insumos Oftalmologicos",
-    "texto2": "¡Oferta especial! 20% de descuento en todos nuestros productos por tiempo limitado.",
-    "texto3": "Insumos para cirugias Oculares"
+    "texto1": "Comunicate al (+54) 011 - 5237-1300",
+    "texto2": "Comunicate al (+54) 011 - 5237-1300",
+    "texto3": "Comunicate al (+54) 011 - 5237-1300"
   },
   "inicio": {
     "titulo": "Somos OCULAR",
@@ -55,14 +55,14 @@
       "question": "¿Qué tipo de lente intraocular necesito para una cirugía de cataratas?",
       "answer": "El tipo de lente intraocular adecuado depende de las necesidades visuales del paciente. Ofrecemos lentes monofocales, multifocales y tóricos, cada uno con características específicas. Consulta con tu oftalmólogo para determinar cuál es el mejor para vos.",
       "linkText": "Ver más sobre nuestros lentes intraoculares",
-      "linkUrl": "./docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
+      "linkUrl": "/docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
     },
     {
       "id": 2,
       "question": "¿Cómo garantizan la calidad de los insumos para cirugía oftalmológica?",
       "answer": "Todos nuestros productos pasan por rigurosos controles de calidad y están aprobados por las principales agencias reguladoras. Trabajamos solo con proveedores confiables para asegurar la mejor calidad en cada insumo.",
       "linkText": "Más información sobre nuestra garantía de calidad",
-      "linkUrl": "./docs/ANMAT - Ocular.pdf"
+      "linkUrl": "/docs/ANMAT_Ocular.pdf"
     },
     {
       "id": 3,
@@ -111,7 +111,7 @@
       "question": "¿Cómo se retira el insumo y como es la facturación de los productos?",
       "answer": "Puedes retirar los insumos quirúrgicos oftalmológicos de nuestra sucursal o elegir entre dos opciones de envío: podemos enviar el producto directamente al paciente o a la clínica. Para tu comodidad, también ofrecemos facturación electrónica para todas las compras. Al completar tu pedido, recibirás un correo con el detalle de la facturación y la confirmación del envío.",
       "linkText": "Ver más sobre envío y facturación",
-      "linkUrl": "./docs/Envios - Ocular.pdf"
+      "linkUrl": "/docs/Envios_Ocular.pdf"
     },
     {
       "id": 10,
