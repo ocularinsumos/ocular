@@ -1,11 +1,12 @@
 "use client";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const Ubicacion = () => {
   const t = useTranslations('userData')
+  const i = useTranslations('contacto')
+
   return (
       <section id="ubicacion" className="w-full bg-background-secondary">
         <article className="flex flex-col items-center">
@@ -18,36 +19,34 @@ const Ubicacion = () => {
             title="Ubicacion de la empresa"
             aria-label="Ubicacion de la empresa"
           />
-      </article>
-      <article className="bg-white w-full">
-        <div className="bg-white w-full max-w-[780px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
-          <div>
-            <h2 className="font-lato text-primary">CONTACTAME</h2>
+        </article>
+        <article className="bg-white w-full">
+          <div className="bg-white w-full max-w-[780px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-10 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
+            <div className="">
+              <h2 className="font-lato text-primary text-center">{i('btn')}</h2>
 
-            <button className="flex items-center mt-8 space-x-2 text-dark-600 text-slate-800">
-              <MapPinIcon className="w-5 h-5 text-primary" /><span>{t('ubicacion')}</span>
-            </button>
+              <button className="flex items-center mt-8 space-x-2 text-dark-600 text-slate-800">
+                <MapPinIcon className="w-5 h-5 text-primary" /><small>{t('ubicacion')}</small>
+              </button>
 
-            <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `mailto:${t('email')}`}>
-              <EnvelopeIcon className="w-5 h-5 text-primary" /><span>{t('email')}</span>
-            </button>
+              <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `mailto:${t('email')}`}>
+                <EnvelopeIcon className="w-5 h-5 text-primary" /><span>{t('email')}</span>
+              </button>
 
-            <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `tel:+${t('codigoPais')}${t('contact')}`}>
-              <FaPhone className="w-5 h-5 text-primary" /><span>{t('numContact')}</span>
-            </button>
+              <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `tel:+${t('codigoPais')}${t('contact')}`}>
+                <FaPhone className="w-5 h-5 text-primary" /><span>{t('numContact')}</span>
+              </button>
 
-            <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.open(`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`, '_blank', 'noopener,noreferrer')}>
-              <FaWhatsapp className="w-5 h-5 text-primary" /><span>WhatsApp</span>
-            </button>
+              <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.open(`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`, '_blank', 'noopener,noreferrer')}>
+                <FaWhatsapp className="w-5 h-5 text-primary" /><span>WhatsApp</span>
+              </button>
+            </div>
+            <div className=" flex border-y px-2 md:border-l md:border-y-transparent items-center  justify-center border-primary md:pl-4 ">
+              <p className="max-w-sm my-12 text-slate-800">{i('texto')}</p>
+            </div>
           </div>
-          <div>
-            <p className="max-w-sm mt-12 mb-4 text-slate-800">
-            En Ocular, nos dedicamos a ofrecerte productos de primera calidad para todas tus necesidades quirúrgicas. Sabemos lo importante que es contar con insumos confiables, por eso estamos acá para asesorarte y resolver cualquier duda que tengas
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>
+        </article>
+      </section>
   );
 };
 
