@@ -186,7 +186,7 @@
     },
     {
       "id": "retina",
-      "img": "mages/servicios/1.webp",
+      "img": "images/servicios/1.webp",
       "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
       "title": "Retinal Surgery",
       "href": "/retina",
