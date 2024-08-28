@@ -1,11 +1,10 @@
 {
   "TopBanner": {
-    "texto1": "Comunicate al (+54) 011 - 5237-1300",
-    "texto2": "Comunicate al (+54) 011 - 5237-1300",
-    "texto3": "Comunicate al (+54) 011 - 5237-1300"
+    "texto1": "Comunicate al - ",
+    "texto2": " (+54) 011 - 5237-1300"
   },
   "inicio": {
-    "titulo": "Somos OCULAR",
+    "titulo": "Ocular",
     "subtitulo": "Creemos en lo que hacemos y nos apasiona.",
     "descripcion": "Tenemos 23 Años en el mercado de Insumos Quirurgicos para Profesionales y Particulares."
   },
@@ -22,20 +21,19 @@
   },
   "contacto": {
     "btn": "CONTACTO",
-    "title": "Contactanos por aca o comunícate por Whatsapp",
+    "title": "Contactanos por aca o comunícate por Whatsapp (+54)011-5237-1300",
     "nombre": "Nombre",
+    "telefono": "Telefono",
     "email": "Tu Email",
     "motivo": "Motivo",
     "opciones": {
       "opc1": "Seleccione una opción",
       "opc2": "Consulta",
-      "opc3": "Precios",
-      "opc4": "Marcas",
-      "opc5": "Envios"
+      "opc3": "Presupuesto"
     },
     "msj": "Mensaje",
     "btnEnv": "ENVIAR",
-    "texto": "En Ocular, nos dedicamos a ofrecerte productos de primera calidad para todas tus necesidades quirúrgicas. Sabemos lo importante que es contar con insumos confiables, por eso estamos acá para asesorarte y resolver cualquier duda que tengas."
+    "texto": "En Ocular, nos dedicamos a ofrecer productos de primera calidad para todas las necesidades quirúrgicas oftalmológicas. Sabemos lo importante que es contar con insumos confiables, y asesoramiento eficaz, por eso conta con nosotros."
   },
   "sociales": [
     {
@@ -45,7 +43,7 @@
     }
   ],
   "footer": {
-    "info": "24 Años en el mercado de Insumos Quirurgicos para Profesionales y Particulares"
+    "info": "Más de dos décadas en el mercado de Insumos Quirurgicos Oftalmológicos dedicados a profesionales, pacientes e instituciones."
   },
   "preguntas": {
     "titulo": "Preguntas frecuentes"
@@ -78,20 +76,6 @@
       "answer": "Para una cirugía de glaucoma exitosa, es fundamental contar con microinstrumentos precisos, soluciones viscoelásticas y lentes quirúrgicos de alta calidad. Ofrecemos una gama completa de insumos diseñados para asegurar la mejor atención a los pacientes con glaucoma.",
       "linkText": "Explora nuestros insumos para cirugía de glaucoma",
       "linkUrl": ""
-    },
-    {
-      "id": 5,
-      "question": "¿Qué características debe tener una solución viscoelástica para cirugía de retina?",
-      "answer": "Las soluciones viscoelásticas para cirugía de retina deben tener una alta viscosidad y elasticidad para proteger las estructuras oculares durante la cirugía. Disponemos de productos con estas características, diseñados para maximizar la seguridad y el éxito quirúrgico.",
-      "linkText": "Conoce nuestras soluciones viscoelásticas",
-      "linkUrl": ""
-    },
-    {
-      "id": 6,
-      "question": "¿Pueden asesorarme sobre qué insumos son los más adecuados para mi clínica?",
-      "answer": "Sí, ofrecemos asesoría personalizada para ayudarte a seleccionar los insumos más adecuados según las necesidades de tu clínica. Nuestro equipo está capacitado para guiarte en cada paso del proceso de compra.",
-      "linkText": "Contáctanos para asesoría personalizada",
-      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
     },
     {
       "id": 7,
@@ -130,7 +114,8 @@
     "textBoton": "¡Contáctame!",
     "textoProductos": "¡Consultar ahora!",
     "textoPredefinido": "Hola, me gustaria consultar sobre, ",
-    "ubicacion":"Rincón 1203 esq. San Juan, CABA, Argentina"
+    "ubicacion":"Rincón 1203 esquina Av. San Juan",
+    "horarios": "Horarios: 7 hs a 15 hs"
   },
   "Links": [
     {

@@ -58,7 +58,7 @@ const Carousel = (inicio) => {
           {/* Text overlay */}
           <div className="absolute inset-0 flex justify-center items-center bottom-16 text-white z-10">
             <div className="text-center">
-              <p className="text-[40px] md:text-[62px] tracking-tight text-customBeige leading-none font-playfair-regular-italic"><strong>{t('titulo')}</strong></p>
+            <p className="text-[40px] md:text-[62px] text-customBeige leading-none font-taviraj italic font-semibold tracking-wider"><strong>{t('titulo')}</strong></p>
               <p className="text-[20px] md:text-[22px] tracking-wide text-customBeige font-light font-lato">{t('subtitulo')}</p>
             </div>
           </div>

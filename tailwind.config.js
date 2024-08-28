@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto Condensed', 'sans-serif'],
+        taviraj: ['Taviraj', 'serif'],
       },
       textColor: {
         'footer-style': '#FFFFFF',

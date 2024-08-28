@@ -44,6 +44,7 @@ const RootLayout = async (props) => {
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.icon} />
         <link rel="manifest" href="/manifest.json" />
+        <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,600&display=swap" rel="stylesheet" />
       </Head>
       <body className=''>
       <NextIntlClientProvider messages={messages}>

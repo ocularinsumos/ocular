@@ -1,7 +1,8 @@
 "use client";
-import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import { MapPinIcon } from "@heroicons/react/24/solid";
 import { useTranslations } from "next-intl";
-import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt  } from "react-icons/fa";
+import { MdStore } from "react-icons/md";
 
 const Ubicacion = () => {
   const t = useTranslations('userData')
@@ -26,11 +27,11 @@ const Ubicacion = () => {
               <h2 className="font-lato text-primary text-center">{i('btn')}</h2>
 
               <button className="flex items-center mt-8 space-x-2 text-dark-600 text-slate-800">
-                <MapPinIcon className="w-5 h-5 text-primary" /><small>{t('ubicacion')}</small>
+                <FaMapMarkerAlt  className="w-5 h-5 text-primary" /><small>{t('ubicacion')}</small>
               </button>
 
               <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `mailto:${t('email')}`}>
-                <EnvelopeIcon className="w-5 h-5 text-primary" /><span>{t('email')}</span>
+                <FaEnvelope  className="w-5 h-5 text-primary" /><span>{t('email')}</span>
               </button>
 
               <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `tel:+${t('codigoPais')}${t('contact')}`}>
@@ -40,6 +41,9 @@ const Ubicacion = () => {
               <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.open(`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`, '_blank', 'noopener,noreferrer')}>
                 <FaWhatsapp className="w-5 h-5 text-primary" /><span>WhatsApp</span>
               </button>
+              <div className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.open(`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`, '_blank', 'noopener,noreferrer')}>
+                <MdStore  className="w-5 h-5 text-primary" /><span>{t('horarios')}</span>
+              </div>
             </div>
             <div className=" flex border-y px-2 md:border-l md:border-y-transparent items-center  justify-center border-primary md:pl-4 ">
               <p className="max-w-sm my-12 text-slate-800">{i('texto')}</p>
