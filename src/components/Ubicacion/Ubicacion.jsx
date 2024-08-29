@@ -27,7 +27,7 @@ const Ubicacion = () => {
               <h2 className="font-lato text-primary text-center">{i('btn')}</h2>
 
               <button className="flex items-center mt-8 space-x-2 text-dark-600 text-slate-800">
-                <FaMapMarkerAlt  className="w-5 h-5 text-primary" /><small>{t('ubicacion')}</small>
+                <FaMapMarkerAlt  className="w-5 h-5 text-primary" /><span>{t('ubicacion')}</span>
               </button>
 
               <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.location.href = `mailto:${t('email')}`}>

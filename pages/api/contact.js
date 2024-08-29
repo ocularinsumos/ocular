@@ -26,6 +26,7 @@ export default async function handler(req, res) {
                     <p>La Persona ha hecho contacto desde el sitio web:</p>
                     <p>Nombre: ${req.body.input1}</p>
                     <p>Email: ${req.body.input2}</p>
+                    <p>Telefono: ${req.body.input5}</p>
                     <p>Motivo: ${req.body.input4}</p>
                     <p>Mensaje: ${req.body.input3}</p>
                 `:`

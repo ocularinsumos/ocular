@@ -17,12 +17,12 @@ const Contactusform = ({ className = '' }) => {
         input5: '',
     });
 
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption, setSelectedOption] = useState('Consulta');
 
     const alert = () => {
         Swal.fire({
             title: `${inputValues.input1}, tu mensaje ha sido enviado correctamente.`,
-            confirmButtonAriaLabel,
+            confirmButtonAriaLabel:`Pronto se comunicarán contigo al siguiente email, ${inputValues.input2}`,
             text: `Pronto se comunicarán contigo al siguiente email, ${inputValues.input2}`,
             icon: 'success',
             confirmButtonText: 'Ok',
@@ -42,7 +42,7 @@ const Contactusform = ({ className = '' }) => {
         Swal.fire({
             text: `${inputValues.input2}, No es un correo electrónico válido`,
             icon: 'error',
-            confirmButtonAriaLabel,
+            confirmButtonAriaLabel:`${inputValues.input2}, No es un correo electrónico válido`,
             confirmButtonText: 'Ok',
         });
     };
@@ -218,9 +218,9 @@ const Contactusform = ({ className = '' }) => {
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     aria-label="Seleccionar motivo de contacto"
                                                 >
-                                                    <option value="otro" disabled>{t('opciones.opc1')}</option>
-                                                    <option value="consulta">{t('opciones.opc2')}</option>
-                                                    <option value="precios">{t('opciones.opc3')}</option>
+                                                    <option value={t('opciones.opc1')} disabled>{t('opciones.opc1')}</option>
+                                                    <option value={t('opciones.opc2')}>{t('opciones.opc2')}</option>
+                                                    <option value={t('opciones.opc3')}>{t('opciones.opc3')}</option>
                                                 </select>
                                             </div>
                                             <div className="sm:col-span-2">
