@@ -12,7 +12,7 @@ function TopBanner() {
   return (
     <section className="flex  items-center md:justify-center justify-around bg-primary min-h-10 lg:min-h-5 content-center text-white py-1 px-6 text-center w-full fixed top-0 z-30">
       <Link href={`tel:+${c("codigoPais")}${c("contact")}`} className="flex text-base lg:text-lg font-semibold pr-2 md:pr-10" target="_blank" referrerPolicy="nonreferrer">
-        <span className="hidden md:block">{t("texto1")}</span><strong>{' '}{t("texto2")}</strong>
+        <span className="hidden md:block">{t("texto1")}</span><strong className="ml-2" >{t("texto2")}</strong>
       </Link>
       <div className="flex">
         <Link className=" items-center text-dark-600 text-slate-800 border-l border-white md:px-10 px-2" target="_blank" referrerPolicy="nonreferrer" href={`https://wa.me/+${c("codigoPais")}${c("contact")}?text=${encodeURIComponent(c("textBoton"))}`}>

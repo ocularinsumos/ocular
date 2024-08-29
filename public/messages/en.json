@@ -1,8 +1,7 @@
 {
   "TopBanner": {
-    "texto1": "Call us (+54) 011 - 5237-1300",
-    "texto2": "Call us (+54) 011 - 5237-1300",
-    "texto3": "Call us (+54) 011 - 5237-1300"
+    "texto1": "Call us",
+    "texto2": "(+54) 11 5237-1300"
   },
   "inicio": {
     "titulo": "We are OCULAR",
@@ -80,20 +79,6 @@
       "linkUrl": ""
     },
     {
-      "id": 5,
-      "question": "What characteristics should a viscoelastic solution have for retinal surgery?",
-      "answer": "Viscoelastic solutions for retinal surgery should have high viscosity and elasticity to protect ocular structures during surgery. We have products with these characteristics, designed to maximize safety and surgical success.",
-      "linkText": "Learn about our viscoelastic solutions",
-      "linkUrl": ""
-    },
-    {
-      "id": 6,
-      "question": "Can you advise me on the most suitable supplies for my clinic?",
-      "answer": "Yes, we offer personalized advice to help you select the most suitable supplies according to your clinic's needs. Our team is trained to guide you through every step of the purchasing process.",
-      "linkText": "Contact us for personalized advice",
-      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
-    },
-    {
       "id": 7,
       "question": "How can I request a quote for cataract surgery supplies?",
       "answer": "To request a quote for cataract surgery supplies, send the prescription via WhatsApp, including the name and surname of the requester. Our team will respond with a detailed quote as soon as possible.",
@@ -130,7 +115,8 @@
     "textBoton": "Contact me!",
     "textoProductos": "Inquire now!",
     "textoPredefinido": "Hello, I would like to inquire about, ",
-    "ubicacion":"Rincón 1203 esq. San Juan, CABA, Argentina"
+    "ubicacion":"Rincón 1203 esq. San Juan, CABA, Argentina",
+    "horarios": "Hours: 7 AM to 3 PM."
   },
   "Links": [
     {
