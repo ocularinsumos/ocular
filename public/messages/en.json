@@ -4,7 +4,7 @@
     "texto2": "(+54) 11 5237-1300"
   },
   "inicio": {
-    "titulo": "We are OCULAR",
+    "titulo": "Ocular",
     "subtitulo": "We believe in what we do and are passionate about it.",
     "descripcion": "We have 23 years in the market of Surgical Supplies for Professionals and Individuals."
   },
@@ -15,9 +15,9 @@
   },
   "nosotros": {
     "titulo": "About Us",
-    "descripcion": "It began in the year 2000 with the goal of providing the best advisory and sales service for surgical supplies in the ophthalmological market. Today, it offers technology, versatility, and services to professionals and individuals throughout the country with the guarantee of products in various stages of use.",
-    "mision": "Our commitment is to achieve the greatest satisfaction for the professional, accompanying their growth, meeting their needs, and supporting their future goals. In summary, Ocular is a company that grows day by day with the solvency, efficiency, and results that we offer to our professionals and clients who choose us time and again.",
-    "valores": "We believe in what we do and that is why we are committed to helping more people like you every day. To ensure that the process is as transparent as possible, there is a variety of products to choose from. Choose our team to design a truly unique solution for you."
+    "descripcion": "Ocular began in the year 2000 with the goal of providing the best advice and sales service for surgical supplies in the ophthalmic market. Today, we offer technology, versatility, and services to institutions, professionals, and individuals across the country, with the guarantee of our products at different stages of use.",
+    "mision": "Our commitment is to achieve the highest customer satisfaction by supporting their growth and meeting their needs. In essence, Ocular is a company that grows day by day with reliability, efficiency, and results.",
+    "valores": "We believe in what we do, and that’s why we are committed to helping more people like you every day. To ensure that the process is as transparent as possible, we offer a variety of products. Choose our team to design a truly unique solution for you."
   },
   "contacto": {
     "btn": "CONTACT",
@@ -28,13 +28,11 @@
     "opciones": {
       "opc1": "Select an option",
       "opc2": "Inquiry",
-      "opc3": "Prices",
-      "opc4": "Brands",
-      "opc5": "Shipping"
+      "opc3": "Budget"
     },
     "msj": "Message",
     "btnEnv": "SEND",
-    "texto": "At Ocular, we are dedicated to providing you with top-quality products for all your surgical needs. We understand how important it is to have reliable supplies, which is why we are here to offer guidance and address any questions you may have."
+    "texto": "At Ocular, we are dedicated to offering top-quality products for all ophthalmic surgical needs. We understand how important it is to have reliable supplies and effective advice, so count on us."
   },
   "sociales": [
     {
@@ -44,7 +42,7 @@
     }
   ],
   "footer": {
-    "info": "24 years in the market of Surgical Supplies for Professionals and Individuals"
+    "info": "Over two decades in the ophthalmic surgical supplies market, dedicated to professionals, patients, and institutions."
   },
   "preguntas": {
     "titulo": "Frequently Asked Questions"
