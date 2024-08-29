@@ -21,6 +21,7 @@ const nextConfig = {
 // Crear la configuración para next-pwa
 const pwaConfig = withPWA({
   dest: 'public',
+  disable: process.env.NODE_ENV === 'development'
 });
 
 // Crear la configuración para next-intl
