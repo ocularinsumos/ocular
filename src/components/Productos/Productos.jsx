@@ -10,6 +10,7 @@ export default function Productos({producto,texto}) {
     <div id="productos">
       <div className="my-10 md:my-10 text-center">
         <h2 className={`text-3xl md:text-[60px] leading-[80px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair ${robotoCondensed.className}`} aria-label={texto.titulo}>{texto.titulo}</h2>
+        <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
       </div>
       <div className="flex justify-around my-10 md:px-0 flex-wrap md:mx-10">
         {producto.map((servicio, i) => (

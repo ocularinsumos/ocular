@@ -10,7 +10,7 @@
   },
   "productos": {
     "titulo": "Productos",
-    "subtitulo": "Amplia variedad",
+    "subtitulo": "Ingresa a cada patologia para ver nuestros insumos",
     "btnVolver": "Volver"
   },
   "nosotros": {
@@ -135,7 +135,7 @@
 "producto": [
     {
         "id": "cataratas",
-        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724984902/con_catarata_llf6ut.webp",
+        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725035418/Catarata_ahf9lt.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
         "title": "cataratas",
         "href": "/cataratas",
@@ -219,7 +219,7 @@
     },
     {
         "id": "cornea",
-        "img": "images/servicios/1.webp",
+        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725033930/queratocono_rsfnsd.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
         "title": "cornea",
         "href": "/cornea",
@@ -303,7 +303,7 @@
     },
     {
         "id": "pterigion",
-        "img": "images/servicios/1.webp",
+        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034865/pterigion_zicnsn.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/pterigion_smf7wp.webp",
         "title": "pterigion",
         "href": "/pterigion",
@@ -387,7 +387,7 @@
     },
     {
         "id": "retina",
-        "img": "images/servicios/1.webp",
+        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034503/retina_n2avcx.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/retina_ihghe9.webp",
         "title": "retina",
         "href": "/retina",
@@ -471,7 +471,7 @@
     },
     {
         "id": "glaucoma",
-        "img": "images/servicios/1.webp",
+        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725028281/glaucoma_fi5ckp.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/glaucoma_zyhxwv.webp",
         "title": "glaucoma",
         "href": "/glaucoma",
