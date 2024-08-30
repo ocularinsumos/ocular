@@ -85,13 +85,6 @@
       "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
     },
     {
-      "id": 8,
-      "question": "¿Cómo puedo solicitar asesoramiento sobre insumos para mi clínica?",
-      "answer": "Si necesitas asesoramiento sobre los insumos más adecuados para tu clínica, envíanos un mensaje detallando tus necesidades. Nuestro equipo de expertos te ofrecerá una guía personalizada y recomendaciones específicas.",
-      "linkText": "Solicita asesoramiento personalizado",
-      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
-    },
-    {
       "id": 9,
       "question": "¿Cómo se retira el insumo y como es la facturación de los productos?",
       "answer": "Puedes retirar los insumos quirúrgicos oftalmológicos de nuestra sucursal o elegir entre dos opciones de envío: podemos enviar el producto directamente al paciente o a la clínica. Para tu comodidad, también ofrecemos facturación electrónica para todas las compras. Al completar tu pedido, recibirás un correo con el detalle de la facturación y la confirmación del envío.",
@@ -142,13 +135,13 @@
 "producto": [
     {
         "id": "cataratas",
-        "img": "images/servicios/1.webp",
+        "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724984902/con_catarata_llf6ut.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
         "title": "cataratas",
         "href": "/cataratas",
-        "texto": "Informacion sobre cataratas",
-        "texto2": "texto sobre eso",
-        "texto3": "mas texto.",
+        "texto": "¿Que es la catarata?",
+        "texto2": "El cristalino es una lente natural que forma el sistema óptico del ser humano. Su funcion es enfocar los rayos de luz sobre la retina.",
+        "texto3": "La catarata es la opacificación o pérdida de transparencia del cristalino que produce una perdida lenta y progresiva de la vision",
         "productos":[
           {
             "nombre":"VISCOELASTICO 2% AUROVISC",
@@ -180,7 +173,7 @@
             "marca":"MANI",
             "codigo":"2000",
             "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON",
-            "categoria": "Sustancias"
+            "categoria": "Sutura"
           },
           {
             "nombre":"LENTE AUROFLEX ASFERICA",
@@ -188,7 +181,7 @@
             "marca":"Aurolab",
             "codigo":"FH5600SQ",
             "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "categoria": "Lente Intraocular"
           },
           {
             "nombre":"LIO ARTISAN MIOPIA 206",
@@ -196,7 +189,7 @@
             "marca":"Ophtec",
             "codigo":"206",
             "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC",
-            "categoria": "Sustancias"
+            "categoria": "Lente Intraocular"
           },
           {
             "nombre":"BISTURIE 2,8MM AUROSLEEK",
@@ -204,7 +197,7 @@
             "marca":"Aurolab",
             "codigo":"206",
             "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "categoria": "Bituri"
           },
           {
             "nombre":"LENTE AUROFLEX EV GOLD",
@@ -212,7 +205,7 @@
             "marca":"Aurolab",
             "codigo":"FH5600AY",
             "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "categoria": "Lente Intraocular"
           },
           {
             "nombre":"LENTE CAMARA ANTERIOR",
@@ -220,7 +213,7 @@
             "marca":"Aurolab",
             "codigo":"A5530",
             "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "categoria": "Lente Intraocular"
           }
         ]
     },

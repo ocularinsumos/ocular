@@ -84,13 +84,6 @@
       "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
     },
     {
-      "id": 8,
-      "question": "How can I request advice on supplies for my clinic?",
-      "answer": "If you need advice on the most suitable supplies for your clinic, send us a message detailing your needs. Our team of experts will offer you personalized guidance and specific recommendations.",
-      "linkText": "Request personalized advice",
-      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
-    },
-    {
       "id": 9,
       "question": "How do I pick up the supply and how is the billing done?",
       "answer": "You can pick up the ophthalmic surgical supplies from our branch or choose between two shipping options: we can send the product directly to the patient or to the clinic. For your convenience, we also offer electronic billing for all purchases. Upon completing your order, you will receive an email with the billing details and shipping confirmation.",
