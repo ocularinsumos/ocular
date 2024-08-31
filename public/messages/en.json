@@ -374,7 +374,23 @@
               "codigo": "FH560I",
               "descripcion": "IVISION MONOFOCAL HYDROPHILIC LENS, WITH INJECTOR, AUROLAB BRAND",
               "categoria": "Intraocular Lens"
-          }
+          },
+          {
+            "nombre": "CAPSULAR TENSION RING 10MM",
+            "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725132448/msz-aurolab-auroring_gcpge8.jpg",
+            "marca": "Aurolab",
+            "codigo": "CTR10",
+            "descripcion": "10MM PMMA CAPSULAR TENSION RING (FROM 12MM TO 10MM) INDIVIDUAL PACKAGE, MANUFACTURED BY AUROLAB.",
+            "categoria": "Implants"
+        },
+        {
+            "nombre": "CAPSULAR TENSION RING 11MM",
+            "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725132448/msz-aurolab-auroring_gcpge8.jpg",
+            "marca": "Aurolab",
+            "codigo": "CTR11",
+            "descripcion": "11MM PMMA CAPSULAR TENSION RING (FROM 13MM TO 11MM) INDIVIDUAL PACKAGE, MANUFACTURED BY AUROLAB.",
+            "categoria": "Implants"
+        }
       ]
     },
     {

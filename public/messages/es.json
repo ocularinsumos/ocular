@@ -374,6 +374,22 @@
             "codigo":"FH560I",
             "descripcion":"LENTE MONOFOCAL HIDROFILICA IVISION, CON INYECTOR, MARCA AUROLAB",
             "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"ANILLO DE TENSION CAPSULAR 10MM",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725132448/msz-aurolab-auroring_gcpge8.jpg",
+            "marca":"Aurolab",
+            "codigo":"CTR10",
+            "descripcion":"ANILLO DE TENSION CAPSULAR DE PMMA DE 10MM ( DE 12 MM A 10MM ) PRESENTACION POR UNIDAD, FABRICADO POR AUROLAB.",
+            "categoria": "Implantes"
+          },
+          {
+            "nombre":"ANILLO DE TENSION CAPSULAR 11MM",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725132448/msz-aurolab-auroring_gcpge8.jpg",
+            "marca":"Aurolab",
+            "codigo":"CTR11",
+            "descripcion":"ANILLO DE TENSION CAPSULAR DE PMMA DE 11MM ( DE 13 MM A 11MM ) PRESENTACION POR UNIDAD, FABRICADO POR AUROLAB.",
+            "categoria": "Implantes"
           }
         ]
     },
