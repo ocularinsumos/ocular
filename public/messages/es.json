@@ -168,12 +168,20 @@
             "categoria": "Sustancias"
           },
           {
-            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "nombre":"BISTURI CRESCENT MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
             "marca":"MANI",
-            "codigo":"2000",
-            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON",
-            "categoria": "Sutura"
+            "codigo":"MCU26",
+            "descripcion":"BISTURI CRESCENT DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI CRESCENT AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+            "marca":"Aurolab",
+            "codigo":"C25222HT",
+            "descripcion":"BISTURI CRESCENT AUROSLEEK, DESCARTABLE FABRICADO POR AUROLAB",
+            "categoria": "Bisturi"
           },
           {
             "nombre":"LENTE AUROFLEX ASFERICA",
@@ -184,20 +192,12 @@
             "categoria": "Lente Intraocular"
           },
           {
-            "nombre":"LIO ARTISAN MIOPIA 206",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
-            "marca":"Ophtec",
-            "codigo":"206",
-            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC",
-            "categoria": "Lente Intraocular"
-          },
-          {
             "nombre":"BISTURIE 2,8MM AUROSLEEK",
             "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
             "marca":"Aurolab",
             "codigo":"206",
             "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB",
-            "categoria": "Bituri"
+            "categoria": "Bisturi"
           },
           {
             "nombre":"LENTE AUROFLEX EV GOLD",
@@ -213,6 +213,166 @@
             "marca":"Aurolab",
             "codigo":"A5530",
             "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"SUTURA NYLON 10/0 MANI DOBLE AGUJA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117751/sutura-mani-nylon-10-0_q2kngz.webp",
+            "marca":"MANI",
+            "codigo":"1406",
+            "descripcion":"SUTURA NYLON 10/0 MANI DOBLE AGUJA, MARCA MANI, JAPON",
+            "categoria": "Sutura"
+          },
+          {
+            "nombre":"SUTURA NYLON 9/0 MANI DOBLE AGUJA MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
+            "marca":"MANI",
+            "codigo":"1407",
+            "descripcion":"SUTURA NYLON 9/0 DOBLE AGUJA, MARCA MANI, JAPON",
+            "categoria": "Sutura"
+          },
+          {
+            "nombre":"BISTURI MVR 20G NANOCUT",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-nanocut.jpg_vjqicd.webp",
+            "marca":"Aurolab",
+            "codigo":"M20002",
+            "descripcion":"BISTURI MVR 20G NANOCUT DESCARTABLE MARCA AUROLAB",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"VISCOELASTICO Healon GV® Pro",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725119394/healon_gv_pro_ozwihx.webp",
+            "marca":"Johnson & Johnson",
+            "codigo":"HGVPRO",
+            "descripcion":"HEALON GV® Pro ofrece alta viscosidad para la creación de una cámara anterior profunda y un espacio máximo para la maniobrabilidad, con un daño mínimo a la córnea u otros tejidos oculares delicados.",
+            "categoria": "Sustancias"
+          },
+          {
+            "nombre":"SUTURA POLIPROPILENE 10/0 - AGUJA CURVA MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128707/sutura-mani-polypropylene-10-0.jpg_1_hs75jo.webp",
+            "marca":"MANI",
+            "codigo":"1458P",
+            "descripcion":"SUTURA POLIPROPILENE 10/0 - AGUJA CURVA MARCA MANI JAPON",
+            "categoria": "Sutura"
+          },
+          {
+            "nombre":"SUTURA POLIPROPILENE 9/0 - DOBLE AGUJA CURVA MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128706/sutura-mani-polpropylene-9-0-l.jpg_wmkbyd.webp",
+            "marca":"MANI",
+            "codigo":"2452L",
+            "descripcion":"SUTURA POLIPROPILENE 9/0 - DOBLE AGUJA CURVA, MARCA MANI JAPON",
+            "categoria": "Sutura"
+          },
+          {
+            "nombre":"BISTURI 3,2MM MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129321/bisturi-mani-msl32_m4fl0m.webp",
+            "marca":"MANI",
+            "codigo":"MSL32",
+            "descripcion":"BISTURI 3,2MM DESCARTABLE MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI 2,4MM MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129312/bisturi-mani-msl24_psckpu.webp",
+            "marca":"MANI",
+            "codigo":"MSL24",
+            "descripcion":"BISTURI DE 2,4MM, DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI 2,6MM MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129316/bisturi-mani-msl26_hxuxzf.webp",
+            "marca":"MANI",
+            "codigo":"MSL26",
+            "descripcion":"BISTURI DE 2,6MM, DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI 3,0MM MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129320/bisturi-mani-msl30_blo8uh.webp",
+            "marca":"MANI",
+            "codigo":"MSL30",
+            "descripcion":"BISTURI 3,0MM DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI 2,2MM MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129313/bisturi-mani-msl22_fbbluj.webp",
+            "marca":"MANI",
+            "codigo":"MSL22",
+            "descripcion":"BISTURI DE 2,2MM, DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI MANI 2.5MM SAFETY",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129314/bisturi-mani-msl25sk-v2_mgxh2f.webp",
+            "marca":"MANI",
+            "codigo":"MSL25SK",
+            "descripcion":"BISTURI MANI 2,5MM SAFETY DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI IMPLANTE 5,2MM MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129787/bisturi-mani-mrs52_xawfvp.webp",
+            "marca":"MANI",
+            "codigo":"MRS52",
+            "descripcion":"BISTURI IMPLANTE 5,2MM MANI DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"LENTE AUROVUE EV GOLD",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-aurovue-gold_uvgygo.webp",
+            "marca":"Aurolab",
+            "codigo":"HP760AY",
+            "descripcion":"LENTE AUROVUE EV GOLD, HIDROFOBICA AMARILLA PRECARGADA MARCA AUROLAB",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"ARTIFLEX INSERTION SPATULA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130096/msz-ophtec-artiflex-insertion-spatula_lznbxc.webp",
+            "marca":"Ophtec",
+            "codigo":"OD110",
+            "descripcion":"ESPATULA AGUJA PARA INSERCION DE LENTES ARTISAN/ ARTIFLEX, FABRICADO POR OPHTEC",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"LIO 3 PIEZAS MATRIX 401",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130094/msz-medennium-matrix_mno6n9.webp",
+            "marca":"Medennium",
+            "codigo":"401",
+            "descripcion":"LENTE HIDROFOBICA DE 3 PIEZAS, MATRIX 401, DE 6MM Y CTE 118.5, MARCA MEDENNIUM USA",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"LENTE BIFOCAL SBL-2",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130092/msz-lenstec-sbl-2_brrzbz.webp",
+            "marca":"LENSTEC",
+            "codigo":"SBL-2",
+            "descripcion":"LENTE BIFOCAL EDOF, SBL-2 , HIDROFILICA, CON 0,25 DIOP, MARCA LENSTEC USA",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"LENTE AUROVUE DFINE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-dfine_fhupos.webp",
+            "marca":"Aurolab",
+            "codigo":"HP760AD3",
+            "descripcion":"LENTE AUROVUE DFINE MULTIFOCAL,CON ADD +3, HIDROFOBICA, PRE CARGADA, MARCA AUROLAB",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"LIO ARTIFLEX MIOPIA 401",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130098/msz-ophtec-lente-artiflex_bqf4my.webp",
+            "marca":"Ophtec",
+            "codigo":"401",
+            "descripcion":"LENTE INTRAOCULAR ARTIFLEX 401 PARA MIOPIA MARCA OPHTEC",
+            "categoria": "Lente Intraocular"
+          },
+          {
+            "nombre":"LENTE IVISION",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130090/msz-aurolab-ivision_dzkszj.webp",
+            "marca":"Aurolab",
+            "codigo":"FH560I",
+            "descripcion":"LENTE MONOFOCAL HIDROFILICA IVISION, CON INYECTOR, MARCA AUROLAB",
             "categoria": "Lente Intraocular"
           }
         ]
@@ -223,80 +383,32 @@
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
         "title": "cornea",
         "href": "/cornea",
-        "texto": "Informacion sobre cornea",
-        "texto2": "texto sobre eso",
-        "texto3": "mas texto.",
+        "texto": "¿Que es la Cornea?",
+        "texto2": "La córnea es la capa transparente y curva que cubre la parte frontal del ojo, desempeñando un papel esencial en el enfoque de la luz hacia la retina.",
+        "texto3": "Protege al ojo de factores externos y, al mismo tiempo, contribuye a la mayor parte del poder refractivo del ojo. Un daño o enfermedad de la córnea puede afectar la claridad de la visión.",
         "productos":[
           {
-            "nombre":"VISCOELASTICO 2% AUROVISC",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
-            "marca":"Aurolab",
-            "codigo":"2000",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
+            "nombre":"ANILLO INTRACORNEALES",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725119789/TeaRing2-710x370_agyheb.webp",
+            "marca":"IMPLANTEC",
+            "codigo":"TEARING",
+            "descripcion":"Anillos Intracorneales de PMMA para el tratamiento de keratocono y keratoglobo de diseño alemán. Varias Medidas",
+            "categoria": "Implantes"
+          },
+          {
+            "nombre":"RIBOFLAVINA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120270/Riboflavina_ambg1e.jpg",
+            "marca":"IMPLANTEC",
+            "codigo":"DEXTRAN500",
+            "descripcion":"Riboflavina para CrossLinking con Dextran-500",
             "categoria": "Sustancias"
           },
           {
-            "nombre":"VISCOELASTICO 3% OPHLINE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
-            "marca":"i+Med",
-            "codigo":"2001",
-            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM.",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"AZUL TRIPAN AUROBLUE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
-            "marca":"Aurolab",
-            "codigo":"2003",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
-            "marca":"MANI",
-            "codigo":"2000",
-            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LENTE AUROFLEX ASFERICA",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
-            "marca":"Aurolab",
-            "codigo":"FH5600SQ",
-            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LIO ARTISAN MIOPIA 206",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
-            "marca":"Ophtec",
-            "codigo":"206",
-            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"BISTURIE 2,8MM AUROSLEEK",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
-            "marca":"Aurolab",
-            "codigo":"206",
-            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LENTE AUROFLEX EV GOLD",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
-            "marca":"Aurolab",
-            "codigo":"FH5600AY",
-            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LENTE CAMARA ANTERIOR",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
-            "marca":"Aurolab",
-            "codigo":"A5530",
-            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB",
+            "nombre":"RIBOFLAVINA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120270/Riboflavina_ambg1e.jpg",
+            "marca":"IMPLANTEC",
+            "codigo":"sINDEXTRAN",
+            "descripcion":"Riboflavina para CrossLinking sin Dextran",
             "categoria": "Sustancias"
           }
         ]
@@ -304,251 +416,291 @@
     {
         "id": "pterigion",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034865/pterigion_zicnsn.webp",
-        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/pterigion_smf7wp.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/pterigion_cmvtjm.webp",
         "title": "pterigion",
         "href": "/pterigion",
-        "texto": "Informacion sobre pterigion",
-        "texto2": "texto sobre eso",
-        "texto3": "mas texto.",
+        "texto": "¿Que es el Pterigion?",
+        "texto2": "El pterigión es un crecimiento anormal de tejido sobre la conjuntiva que puede extenderse hacia la córnea.",
+        "texto3": "A menudo relacionado con la exposición al sol y a irritantes ambientales, puede causar irritación, enrojecimiento y, en casos avanzados, afectar la visión si invade el eje visual. Su tratamiento puede requerir cirugía si afecta la vista.",
         "productos":[
           {
-            "nombre":"VISCOELASTICO 2% AUROVISC",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
-            "marca":"Aurolab",
-            "codigo":"2000",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"VISCOELASTICO 3% OPHLINE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
-            "marca":"i+Med",
-            "codigo":"2001",
-            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM.",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"AZUL TRIPAN AUROBLUE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
-            "marca":"Aurolab",
-            "codigo":"2003",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "nombre":"SUTURA NYLON 10/0 MANI DOBLE AGUJA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117751/sutura-mani-nylon-10-0_q2kngz.webp",
             "marca":"MANI",
-            "codigo":"2000",
-            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON",
-            "categoria": "Sustancias"
+            "codigo":"1406",
+            "descripcion":"SUTURA NYLON 10/0 MANI DOBLE AGUJA, MARCA MANI, JAPON",
+            "categoria": "Sutura"
           },
           {
-            "nombre":"LENTE AUROFLEX ASFERICA",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "nombre":"SUTURA NYLON 9/0 MANI DOBLE AGUJA MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
+            "marca":"MANI",
+            "codigo":"1407",
+            "descripcion":"SUTURA NYLON 9/0 DOBLE AGUJA, MARCA MANI, JAPON",
+            "categoria": "Sutura"
+          },
+          {
+            "nombre":"BISTURI CRESCENT MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
+            "marca":"MANI",
+            "codigo":"MCU26",
+            "descripcion":"BISTURI CRESCENT DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI CRESCENT AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
             "marca":"Aurolab",
-            "codigo":"FH5600SQ",
-            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LIO ARTISAN MIOPIA 206",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
-            "marca":"Ophtec",
-            "codigo":"206",
-            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"BISTURIE 2,8MM AUROSLEEK",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
-            "marca":"Aurolab",
-            "codigo":"206",
-            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LENTE AUROFLEX EV GOLD",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
-            "marca":"Aurolab",
-            "codigo":"FH5600AY",
-            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"LENTE CAMARA ANTERIOR",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
-            "marca":"Aurolab",
-            "codigo":"A5530",
-            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "codigo":"C25222HT",
+            "descripcion":"BISTURI CRESCENT AUROSLEEK, DESCARTABLE FABRICADO POR AUROLAB",
+            "categoria": "Bisturi"
           }
         ]
     },
     {
         "id": "retina",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034503/retina_n2avcx.webp",
-        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/retina_ihghe9.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
         "title": "retina",
         "href": "/retina",
-        "texto": "Informacion sobre retina",
-        "texto2": "texto sobre eso",
-        "texto3": "mas texto.",
+        "texto": "¿Que es la Retina?",
+        "texto2": "La retina es una capa delgada de tejido que recubre la parte interna del ojo. Está formada por células sensibles a la luz que captan las imágenes y las envían al cerebro a través del nervio óptico.",
+        "texto3": "Un daño en la retina puede afectar la visión de forma significativa, causando problemas como desprendimientos o degeneración macular.",
         "productos":[
           {
-            "nombre":"VISCOELASTICO 2% AUROVISC",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+            "nombre":"PERFLUORO CARBONO AUROCTANE",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-auroctane.jpg_wcmzzh.webp",
             "marca":"Aurolab",
-            "codigo":"2000",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
+            "codigo":"2004",
+            "descripcion":"PERFLUORO CARBONO LIQUIDO POR 5ML, FABRICADO POR AUROLAB",
             "categoria": "Sustancias"
           },
           {
-            "nombre":"VISCOELASTICO 3% OPHLINE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
-            "marca":"i+Med",
-            "codigo":"2001",
-            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM.",
+            "nombre":"WASHOUT",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120993/msz-geuder-washout.jpg_dtpnd3.webp",
+            "marca":"Geuder",
+            "codigo":"WASHOUT",
+            "descripcion":"WASHOUT, PERFLUORO BUTIL PENTANO, PARA CIRUGIAS DE RETINA,MARCA GEUDER",
             "categoria": "Sustancias"
           },
           {
-            "nombre":"AZUL TRIPAN AUROBLUE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+            "nombre":"DENSIRON XTRA",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120991/msz-geuder-densiron-xtra.jpg_f1ol5w.webp",
+            "marca":"Geuder",
+            "codigo":"G-80925",
+            "descripcion":"DENSIRON XTRA, PERFLUORO HEXILOCTANO, ACEITE DE SILICONA CON DISEÑO MOLECULAR, PARA CIRUGIA DE RETINA, MARCA GEUDER",
+            "categoria": "Sustancias"
+          },
+          {
+            "nombre":"EASYGAS C3F8 - 30 DIAS",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120992/msz-geuder-easy-gas-30-days.jpg_ps5nij.webp",
+            "marca":"Geuder",
+            "codigo":"G-80970",
+            "descripcion":"GASES ENVASADOS PARA CIRUGIA DE RETINA C3F8 FABRICADO POR GEUDER ALEMANIA",
+            "categoria": "Gases"
+          },
+          {
+            "nombre":"EASYGAS C2F6 - 15 DIAS",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120991/msz-geuder-easy-gas-15-days.jpg_hixwep.webp",
+            "marca":"Geuder",
+            "codigo":"G-80960",
+            "descripcion":"GASES ENVASADOS PARA CIRUGIA DE RETINA C2F6 FABRICADO POR GEUDER ALEMANIA",
+            "categoria": "Gases"
+          },
+          {
+            "nombre":"EASYGAS SF6 - 6 DIAS",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120990/msz-geuder-easy-gas-6-days.jpg_qb1dva.webp",
+            "marca":"Geuder",
+            "codigo":"G-80950",
+            "descripcion":"GASES ENVASADOS PARA CIRUGIA DE RETINA SF6 FABRICADO POR GEUDER ALEMANIA",
+            "categoria": "Gases"
+          },
+          {
+            "nombre":"ACEITE DE SILICONA 5000CC AUROSIL PLUS",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-aurosil-plus.jpg_yjnjdz.webp",
             "marca":"Aurolab",
-            "codigo":"2003",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
+            "codigo":"2007",
+            "descripcion":"ACEITE DE SILICONA DE 5000 MN2/S, PARA CIRUGIAS DE RETINA, EN ENVASE ESTERIL DE 10 ML, FABRICADO POR AUROLAB",
+            "categoria": "Sustancias"
+          },
+          {
+            "nombre":"AZUL BRILLANTE G OCUBLUE PLUS",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120990/msz-aurolab-ocublue-plus.jpg_rjm2s6.webp",
+            "marca":"Aurolab",
+            "codigo":"2002",
+            "descripcion":"AZUL BRILLANTE,BRILLIANT BLUE G 0.05% W/V, PRESENTADO EN AMPOLLAS DE 1ML, PARA CIRUGIAS DE RETINA, FABRICADO POR AUROLAB",
+            "categoria": "Sustancias"
+          },
+          {
+            "nombre":"BISTURI MVR 20G NANOCUT",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-nanocut.jpg_vjqicd.webp",
+            "marca":"Aurolab",
+            "codigo":"M20002",
+            "descripcion":"BISTURI MVR 20G NANOCUT DESCARTABLE MARCA AUROLAB",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"ACEITE DE SILICONA 1000CC AUROSIL",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-aurosil.jpg_cuc9eq.webp",
+            "marca":"Aurolab",
+            "codigo":"2005",
+            "descripcion":"ACEITE DE SILICONA DE 1000 MN2/S, PARA CIRUGIAS DE RETINA, EN ENVASE ESTERIL DE 10 ML, FABRICADO POR AUROLAB",
             "categoria": "Sustancias"
           },
           {
             "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725121858/sutura-mani-nylon-5-0-single_kxz4al.webp",
             "marca":"MANI",
-            "codigo":"2000",
+            "codigo":"3383S",
             "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON",
-            "categoria": "Sustancias"
+            "categoria": "Sutura"
           },
           {
-            "nombre":"LENTE AUROFLEX ASFERICA",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
-            "marca":"Aurolab",
-            "codigo":"FH5600SQ",
-            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "nombre":"SET DE TROCAR 23G",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
+            "marca":"Geuder",
+            "codigo":"G-46311",
+            "descripcion":"SET DE TROCAR 23G MARCA GEUDER, ALEMANIA",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"LIO ARTISAN MIOPIA 206",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
-            "marca":"Ophtec",
-            "codigo":"206",
-            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC",
-            "categoria": "Sustancias"
+            "nombre":"SET DE TROCAR 25G",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
+            "marca":"Geuder",
+            "codigo":"G-46511",
+            "descripcion":"SET DE TROCAR 25G MARCA GEUDER, ALEMANIA",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"BISTURIE 2,8MM AUROSLEEK",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
-            "marca":"Aurolab",
-            "codigo":"206",
-            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "nombre":"BISTURI V-LANCE 23G MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr23g_fe301x.webp",
+            "marca":"MANI",
+            "codigo":"MVR23",
+            "descripcion":"BISTURI V-LANCE 23G DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"LENTE AUROFLEX EV GOLD",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
-            "marca":"Aurolab",
-            "codigo":"FH5600AY",
-            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "nombre":"BISTURI V-LANCE 20G MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr20g_uhm7sw.webp",
+            "marca":"MANI",
+            "codigo":"MVR20",
+            "descripcion":"BISTURI V-LANCE 20G DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"LENTE CAMARA ANTERIOR",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
-            "marca":"Aurolab",
-            "codigo":"A5530",
-            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "nombre":"BISTURI V-LANCE 25G MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr25g_wyf0d7.webp",
+            "marca":"MANI",
+            "codigo":"MVR25",
+            "descripcion":"BISTURI V-LANCE 25G DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI 21G ANGULADO SAFETY MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr21g_ite2dt.webp",
+            "marca":"MANI",
+            "codigo":"MVR21ASK",
+            "descripcion":"BBISTURI 21G ANGULADO SAFETY DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"Cánulas Charles 23G",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126619/CanulaOftalmica_implantec_ior1uh.webp",
+            "marca":"IMPLANTEC",
+            "codigo":"23G",
+            "descripcion":"Cánulas de Charles con brush 23G",
+            "categoria": "Canulas"
+          },
+          {
+            "nombre":"Cánulas Charles 25G",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126619/CanulaOftalmica_implantec_ior1uh.webp",
+            "marca":"IMPLANTEC",
+            "codigo":"25G",
+            "descripcion":"Cánulas de Charles con brush 25G",
+            "categoria": "Canulas"
+          },
+          {
+            "nombre":"Cánula liquido subretinal 25G",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126945/Hurricane25G_pikrij.webp",
+            "marca":"Hurricane",
+            "codigo":"7825",
+            "descripcion":"Cánula liquido subretinal 25G",
+            "categoria": "Canulas"
+          } ,
+          {
+            "nombre":"Cánula liquido subretinal 23G",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126944/Hurricane23G_xx2lup.webp",
+            "marca":"Hurricane",
+            "codigo":"7823",
+            "descripcion":"Cánula liquido subretinal 23G",
+            "categoria": "Canulas"
           }
         ]
     },
     {
         "id": "glaucoma",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725028281/glaucoma_fi5ckp.webp",
-        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/glaucoma_zyhxwv.webp",
+        "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
         "title": "glaucoma",
         "href": "/glaucoma",
-        "texto": "Informacion sobre glaucoma",
-        "texto2": "texto sobre eso",
-        "texto3": "mas texto.",
+        "texto": "¿Que es el Glaucoma?",
+        "texto2": "El glaucoma es una enfermedad del ojo que causa daño progresivo al nervio óptico, generalmente debido a un aumento de la presión intraocular.",
+        "texto3": "Esta afección puede llevar a la pérdida de visión gradual y, sin tratamiento, al deterioro irreversible de la vista. El diagnóstico temprano es clave para prevenir daños severos.",
         "productos":[
           {
-            "nombre":"VISCOELASTICO 2% AUROVISC",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
-            "marca":"Aurolab",
-            "codigo":"2000",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"VISCOELASTICO 3% OPHLINE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
-            "marca":"i+Med",
-            "codigo":"2001",
-            "descripcion":"VISCOELASTICO PESADO, OPHLINE 3% COMPUESTO POR HIALURONATO DE SODIO, PRESENTACION DE 1.2MM.",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"AZUL TRIPAN AUROBLUE",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
-            "marca":"Aurolab",
-            "codigo":"2003",
-            "descripcion":"AUROVISC VISCOELASTICO LIVIANO COMPUESTO POR - HPMC 2% PRESENTACION DE 2ML",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"SUTURA NYLON 5/0 1 AGUJA SIMIL 1470 JNJ MANI",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685419/sutura-mani-nylon-5-0-single.jpg_fokq14.webp",
+            "nombre":"BISTURI CRESCENT MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
             "marca":"MANI",
-            "codigo":"2000",
-            "descripcion":"SUTURA NYLON 5/0, MARCA MANI, JAPON",
-            "categoria": "Sustancias"
+            "codigo":"MCU26",
+            "descripcion":"BISTURI CRESCENT DESCARTABLE, MARCA MANI ORIGEN JAPON",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"LENTE AUROFLEX ASFERICA",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+            "nombre":"BISTURI 15 GRADOS MANI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118212/bisturi-mani-mst15_sinmnd.webp",
+            "marca":"MANI",
+            "codigo":"MST15",
+            "descripcion":"BISTURI 15 GRADOS DESCARTABLE, FABRICADO POR MANI, ORIGEN JAPON",
+            "categoria": "Bisturi"
+          },
+          {
+            "nombre":"BISTURI 15 GRADOS AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
             "marca":"Aurolab",
-            "codigo":"FH5600SQ",
-            "descripcion":"LENTE AUROFLEX ASFERICA , HIDROFILICA DE 1 PIEZA, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "codigo":"L15022HT",
+            "descripcion":"BISTURI 15 GRADOS AUROSLEEK, DESCARTABLE FABRICADO POR AUROLAB.",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"LIO ARTISAN MIOPIA 206",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-ophtec-artisan-lente.jpg_juv2bl.webp",
-            "marca":"Ophtec",
-            "codigo":"206",
-            "descripcion":"LENTE INTRAOCULAR ARTISAN 206 PARA MIOPIA MARCA OPHTEC",
-            "categoria": "Sustancias"
-          },
-          {
-            "nombre":"BISTURIE 2,8MM AUROSLEEK",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+            "nombre":"BISTURI CRESCENT AUROSLEEK",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
             "marca":"Aurolab",
-            "codigo":"206",
-            "descripcion":"BISTURI 2,8MM AUROSLEEK DESCARTABLE MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "codigo":"C25222HT",
+            "descripcion":"BISTURI CRESCENT AUROSLEEK, DESCARTABLE FABRICADO POR AUROLAB",
+            "categoria": "Bisturi"
           },
           {
-            "nombre":"LENTE AUROFLEX EV GOLD",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+            "nombre":"IMPLANTE PARA GLAUCOMA AADI",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118850/msz-aurolab-aadi_vaf292.webp",
             "marca":"Aurolab",
-            "codigo":"FH5600AY",
-            "descripcion":"LENTE AUROFLEX EV GOLD, ASFERICA, HIDROFILICA DE 1 PIEZA, CON FILTRO AMARILLO, CON INYECTOR, MARCA AUROLAB",
-            "categoria": "Sustancias"
+            "codigo":"AADI",
+            "descripcion":"IMPLANTE PARA GLAUCOMA, DRENAGE DE HUMOR ACUOSO, AADI MARCA AUROLAB",
+            "categoria": "Implantes"
           },
           {
-            "nombre":"LENTE CAMARA ANTERIOR",
-            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
-            "marca":"Aurolab",
-            "codigo":"A5530",
-            "descripcion":"LENTE DE CAMARA ANTERIOR DE PMMA, CTE 115.3, DE 5,5 MM, MARCA AUROLAB",
+            "nombre":"IMPLANTE PARA GLAUCOMA PAUL®",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118976/PGI-Box-Mockup-wo-BG-1024x633_fd89xn.webp",
+            "marca":"AOI",
+            "codigo":"PAUL",
+            "descripcion":"Un dispositivo de drenaje para glaucoma diseñado para regular la presión intraocular en los ojos del paciente y prevenir la progresión de la enfermedad.",
+            "categoria": "Implantes"
+          },
+          {
+            "nombre":"VISCOELASTICO Healon GV® Pro",
+            "imagen":"https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725119394/healon_gv_pro_ozwihx.webp",
+            "marca":"Johnson & Johnson",
+            "codigo":"HGVPRO",
+            "descripcion":"HEALON GV® Pro ofrece alta viscosidad para la creación de una cámara anterior profunda y un espacio máximo para la maniobrabilidad, con un daño mínimo a la córnea u otros tejidos oculares delicados.",
             "categoria": "Sustancias"
           }
         ]
