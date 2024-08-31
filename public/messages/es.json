@@ -104,7 +104,7 @@
     "contact": "91152371300",
     "numContact":"(+54) 11 5237-1300",
     "email": "ocularinsumos@gmail.com",
-    "textBoton": "¡Contáctame!",
+    "textBoton": "¡Contáctanos!",
     "textoProductos": "¡Consultar ahora!",
     "textoPredefinido": "Hola, me gustaria consultar sobre, ",
     "ubicacion":"Rincón 1203 esquina Av. San Juan",
@@ -141,7 +141,7 @@
         "href": "/cataratas",
         "texto": "¿Que es la catarata?",
         "texto2": "El cristalino es una lente natural que forma el sistema óptico del ser humano. Su funcion es enfocar los rayos de luz sobre la retina.",
-        "texto3": "La catarata es la opacificación o pérdida de transparencia del cristalino que produce una perdida lenta y progresiva de la vision",
+        "texto3": "La catarata es la opacificación o pérdida de transparencia del cristalino que produce una perdida lenta y progresiva de la vision.",
         "productos":[
           {
             "nombre":"VISCOELASTICO 2% AUROVISC",

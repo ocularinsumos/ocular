@@ -104,7 +104,7 @@
     "contact": "91152371300",
     "numContact":"(+54) 11 5237-1300",
     "email": "ocularinsumos@gmail.com",
-    "textBoton": "Contact me!",
+    "textBoton": "Contact us!",
     "textoProductos": "Inquire now!",
     "textoPredefinido": "Hello, I would like to inquire about, ",
     "ubicacion":"Rincón 1203 esq. San Juan, CABA, Argentina",
@@ -135,53 +135,576 @@
   "producto": [
     {
       "id": "cataratas",
-      "img": "images/servicios/1.webp",
+      "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725035418/Catarata_ahf9lt.webp",
       "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
-      "title": "cataracts",
+      "title": "Cataracts",
       "href": "/cataratas",
-      "texto": "Information about cataracts",
-      "texto2": "text about that",
-      "texto3": "more text."
+      "texto": "What is a cataract?",
+      "texto2": "The lens is a natural component of the human optical system. Its function is to focus light rays onto the retina.",
+      "texto3": "A cataract is the opacification or loss of transparency of the lens, which results in a slow and progressive loss of vision.",
+      "productos": [
+          {
+              "nombre": "VISCOELASTIC 2% AUROVISC",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-aurolab-aurovisc_xcphut.webp",
+              "marca": "Aurolab",
+              "codigo": "2000",
+              "descripcion": "AUROVISC LIGHT VISCOELASTIC COMPOSED OF - HPMC 2% PRESENTATION OF 2ML",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "VISCOELASTIC 3% OPHLINE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684733/msz-ofmed-ophline_k7f5i0.webp",
+              "marca": "i+Med",
+              "codigo": "2001",
+              "descripcion": "HEAVY VISCOELASTIC, OPHLINE 3% COMPOSED OF SODIUM HYALURONATE, PRESENTATION OF 1.2MM.",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "AZUL TRIPAN AUROBLUE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724684732/msz-aurolab-auroblue_fmxvk2.webp",
+              "marca": "Aurolab",
+              "codigo": "2003",
+              "descripcion": "AUROVISC LIGHT VISCOELASTIC COMPOSED OF - HPMC 2% PRESENTATION OF 2ML",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "CRESCENT SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
+              "marca": "MANI",
+              "codigo": "MCU26",
+              "descripcion": "DISPOSABLE CRESCENT SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "CRESCENT SCALPEL AUROSLEEK",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+              "marca": "Aurolab",
+              "codigo": "C25222HT",
+              "descripcion": "AUROSLEEK CRESCENT SCALPEL, DISPOSABLE MANUFACTURED BY AUROLAB",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "AUROFLEX ASPHERIC LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+              "marca": "Aurolab",
+              "codigo": "FH5600SQ",
+              "descripcion": "AUROFLEX ASPHERIC, HYDROPHILIC SINGLE-PIECE LENS, WITH INJECTOR, AUROLAB BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "AUROSLEEK 2.8MM SCALPEL",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+              "marca": "Aurolab",
+              "codigo": "206",
+              "descripcion": "2.8MM AUROSLEEK SCALPEL DISPOSABLE, AUROLAB BRAND",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "AUROFLEX EV GOLD LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+              "marca": "Aurolab",
+              "codigo": "FH5600AY",
+              "descripcion": "AUROFLEX EV GOLD LENS, ASPHERIC, HYDROPHILIC SINGLE-PIECE LENS WITH YELLOW FILTER, WITH INJECTOR, AUROLAB BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "ANterior Chamber Lens",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+              "marca": "Aurolab",
+              "codigo": "A5530",
+              "descripcion": "ANterior CHAMBER LENS OF PMMA, CTE 115.3, 5.5 MM, AUROLAB BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "NYLON SUTURE 10/0 MANI DOUBLE NEEDLE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117751/sutura-mani-nylon-10-0_q2kngz.webp",
+              "marca": "MANI",
+              "codigo": "1406",
+              "descripcion": "NYLON SUTURE 10/0 MANI DOUBLE NEEDLE, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "NYLON SUTURE 9/0 MANI DOUBLE NEEDLE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
+              "marca": "MANI",
+              "codigo": "1407",
+              "descripcion": "NYLON SUTURE 9/0 DOUBLE NEEDLE, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "MVR 20G NANOCUT SCALPEL",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-nanocut.jpg_vjqicd.webp",
+              "marca": "Aurolab",
+              "codigo": "M20002",
+              "descripcion": "MVR 20G NANOCUT SCALPEL DISPOSABLE, AUROLAB BRAND",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "Healon GV® Pro VISCOELASTIC",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725119394/healon_gv_pro_ozwihx.webp",
+              "marca": "Johnson & Johnson",
+              "codigo": "HGVPRO",
+              "descripcion": "HEALON GV® Pro offers high viscosity for creating a deep anterior chamber and maximum space for maneuverability, with minimal damage to the cornea or other delicate ocular tissues.",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "POLYPROPYLENE SUTURE 10/0 - CURVED NEEDLE MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128707/sutura-mani-polypropylene-10-0.jpg_1_hs75jo.webp",
+              "marca": "MANI",
+              "codigo": "1458P",
+              "descripcion": "POLYPROPYLENE SUTURE 10/0 - CURVED NEEDLE, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "POLYPROPYLENE SUTURE 9/0 - DOUBLE CURVED NEEDLE MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128706/sutura-mani-polpropylene-9-0-l.jpg_wmkbyd.webp",
+              "marca": "MANI",
+              "codigo": "2452L",
+              "descripcion": "POLYPROPYLENE SUTURE 9/0 - DOUBLE CURVED NEEDLE, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "3.2MM SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129321/bisturi-mani-msl32_m4fl0m.webp",
+              "marca": "MANI",
+              "codigo": "MSL32",
+              "descripcion": "3.2MM DISPOSABLE SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "2.4MM SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129312/bisturi-mani-msl24_psckpu.webp",
+              "marca": "MANI",
+              "codigo": "MSL24",
+              "descripcion": "2.4MM DISPOSABLE SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "2.6MM SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129316/bisturi-mani-msl26_hxuxzf.webp",
+              "marca": "MANI",
+              "codigo": "MSL26",
+              "descripcion": "2.6MM DISPOSABLE SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "3.0MM SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129320/bisturi-mani-msl30_blo8uh.webp",
+              "marca": "MANI",
+              "codigo": "MSL30",
+              "descripcion": "3.0MM DISPOSABLE SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "2.2MM SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129313/bisturi-mani-msl22_fbbluj.webp",
+              "marca": "MANI",
+              "codigo": "MSL22",
+              "descripcion": "2.2MM DISPOSABLE SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "MANI 2.5MM SAFETY SCALPEL",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129314/bisturi-mani-msl25sk-v2_mgxh2f.webp",
+              "marca": "MANI",
+              "codigo": "MSL25SK",
+              "descripcion": "MANI 2.5MM SAFETY DISPOSABLE SCALPEL, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "IMPLANT SCALPEL 5.2MM MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129787/bisturi-mani-mrs52_xawfvp.webp",
+              "marca": "MANI",
+              "codigo": "MRS52",
+              "descripcion": "5.2MM IMPLANT SCALPEL DISPOSABLE, MANI BRAND, JAPAN ORIGIN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "AUROVUE EV GOLD LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-aurovue-gold_uvgygo.webp",
+              "marca": "Aurolab",
+              "codigo": "HP760AY",
+              "descripcion": "AUROVUE EV GOLD LENS, HYDROPHOBIC YELLOW PRELOADED, AUROLAB BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "ARTIFLEX INSERTION SPATULA",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130096/msz-ophtec-artiflex-insertion-spatula_lznbxc.webp",
+              "marca": "Ophtec",
+              "codigo": "OD110",
+              "descripcion": "ARTISAN/ARTIFLEX LENS INSERTION SPATULA, MANUFACTURED BY OPHTEC",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "3 PIECE MATRIX 401 LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130094/msz-medennium-matrix_mno6n9.webp",
+              "marca": "Medennium",
+              "codigo": "401",
+              "descripcion": "3 PIECE HYDROPHOBIC LENS, MATRIX 401, 6MM AND CTE 118.5, MEDENNIUM USA BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "BIFOCAL LENS SBL-2",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130092/msz-lenstec-sbl-2_brrzbz.webp",
+              "marca": "LENSTEC",
+              "codigo": "SBL-2",
+              "descripcion": "BIFOCAL EDOF LENS, SBL-2, HYDROPHILIC, WITH 0.25 DIOPTERS, LENSTEC USA BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "AUROVUE DFINE LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-dfine_fhupos.webp",
+              "marca": "Aurolab",
+              "codigo": "HP760AD3",
+              "descripcion": "AUROVUE DFINE MULTIFOCAL LENS, WITH +3 ADDITION, HYDROPHOBIC, PRELOADED, AUROLAB BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "ARTIFLEX MYOPIA 401 LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130098/msz-ophtec-lente-artiflex_bqf4my.webp",
+              "marca": "Ophtec",
+              "codigo": "401",
+              "descripcion": "ARTIFLEX 401 INTRAOCULAR LENS FOR MYOPIA, OPHTEC BRAND",
+              "categoria": "Intraocular Lens"
+          },
+          {
+              "nombre": "IVISION LENS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130090/msz-aurolab-ivision_dzkszj.webp",
+              "marca": "Aurolab",
+              "codigo": "FH560I",
+              "descripcion": "IVISION MONOFOCAL HYDROPHILIC LENS, WITH INJECTOR, AUROLAB BRAND",
+              "categoria": "Intraocular Lens"
+          }
+      ]
     },
     {
       "id": "cornea",
-      "img": "images/servicios/1.webp",
+      "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725033930/queratocono_rsfnsd.webp",
       "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
-      "title": "Corneal Surgery",
+      "title": "Cornea",
       "href": "/cornea",
-      "texto": "Information about Corneal Surgery",
-      "texto2": "text about that",
-      "texto3": "more text."
-    },
+      "texto": "What is the Cornea?",
+      "texto2": "The cornea is the transparent, curved layer that covers the front part of the eye, playing a crucial role in focusing light onto the retina.",
+      "texto3": "It protects the eye from external factors while also contributing to most of the eye's refractive power. Damage or disease of the cornea can affect visual clarity.",
+      "productos": [
+          {
+              "nombre": "INTRACORNEAL RINGS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725119789/TeaRing2-710x370_agyheb.webp",
+              "marca": "IMPLANTEC",
+              "codigo": "TEARING",
+              "descripcion": "Intracorneal rings made of PMMA for treating keratoconus and keratoglobus, German design. Various sizes available.",
+              "categoria": "Implants"
+          },
+          {
+              "nombre": "RIBOFLAVIN",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120270/Riboflavina_ambg1e.jpg",
+              "marca": "IMPLANTEC",
+              "codigo": "DEXTRAN500",
+              "descripcion": "Riboflavin for Cross-Linking with Dextran-500.",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "RIBOFLAVIN",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120270/Riboflavina_ambg1e.jpg",
+              "marca": "IMPLANTEC",
+              "codigo": "sINDEXTRAN",
+              "descripcion": "Riboflavin for Cross-Linking without Dextran.",
+              "categoria": "Substances"
+          }
+      ]
+    },  
     {
       "id": "pterigion",
-      "img": "images/servicios/1.webp",
+      "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034865/pterigion_zicnsn.webp",
       "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/pterigion_cmvtjm.webp",
-      "title": "pterigion",
+      "title": "Pterygium",
       "href": "/pterigion",
-      "texto": "Information about pterigion",
-      "texto2": "text about that",
-      "texto3": "more text."
-    },
+      "texto": "What is Pterygium?",
+      "texto2": "Pterygium is an abnormal growth of tissue on the conjunctiva that can extend onto the cornea.",
+      "texto3": "Often related to sun exposure and environmental irritants, it can cause irritation, redness, and, in advanced cases, affect vision if it invades the visual axis. Treatment may require surgery if it affects sight.",
+      "productos": [
+          {
+              "nombre": "NYLON SUTURE 10/0 MANI DOUBLE NEEDLE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117751/sutura-mani-nylon-10-0_q2kngz.webp",
+              "marca": "MANI",
+              "codigo": "1406",
+              "descripcion": "NYLON SUTURE 10/0 MANI DOUBLE NEEDLE, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "NYLON SUTURE 9/0 MANI DOUBLE NEEDLE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
+              "marca": "MANI",
+              "codigo": "1407",
+              "descripcion": "NYLON SUTURE 9/0 DOUBLE NEEDLE, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "CRESCENT SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
+              "marca": "MANI",
+              "codigo": "MCU26",
+              "descripcion": "CRESCENT SCALPEL DISPOSABLE, MANI BRAND, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "CRESCENT SCALPEL AUROSLEEK",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+              "marca": "Aurolab",
+              "codigo": "C25222HT",
+              "descripcion": "CRESCENT SCALPEL AUROSLEEK, DISPOSABLE MANUFACTURED BY AUROLAB",
+              "categoria": "Scalpel"
+          }
+      ]
+    },  
     {
       "id": "retina",
-      "img": "images/servicios/1.webp",
+      "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034503/retina_n2avcx.webp",
       "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
-      "title": "Retinal Surgery",
+      "title": "Retina",
       "href": "/retina",
-      "texto": "Information about Retinal Surgery",
-      "texto2": "text about that",
-      "texto3": "more text."
-    },
+      "texto": "What is the Retina?",
+      "texto2": "The retina is a thin layer of tissue that lines the inner part of the eye. It is made up of light-sensitive cells that capture images and send them to the brain through the optic nerve.",
+      "texto3": "Damage to the retina can significantly affect vision, causing issues such as retinal detachment or macular degeneration.",
+      "productos": [
+          {
+              "nombre": "PERFLUOROCARBON AUROCTANE",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-auroctane.jpg_wcmzzh.webp",
+              "marca": "Aurolab",
+              "codigo": "2004",
+              "descripcion": "PERFLUOROCARBON LIQUID 5ML, MANUFACTURED BY AUROLAB",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "WASHOUT",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120993/msz-geuder-washout.jpg_dtpnd3.webp",
+              "marca": "Geuder",
+              "codigo": "WASHOUT",
+              "descripcion": "WASHOUT, PERFLUORO BUTYL PENTANE, FOR RETINAL SURGERIES, GEUDER BRAND",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "DENSIRON XTRA",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120991/msz-geuder-densiron-xtra.jpg_f1ol5w.webp",
+              "marca": "Geuder",
+              "codigo": "G-80925",
+              "descripcion": "DENSIRON XTRA, PERFLUORO HEXADECANE, SILICONE OIL WITH MOLECULAR DESIGN, FOR RETINAL SURGERY, GEUDER BRAND",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "EASYGAS C3F8 - 30 DAYS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120992/msz-geuder-easy-gas-30-days.jpg_ps5nij.webp",
+              "marca": "Geuder",
+              "codigo": "G-80970",
+              "descripcion": "GAS PACKAGED FOR RETINAL SURGERY C3F8 MANUFACTURED BY GEUDER, GERMANY",
+              "categoria": "Gases"
+          },
+          {
+              "nombre": "EASYGAS C2F6 - 15 DAYS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120991/msz-geuder-easy-gas-15-days.jpg_hixwep.webp",
+              "marca": "Geuder",
+              "codigo": "G-80960",
+              "descripcion": "GAS PACKAGED FOR RETINAL SURGERY C2F6 MANUFACTURED BY GEUDER, GERMANY",
+              "categoria": "Gases"
+          },
+          {
+              "nombre": "EASYGAS SF6 - 6 DAYS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120990/msz-geuder-easy-gas-6-days.jpg_qb1dva.webp",
+              "marca": "Geuder",
+              "codigo": "G-80950",
+              "descripcion": "GAS PACKAGED FOR RETINAL SURGERY SF6 MANUFACTURED BY GEUDER, GERMANY",
+              "categoria": "Gases"
+          },
+          {
+              "nombre": "SILICONE OIL 5000CC AUROSIL PLUS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-aurosil-plus.jpg_yjnjdz.webp",
+              "marca": "Aurolab",
+              "codigo": "2007",
+              "descripcion": "SILICONE OIL 5000 MN2/S, FOR RETINAL SURGERIES, IN STERILE 10 ML PACKAGE, MANUFACTURED BY AUROLAB",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "BRILLIANT BLUE G OCUBLUE PLUS",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120990/msz-aurolab-ocublue-plus.jpg_rjm2s6.webp",
+              "marca": "Aurolab",
+              "codigo": "2002",
+              "descripcion": "BRILLIANT BLUE G 0.05% W/V, PRESENTED IN 1ML AMPOULES, FOR RETINAL SURGERIES, MANUFACTURED BY AUROLAB",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "MVR 20G NANOCUT SCALPEL",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-nanocut.jpg_vjqicd.webp",
+              "marca": "Aurolab",
+              "codigo": "M20002",
+              "descripcion": "MVR 20G NANOCUT SCALPEL DISPOSABLE, AUROLAB BRAND",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "SILICONE OIL 1000CC AUROSIL",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-aurosil.jpg_cuc9eq.webp",
+              "marca": "Aurolab",
+              "codigo": "2005",
+              "descripcion": "SILICONE OIL 1000 MN2/S, FOR RETINAL SURGERIES, IN STERILE 10 ML PACKAGE, MANUFACTURED BY AUROLAB",
+              "categoria": "Substances"
+          },
+          {
+              "nombre": "NYLON SUTURE 5/0 1 NEEDLE SIMIL 1470 JNJ MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725121858/sutura-mani-nylon-5-0-single_kxz4al.webp",
+              "marca": "MANI",
+              "codigo": "3383S",
+              "descripcion": "NYLON SUTURE 5/0, MANI BRAND, JAPAN",
+              "categoria": "Suture"
+          },
+          {
+              "nombre": "23G TROCAR SET",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
+              "marca": "Geuder",
+              "codigo": "G-46311",
+              "descripcion": "23G TROCAR SET, GEUDER BRAND, GERMANY",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "25G TROCAR SET",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
+              "marca": "Geuder",
+              "codigo": "G-46511",
+              "descripcion": "25G TROCAR SET, GEUDER BRAND, GERMANY",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "V-LANCE SCALPEL 23G MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr23g_fe301x.webp",
+              "marca": "MANI",
+              "codigo": "MVR23",
+              "descripcion": "V-LANCE 23G SCALPEL DISPOSABLE, MANI BRAND, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "V-LANCE SCALPEL 20G MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr20g_uhm7sw.webp",
+              "marca": "MANI",
+              "codigo": "MVR20",
+              "descripcion": "V-LANCE 20G SCALPEL DISPOSABLE, MANI BRAND, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "V-LANCE SCALPEL 25G MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr25g_wyf0d7.webp",
+              "marca": "MANI",
+              "codigo": "MVR25",
+              "descripcion": "V-LANCE 25G SCALPEL DISPOSABLE, MANI BRAND, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "21G ANGLED SAFETY SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr21g_ite2dt.webp",
+              "marca": "MANI",
+              "codigo": "MVR21ASK",
+              "descripcion": "21G ANGLED SAFETY SCALPEL DISPOSABLE, MANI BRAND, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "Charles Cannulas 23G",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126619/CanulaOftalmica_implantec_ior1uh.webp",
+              "marca": "IMPLANTEC",
+              "codigo": "23G",
+              "descripcion": "Charles Cannulas with brush 23G",
+              "categoria": "Cannulas"
+          },
+          {
+              "nombre": "Charles Cannulas 25G",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126619/CanulaOftalmica_implantec_ior1uh.webp",
+              "marca": "IMPLANTEC",
+              "codigo": "25G",
+              "descripcion": "Charles Cannulas with brush 25G",
+              "categoria": "Cannulas"
+          },
+          {
+              "nombre": "Subretinal Liquid Cannula 25G",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126945/Hurricane25G_pikrij.webp",
+              "marca": "Hurricane",
+              "codigo": "7825",
+              "descripcion": "Subretinal liquid cannula 25G",
+              "categoria": "Cannulas"
+          },
+          {
+              "nombre": "Subretinal Liquid Cannula 23G",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725126944/Hurricane23G_xx2lup.webp",
+              "marca": "Hurricane",
+              "codigo": "7823",
+              "descripcion": "Subretinal liquid cannula 23G",
+              "categoria": "Cannulas"
+          }
+      ]
+    },  
     {
       "id": "glaucoma",
-      "img": "images/servicios/1.webp",
+      "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725028281/glaucoma_fi5ckp.webp",
       "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
       "title": "Glaucoma",
       "href": "/glaucoma",
-      "texto": "Information about glaucoma",
-      "texto2": "text about that",
-      "texto3": "more text."
-    }
+      "texto": "What is Glaucoma?",
+      "texto2": "Glaucoma is an eye disease that causes progressive damage to the optic nerve, usually due to increased intraocular pressure.",
+      "texto3": "This condition can lead to gradual vision loss and, if untreated, irreversible vision deterioration. Early diagnosis is key to preventing severe damage.",
+      "productos": [
+          {
+              "nombre": "CRESCENT SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
+              "marca": "MANI",
+              "codigo": "MCU26",
+              "descripcion": "CRESCENT SCALPEL DISPOSABLE, MANI BRAND, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "15 DEGREE SCALPEL MANI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118212/bisturi-mani-mst15_sinmnd.webp",
+              "marca": "MANI",
+              "codigo": "MST15",
+              "descripcion": "15 DEGREE SCALPEL DISPOSABLE, MANUFACTURED BY MANI, JAPAN",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "15 DEGREE SCALPEL AUROSLEEK",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+              "marca": "Aurolab",
+              "codigo": "L15022HT",
+              "descripcion": "15 DEGREE AUROSLEEK SCALPEL, DISPOSABLE, MANUFACTURED BY AUROLAB.",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "CRESCENT SCALPEL AUROSLEEK",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+              "marca": "Aurolab",
+              "codigo": "C25222HT",
+              "descripcion": "CRESCENT AUROSLEEK SCALPEL, DISPOSABLE, MANUFACTURED BY AUROLAB",
+              "categoria": "Scalpel"
+          },
+          {
+              "nombre": "GLAUCOMA IMPLANT AADI",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118850/msz-aurolab-aadi_vaf292.webp",
+              "marca": "Aurolab",
+              "codigo": "AADI",
+              "descripcion": "GLAUCOMA IMPLANT, AQUEOUS HUMOR DRAINAGE, AADI BRAND BY AUROLAB",
+              "categoria": "Implants"
+          },
+          {
+              "nombre": "GLAUCOMA IMPLANT PAUL®",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118976/PGI-Box-Mockup-wo-BG-1024x633_fd89xn.webp",
+              "marca": "AOI",
+              "codigo": "PAUL",
+              "descripcion": "A drainage device for glaucoma designed to regulate intraocular pressure and prevent disease progression.",
+              "categoria": "Implants"
+          },
+          {
+              "nombre": "VISCOELASTIC Healon GV® Pro",
+              "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725119394/healon_gv_pro_ozwihx.webp",
+              "marca": "Johnson & Johnson",
+              "codigo": "HGVPRO",
+              "descripcion": "HEALON GV® Pro offers high viscosity for creating a deep anterior chamber and maximum space for maneuverability, with minimal damage to the cornea or other delicate ocular tissues.",
+              "categoria": "Substances"
+          }
+        ]
+      }
   ]
-}
+  
+  }
