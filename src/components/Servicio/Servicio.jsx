@@ -8,7 +8,7 @@ export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono,
   const userData = useTranslations('userData');
   const productos = useTranslations('productos');
   const enviar = `https://wa.me/+${userData('codigoPais')}${userData('contact')}?text=${encodeURIComponent(userData('textoPredefinido'))}`;
-  console.log('productos:', prod);
+  //console.log('productos:', prod);
 
   return (
     <section className="md:min-h-screen grid col-span-1 justify-items-center md:grid-cols-3 md:px-4 lg:pl-20 lg:pr-10 py-16 lg:gap-20 ">
