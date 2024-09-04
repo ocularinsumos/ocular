@@ -39,7 +39,7 @@ const Ubicacion = () => {
               </button>
 
               <button className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.open(`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`, '_blank', 'noopener,noreferrer')}>
-                <FaWhatsapp className="w-5 h-5 text-primary" /><span>WhatsApp</span>
+                <FaWhatsapp className="w-5 h-5 text-primary" /><span>WhatsApp {t('numContact')}</span>
               </button>
               <div className="flex items-center mt-2 space-x-2 text-dark-600 text-slate-800" onClick={() => window.open(`https://wa.me/+${t('codigoPais')}${t('contact')}?text=${encodeURIComponent(t('textBoton'))}`, '_blank', 'noopener,noreferrer')}>
                 <MdStore  className="w-5 h-5 text-primary" /><span>{t('horarios')}</span>
