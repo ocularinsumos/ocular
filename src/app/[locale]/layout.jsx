@@ -48,9 +48,9 @@ const RootLayout = async (props) => {
         <meta property="og:image" content={meta.icon} />
         <meta name="keywords" content={meta.keywords.join(', ')} />
         
-        <link rel="icon" href={meta.icon} sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href={meta.appleTouchIcon} />
-        <link rel="manifest" href={meta.manifest} />
+        <link rel="manifest" href="/manifest.json" />
         <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,600&display=swap" rel="stylesheet" />
       </Head>
       <body className='bg-white text-gray-900'>
