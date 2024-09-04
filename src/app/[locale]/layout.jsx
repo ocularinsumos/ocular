@@ -8,48 +8,43 @@ import TopBanner from '../../components/TopBanner/TopBanner';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
+export const meta = {
+  title: "OCULAR INSUMOS QUIRURGICOS",
+  description: "Insumos quirurgicos para cirugias oftalmologicas",
+  manifest: "/manifest.json",
+  type: "website",
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#451F49',
+  charSet: 'UTF-8',
+  icon: '/favicon.ico',
+  appleTouchIcon: '/icons/icon-192x192.png', // 180x180
+  keywords: 'insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica'
+
+};
+
 const RootLayout = async (props) => {
   const { children, params: { locale } } = props;
-  const meta = {
-    title: "OCULAR INSUMOS QUIRURGICOS",
-    description: "Insumos quirurgicos para cirugias oftalmologicas",
-    manifest: "/manifest.json",
-    type: "website",
-    viewport: 'width=device-width, initial-scale=1',
-    themeColor: '#451F49',
-    charSet: 'UTF-8',
-    icon: '/favicon.ico',
-    appleTouchIcon: '/icons/apple-touch-icon.png', // 180x180
-    keywords: [
-      'insumos', 'insumos quirúrgicos', 'oftalmología', 'cirugía oftalmológica', 'cirugía', 
-      'cirugía de cataratas', 'retina', 'cataratas', 'equipos oftalmológicos', 'material quirúrgico', 
-      'instrumentos oftalmológicos', 'lentes intraoculares', 'vitrectomía', 'microcirugía ocular', 
-      'facoemulsificación', 'láser oftalmológico', 'insumos para cirugía refractiva', 
-      'quirófano oftalmológico', 'desprendimiento de retina', 'glaucoma', 
-      'insumos para cirugía de glaucoma', 'insumos para cirugía de retina', 
-      'insumos para cirugía de córnea', 'anestesia oftalmológica'
-    ]
-  };
+
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <Head>
-        <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
-        <meta name="viewport" content={meta.viewport} />
-        <meta charSet={meta.charSet} />
-        <meta name="theme-color" content={meta.themeColor} />
+        <title>OCULAR INSUMOS QUIRURGICOS</title>
+        <meta name="description" content="Insumos quirurgicos para cirugias oftalmologicas" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="theme-color" content="#451F49" />
         <meta name="robots" content="follow, index" />
-        <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content={meta.title} />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.icon} />
-        <meta name="keywords" content={meta.keywords.join(', ')} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS" />
+        <meta property="og:description" content="Insumos quirurgicos para cirugias oftalmologicas" />
+        <meta property="og:title" content="OCULAR INSUMOS QUIRURGICOS" />
+        <meta property="og:image" content="/favicon.ico" />
+        <meta name="keywords" content="insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica" />
         
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href={meta.appleTouchIcon} />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
         <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,600&display=swap" rel="stylesheet" />
       </Head>
