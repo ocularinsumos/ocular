@@ -5,11 +5,11 @@ import Navbar from "../../components/Navbar/Navbar";
 import VolverArriba from "../../components/VolverArriba/VolverArriba";
 import BotonWsp from "../../components/BotonWSP/BotonWsp";
 import TopBanner from '../../components/TopBanner/TopBanner';
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 
 const RootLayout = async (props) => {
-  const { children,params: {locale} } = props;
+  const { children, params: { locale } } = props;
   const meta = {
     title: "OCULAR INSUMOS QUIRURGICOS",
     description: "Insumos quirurgicos para cirugias oftalmologicas",
@@ -19,6 +19,7 @@ const RootLayout = async (props) => {
     themeColor: '#451F49',
     charSet: 'UTF-8',
     icon: '/favicon.ico',
+    appleTouchIcon: '/icons/apple-touch-icon.png', // 180x180
     keywords: [
       'insumos', 'insumos quirúrgicos', 'oftalmología', 'cirugía oftalmológica', 'cirugía', 
       'cirugía de cataratas', 'retina', 'cataratas', 'equipos oftalmológicos', 'material quirúrgico', 
@@ -33,22 +34,28 @@ const RootLayout = async (props) => {
 
   return (
     <html lang={locale}>
-      <title>{meta.title}</title>
-      <meta name="description" content={meta.description} />
       <Head>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <meta name="viewport" content={meta.viewport} />
+        <meta charSet={meta.charSet} />
+        <meta name="theme-color" content={meta.themeColor} />
         <meta name="robots" content="follow, index" />
-        <link rel="shortcut icon" href='/favicon.ico' />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.icon} />
-        <link rel="manifest" href="/manifest.json" />
+        <meta name="keywords" content={meta.keywords.join(', ')} />
+        
+        <link rel="icon" href={meta.icon} sizes="any" />
+        <link rel="apple-touch-icon" href={meta.appleTouchIcon} />
+        <link rel="manifest" href={meta.manifest} />
         <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,600&display=swap" rel="stylesheet" />
       </Head>
-      <body className=''>
-      <NextIntlClientProvider messages={messages}>
-          <TopBanner/>
+      <body className='bg-white text-gray-900'>
+        <NextIntlClientProvider messages={messages}>
+          <TopBanner />
           <nav>
             <Navbar />
           </nav>
