@@ -64,32 +64,11 @@
       "linkUrl": "/docs/ANMAT_OCULAR.pdf"
     },
     {
-      "id": 3,
-      "question": "¿Ofrecen envío rápido para insumos de emergencia?",
-      "answer": "Sí, contamos con opciones de envío rápido para atender emergencias quirúrgicas. Los pedidos realizados antes de las 2 p.m. se envían el mismo día, asegurando que lleguen a tiempo para tus necesidades.",
-      "linkText": "Consulta nuestras opciones de envío",
-      "linkUrl": ""
-    },
-    {
-      "id": 4,
-      "question": "¿Qué insumos son esenciales para realizar una cirugía de glaucoma?",
-      "answer": "Para una cirugía de glaucoma exitosa, es fundamental contar con microinstrumentos precisos, soluciones viscoelásticas y lentes quirúrgicos de alta calidad. Ofrecemos una gama completa de insumos diseñados para asegurar la mejor atención a los pacientes con glaucoma.",
-      "linkText": "Explora nuestros insumos para cirugía de glaucoma",
-      "linkUrl": ""
-    },
-    {
       "id": 7,
       "question": "¿Cómo puedo pedir un presupuesto de insumos para cirugía de cataratas?",
       "answer": "Para solicitar un presupuesto de insumos para cirugía de cataratas, envía la receta por WhatsApp incluyendo el nombre y apellido del solicitante. Nuestro equipo te responderá con un presupuesto detallado lo antes posible.",
       "linkText": "Contáctanos por WhatsApp",
       "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
-    },
-    {
-      "id": 9,
-      "question": "¿Cómo se retira el insumo y como es la facturación de los productos?",
-      "answer": "Puedes retirar los insumos quirúrgicos oftalmológicos de nuestra sucursal o elegir entre dos opciones de envío: podemos enviar el producto directamente al paciente o a la clínica. Para tu comodidad, también ofrecemos facturación electrónica para todas las compras. Al completar tu pedido, recibirás un correo con el detalle de la facturación y la confirmación del envío.",
-      "linkText": "Ver más sobre envío y facturación",
-      "linkUrl": "/docs/Envios_OCULAR.pdf"
     },
     {
       "id": 10,

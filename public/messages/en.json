@@ -64,32 +64,11 @@
       "linkUrl": "/docs/ANMAT_OCULAR.pdf"
     },
     {
-      "id": 3,
-      "question": "Do you offer fast shipping for emergency supplies?",
-      "answer": "Yes, we offer fast shipping options to meet surgical emergencies. Orders placed before 2 p.m. are shipped the same day, ensuring they arrive in time for your needs.",
-      "linkText": "Check out our shipping options",
-      "linkUrl": ""
-    },
-    {
-      "id": 4,
-      "question": "What supplies are essential for performing glaucoma surgery?",
-      "answer": "For successful glaucoma surgery, precise microinstruments, viscoelastic solutions, and high-quality surgical lenses are essential. We offer a full range of supplies designed to ensure the best care for patients with glaucoma.",
-      "linkText": "Explore our supplies for glaucoma surgery",
-      "linkUrl": ""
-    },
-    {
       "id": 7,
       "question": "How can I request a quote for cataract surgery supplies?",
       "answer": "To request a quote for cataract surgery supplies, send the prescription via WhatsApp, including the name and surname of the requester. Our team will respond with a detailed quote as soon as possible.",
       "linkText": "Contact us via WhatsApp",
       "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
-    },
-    {
-      "id": 9,
-      "question": "How do I pick up the supply and how is the billing done?",
-      "answer": "You can pick up the ophthalmic surgical supplies from our branch or choose between two shipping options: we can send the product directly to the patient or to the clinic. For your convenience, we also offer electronic billing for all purchases. Upon completing your order, you will receive an email with the billing details and shipping confirmation.",
-      "linkText": "Learn more about shipping and billing",
-      "linkUrl": "/docs/Envios_OCULAR.pdf"
     },
     {
       "id": 10,
