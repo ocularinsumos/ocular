@@ -45,6 +45,16 @@ const RootLayout = async (props) => {
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
         <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,600&display=swap" rel="stylesheet" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHMWPKSR6"/>
+        <script dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-KBHMWPKSR6');
+            `,}}
+        />
       </head>
       <body className='bg-white text-gray-900'>
         <NextIntlClientProvider messages={messages}>
