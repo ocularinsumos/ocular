@@ -374,10 +374,10 @@
         ]
     },
     {
-        "id": "Cirugia de cornea",
+        "id": "cornea",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725033930/queratocono_rsfnsd.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
-        "title": "cornea",
+        "title": "Cirugia de cornea",
         "href": "/cornea",
         "texto": "¿Que es la Cornea?",
         "texto2": "La córnea es la capa transparente y curva que cubre la parte frontal del ojo, desempeñando un papel esencial en el enfoque de la luz hacia la retina.",
@@ -454,10 +454,10 @@
         ]
     },
     {
-        "id": "Cirugia de Retina",
+        "id": "Retina",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034503/retina_n2avcx.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
-        "title": "retina",
+        "title": "Cirugia de Retina",
         "href": "/retina",
         "texto": "¿Que es la Retina?",
         "texto2": "La retina es una capa delgada de tejido que recubre la parte interna del ojo. Está formada por células sensibles a la luz que captan las imágenes y las envían al cerebro a través del nervio óptico.",
