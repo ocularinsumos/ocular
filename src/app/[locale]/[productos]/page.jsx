@@ -1,6 +1,5 @@
 'use client'
 import Servicio from "@/components/Servicio/Servicio";
-import productos from "@/components/Constantes/productos.json";
 import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
 

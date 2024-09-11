@@ -117,7 +117,7 @@
         "id": "cataratas",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725035418/Catarata_ahf9lt.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
-        "title": "cataratas",
+        "title": "Cirugia de cataratas",
         "href": "/cataratas",
         "texto": "¿Que es la catarata?",
         "texto2": "El cristalino es una lente natural que forma el sistema óptico del ser humano. Su funcion es enfocar los rayos de luz sobre la retina.",
@@ -374,7 +374,7 @@
         ]
     },
     {
-        "id": "cornea",
+        "id": "Cirugia de cornea",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725033930/queratocono_rsfnsd.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680499/cornea_f02yed.webp",
         "title": "cornea",
@@ -454,7 +454,7 @@
         ]
     },
     {
-        "id": "retina",
+        "id": "Cirugia de Retina",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034503/retina_n2avcx.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
         "title": "retina",
