@@ -6,6 +6,7 @@ import BotonWsp from "../../components/BotonWSP/BotonWsp";
 import TopBanner from '../../components/TopBanner/TopBanner';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { Analytics } from "@vercel/analytics/react"
 
 export const meta = {
   title: "OCULAR INSUMOS QUIRURGICOS",
@@ -70,6 +71,7 @@ const RootLayout = async (props) => {
             <VolverArriba />
             <BotonWsp />
           </footer>
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
