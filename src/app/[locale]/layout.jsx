@@ -33,7 +33,7 @@ const RootLayout = async (props) => {
         <meta name="description" content="Insumos quirurgicos para cirugias oftalmologicas" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
-        <meta name="theme-color" content="#451F49" />
+        <meta name="theme-color" content="#007BC7" />
         <meta name="robots" content="follow, index" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS" />
