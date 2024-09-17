@@ -11,7 +11,9 @@
   "productos": {
     "titulo": "Productos",
     "subtitulo": "Ingresa a cada patologia para ver nuestros insumos",
-    "btnVolver": "Volver"
+    "btnVolver": "Volver",
+    "tituloCat": "Categorias de Productos",
+    "subCat":" Ingrese a cada categoria para ver todos nuestros insumos"
   },
   "nosotros": {
     "titulo": "Nosotros",
