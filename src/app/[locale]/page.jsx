@@ -13,7 +13,7 @@ export default async function HomePage() {
   return (
       <>
         <Inicio inicio={messages.inicio}/>
-        <Productos producto={messages.producto} texto={messages.productos}/> 
+        <Productos producto={messages.producto} texto={messages.productos} categorias={messages.categorias}/> 
         <VideoPublicidad />
         <SobreMi />
         <Ubicacion />
