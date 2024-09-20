@@ -22,8 +22,7 @@ import OtrasCategorias from './OtrasCategorias'
             {icono && (<img src={icono} loading="lazy" className="w-fit px-2" width={60} height="auto" alt={`Icono de ${titulo}`} title={`Icono de ${titulo}`} aria-label={`Icono de ${titulo}`} />)}
           </div>
           <div className="mx-auto">
-            <Link href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block"
-              target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto">
+            <Link href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block"target="_blank" rel="noopener noreferrer" aria-label={userData('textoProductos')} title={userData('textoProductos')}>
               {userData('textoProductos')}
             </Link>
           </div>
@@ -33,8 +32,7 @@ import OtrasCategorias from './OtrasCategorias'
         <OtrasCategorias cat={cat} />
       </article>
       <div className="mx-auto">
-        <Link href="/#productos" className="bg-primary hover:bg-primary-hover active:bg-primary-active md:hidden text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block"
-          aria-label={productos('btnVolver')} >
+        <Link href="/#productos" className="bg-primary hover:bg-primary-hover active:bg-primary-active md:hidden text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block"aria-label={productos('btnVolver')} title={productos('btnVolver')}>
           {productos('btnVolver')}
         </Link>
       </div>

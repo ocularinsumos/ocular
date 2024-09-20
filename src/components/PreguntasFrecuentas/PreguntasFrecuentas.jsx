@@ -45,14 +45,14 @@ const PreguntasFrecuentes = () => {
                   <p className="mb-2 text-gray-700">{faq.answer}</p>
                   {faq.linkText && (
                     <p className="mb-2 text-gray-700">
-                      <Link href={faq.linkUrl} className="text-blue-600 hover:underline" target="_blank" >{faq.linkUrl?faq.linkText:''}</Link>
+                      <Link href={faq.linkUrl} className="text-blue-600 hover:underline" target="_blank" title={faq.linkUrl?faq.linkText:''} >{faq.linkUrl?faq.linkText:''}</Link>
                     </p>
                   )}
                   {faq.additionalInfo && (
                     <div>
                       <p className="mb-2 text-gray-700">{faq.additionalInfo[0].text}</p>
                       <ul className="pl-4 text-gray-700 list-disc">{faq.additionalInfo[0].links.map((link, index) => (
-                          <li key={index}><Link href={link.url} className="text-blue-600 hover:underline" >{link.text}</Link> </li>
+                          <li key={index}><Link href={link.url} className="text-blue-600 hover:underline" title={link.text}>{link.text}</Link> </li>
                         ))}
                       </ul>
                     </div>

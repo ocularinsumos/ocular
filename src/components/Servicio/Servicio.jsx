@@ -24,7 +24,7 @@ export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono,
           <p className="text-text-primary">{texto2}</p>
           {texto3 ? <p className="py-6 text-text-primary">{texto3}</p> : null}
           <div className="mx-auto">
-            <Link href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto">
+            <Link href={enviar} className="bg-primary hover:bg-primary-hover active:bg-primary-active text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" target="_blank" rel="noopener noreferrer" aria-label="Boton de contacto" title={userData('textoProductos')}>
               {userData('textoProductos')}
             </Link>
           </div>
@@ -34,7 +34,7 @@ export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono,
         <SubCategorias prod={prod}/>
       </article>
       <div className="mx-auto">
-            <Link href='/#productos' className="bg-primary hover:bg-primary-hover active:bg-primary-active md:hidden text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" aria-label={productos('btnVolver')}>
+            <Link href='/#productos' className="bg-primary hover:bg-primary-hover active:bg-primary-active md:hidden text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" aria-label={productos('btnVolver')} title={productos('btnVolver')}>
               {productos('btnVolver')}
             </Link>
           </div>

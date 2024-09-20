@@ -44,7 +44,7 @@ export default function Navbar(contacto) {
               <div className="relative flex h-16 items-center justify-start md:justify-around">
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
-                    <Link href="/" className="">
+                    <Link href="/" className="" title="Logo de empresa, volver a home">
                       <img src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={'auto'} title="Logo de Ocular" />
                     </Link>
                   </div>
@@ -54,18 +54,8 @@ export default function Navbar(contacto) {
                         const href = generateHref(null, item.href);
                         if (!href) return null; // Don't render if href is undefined
                         return (
-                          <Link 
-                            key={item.name} 
-                            href={href} 
-                            className={classNames(
-                              activeLink === item.href 
-                              ? "relative inline-block group text-lg font-semibold text-text-secondary"
-                              : "relative inline-block group text-text-link font-bold"
-                            )} 
-                            aria-current={activeLink === item.href ? "page" : undefined} 
-                            onClick={() => handleLinkClick(item.href)} 
-                            aria-label={item.name}
-                          >
+                          <Link key={item.name} href={href} className={classNames(activeLink === item.href ? "relative inline-block group text-lg font-semibold text-text-secondary" : "relative inline-block group text-text-link font-bold")} aria-current={activeLink === item.href ? "page" : undefined} 
+                            onClick={() => handleLinkClick(item.href)} aria-label={item.name} title={item.name} >
                             <span className={classNames(
                               "absolute bottom-[-1px] h-[1.5px] bg-white transition-transform duration-300 ease-out", 
                               activeLink === item.href ? "scale-x-100 inset-x-0 " : "scale-x-0 group-hover:scale-x-100 inset-x-1"
