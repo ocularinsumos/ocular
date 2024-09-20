@@ -544,53 +544,53 @@
         ]
       }
     ],
-  "categories": [
+  "categorias": [
   {
     "id": "Sutures",
     "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
     "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
     "title": "Sutures",
     "href": "/Sutures",
-    "products": [
+    "productos": [
       {
-        "name": "NYLON 5/0 SUTURE 1 NEEDLE SIMILAR 1470 JNJ MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725121858/sutura-mani-nylon-5-0-single_kxz4al.webp",
-        "brand": "MANI",
-        "code": "3383S",
-        "description": "NYLON 5/0 SUTURE, BRAND MANI, JAPAN",
-        "category": "Suture"
+        "nombre": "NYLON 5/0 SUTURE 1 NEEDLE SIMILAR 1470 JNJ MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725121858/sutura-mani-nylon-5-0-single_kxz4al.webp",
+        "marca": "MANI",
+        "codigo": "3383S",
+        "descripcion": "NYLON 5/0 SUTURE, BRAND MANI, JAPAN",
+        "categoria": "Suture"
       },
       {
-        "name": "NYLON 10/0 SUTURE MANI DOUBLE NEEDLE",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117751/sutura-mani-nylon-10-0_q2kngz.webp",
-        "brand": "MANI",
-        "code": "1406",
-        "description": "NYLON 10/0 SUTURE MANI DOUBLE NEEDLE, BRAND MANI, JAPAN",
-        "category": "Suture"
+        "nombre": "NYLON 10/0 SUTURE MANI DOUBLE NEEDLE",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117751/sutura-mani-nylon-10-0_q2kngz.webp",
+        "marca": "MANI",
+        "codigo": "1406",
+        "descripcion": "NYLON 10/0 SUTURE MANI DOUBLE NEEDLE, BRAND MANI, JAPAN",
+        "categoria": "Suture"
       },
       {
-        "name": "NYLON 9/0 SUTURE MANI DOUBLE NEEDLE",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
-        "brand": "MANI",
-        "code": "1407",
-        "description": "NYLON 9/0 SUTURE DOUBLE NEEDLE, BRAND MANI, JAPAN",
-        "category": "Suture"
+        "nombre": "NYLON 9/0 SUTURE MANI DOUBLE NEEDLE",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117750/sutura-mani-nylon-9-0_ruflb8.webp",
+        "marca": "MANI",
+        "codigo": "1407",
+        "descripcion": "NYLON 9/0 SUTURE DOUBLE NEEDLE, BRAND MANI, JAPAN",
+        "categoria": "Suture"
       },
       {
-        "name": "POLYPROPYLENE 10/0 SUTURE - CURVED NEEDLE MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128707/sutura-mani-polypropylene-10-0.jpg_1_hs75jo.webp",
-        "brand": "MANI",
-        "code": "1458P",
-        "description": "POLYPROPYLENE 10/0 SUTURE - CURVED NEEDLE, BRAND MANI JAPAN",
-        "category": "Suture"
+        "nombre": "POLYPROPYLENE 10/0 SUTURE - CURVED NEEDLE MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128707/sutura-mani-polypropylene-10-0.jpg_1_hs75jo.webp",
+        "marca": "MANI",
+        "codigo": "1458P",
+        "descripcion": "POLYPROPYLENE 10/0 SUTURE - CURVED NEEDLE, BRAND MANI JAPAN",
+        "categoria": "Suture"
       },
       {
-        "name": "POLYPROPYLENE 9/0 SUTURE - DOUBLE CURVED NEEDLE MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128706/sutura-mani-polpropylene-9-0-l.jpg_wmkbyd.webp",
-        "brand": "MANI",
-        "code": "2452L",
-        "description": "POLYPROPYLENE 9/0 SUTURE - DOUBLE CURVED NEEDLE, BRAND MANI JAPAN",
-        "category": "Suture"
+        "nombre": "POLYPROPYLENE 9/0 SUTURE - DOUBLE CURVED NEEDLE MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725128706/sutura-mani-polpropylene-9-0-l.jpg_wmkbyd.webp",
+        "marca": "MANI",
+        "codigo": "2452L",
+        "descripcion": "POLYPROPYLENE 9/0 SUTURE - DOUBLE CURVED NEEDLE, BRAND MANI JAPAN",
+        "categoria": "Suture"
       }
     ]
   },
@@ -600,142 +600,142 @@
     "icon": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
     "title": "Scalpels",
     "href": "/Scalpels",
-    "products": [
+    "productos": [
       {
-        "name": "CRESCENT SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
-        "brand": "MANI",
-        "code": "MCU26",
-        "description": "DISPOSABLE CRESCENT SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "CRESCENT SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725117589/bisturi-mani-mcu26_oi6n4x.webp",
+        "marca": "MANI",
+        "codigo": "MCU26",
+        "descripcion": "DISPOSABLE CRESCENT SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "15 DEGREES SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118212/bisturi-mani-mst15_sinmnd.webp",
-        "brand": "MANI",
-        "code": "MST15",
-        "description": "DISPOSABLE 15 DEGREES SCALPEL, MANUFACTURED BY MANI, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "15 DEGREES SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118212/bisturi-mani-mst15_sinmnd.webp",
+        "marca": "MANI",
+        "codigo": "MST15",
+        "descripcion": "DISPOSABLE 15 DEGREES SCALPEL, MANUFACTURED BY MANI, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "15 DEGREES SCALPEL AUROSLEEK",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
-        "brand": "Aurolab",
-        "code": "L15022HT",
-        "description": "15 DEGREES AUROSLEEK SCALPEL, DISPOSABLE MANUFACTURED BY AUROLAB.",
-        "category": "Scalpel"
+        "nombre": "15 DEGREES SCALPEL AUROSLEEK",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+        "marca": "Aurolab",
+        "codigo": "L15022HT",
+        "descripcion": "15 DEGREES AUROSLEEK SCALPEL, DISPOSABLE MANUFACTURED BY AUROLAB.",
+        "categoria": "Scalpel"
       },
       {
-        "name": "CRESCENT SCALPEL AUROSLEEK",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
-        "brand": "Aurolab",
-        "code": "C25222HT",
-        "description": "CRESCENT AUROSLEEK SCALPEL, DISPOSABLE MANUFACTURED BY AUROLAB",
-        "category": "Scalpel"
+        "nombre": "CRESCENT SCALPEL AUROSLEEK",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725118361/msz-aurolab-aurosleek_omjirh.webp",
+        "marca": "Aurolab",
+        "codigo": "C25222HT",
+        "descripcion": "CRESCENT AUROSLEEK SCALPEL, DISPOSABLE MANUFACTURED BY AUROLAB",
+        "categoria": "Scalpel"
       },
       {
-        "name": "MVR 20G NANOCUT SCALPEL",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-nanocut.jpg_vjqicd.webp",
-        "brand": "Aurolab",
-        "code": "M20002",
-        "description": "DISPOSABLE MVR 20G NANOCUT SCALPEL, AUROLAB BRAND",
-        "category": "Scalpel"
+        "nombre": "MVR 20G NANOCUT SCALPEL",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725120989/msz-aurolab-nanocut.jpg_vjqicd.webp",
+        "marca": "Aurolab",
+        "codigo": "M20002",
+        "descripcion": "DISPOSABLE MVR 20G NANOCUT SCALPEL, AUROLAB BRAND",
+        "categoria": "Scalpel"
       },
       {
-        "name": "TROCAR SET 23G",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
-        "brand": "Geuder",
-        "code": "G-46311",
-        "description": "TROCAR SET 23G GEUDER BRAND, GERMANY",
-        "category": "Scalpel"
+        "nombre": "TROCAR SET 23G",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
+        "marca": "Geuder",
+        "codigo": "G-46311",
+        "descripcion": "TROCAR SET 23G GEUDER BRAND, GERMANY",
+        "categoria": "Scalpel"
       },
       {
-        "name": "TROCAR SET 25G",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
-        "brand": "Geuder",
-        "code": "G-46511",
-        "description": "TROCAR SET 25G GEUDER BRAND, GERMANY",
-        "category": "Scalpel"
+        "nombre": "TROCAR SET 25G",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122415/msz-geuder-3-23g_fwyamc.webp",
+        "marca": "Geuder",
+        "codigo": "G-46511",
+        "descripcion": "TROCAR SET 25G GEUDER BRAND, GERMANY",
+        "categoria": "Scalpel"
       },
       {
-        "name": "V-LANCE SCALPEL 23G MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr23g_fe301x.webp",
-        "brand": "MANI",
-        "code": "MVR23",
-        "description": "DISPOSABLE V-LANCE SCALPEL 23G, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "V-LANCE SCALPEL 23G MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr23g_fe301x.webp",
+        "marca": "MANI",
+        "codigo": "MVR23",
+        "descripcion": "DISPOSABLE V-LANCE SCALPEL 23G, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "V-LANCE SCALPEL 20G MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr20g_uhm7sw.webp",
-        "brand": "MANI",
-        "code": "MVR20",
-        "description": "DISPOSABLE V-LANCE SCALPEL 20G, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "V-LANCE SCALPEL 20G MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr20g_uhm7sw.webp",
+        "marca": "MANI",
+        "codigo": "MVR20",
+        "descripcion": "DISPOSABLE V-LANCE SCALPEL 20G, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "V-LANCE SCALPEL 25G MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr25g_wyf0d7.webp",
-        "brand": "MANI",
-        "code": "MVR25",
-        "description": "DISPOSABLE V-LANCE SCALPEL 25G, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "V-LANCE SCALPEL 25G MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122417/bisturi-mani-mvr25g_wyf0d7.webp",
+        "marca": "MANI",
+        "codigo": "MVR25",
+        "descripcion": "DISPOSABLE V-LANCE SCALPEL 25G, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "21G ANGLED SAFETY SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr21g_ite2dt.webp",
-        "brand": "MANI",
-        "code": "MVR21ASK",
-        "description": "DISPOSABLE 21G ANGLED SAFETY SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "21G ANGLED SAFETY SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725122416/bisturi-mani-mvr21g_ite2dt.webp",
+        "marca": "MANI",
+        "codigo": "MVR21ASK",
+        "descripcion": "DISPOSABLE 21G ANGLED SAFETY SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "2.8MM SCALPEL AUROSLEEK",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
-        "brand": "Aurolab",
-        "code": "206",
-        "description": "DISPOSABLE 2.8MM AUROSLEEK SCALPEL, AUROLAB BRAND",
-        "category": "Scalpel"
+        "nombre": "2.8MM SCALPEL AUROSLEEK",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685418/msz-aurolab-aurosleek.jpg_1_eqj1xp.webp",
+        "marca": "Aurolab",
+        "codigo": "206",
+        "descripcion": "DISPOSABLE 2.8MM AUROSLEEK SCALPEL, AUROLAB BRAND",
+        "categoria": "Scalpel"
       },
       {
-        "name": "3.2MM SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129321/bisturi-mani-msl32_m4fl0m.webp",
-        "brand": "MANI",
-        "code": "MSL32",
-        "description": "DISPOSABLE 3.2MM SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "3.2MM SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129321/bisturi-mani-msl32_m4fl0m.webp",
+        "marca": "MANI",
+        "codigo": "MSL32",
+        "descripcion": "DISPOSABLE 3.2MM SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "2.4MM SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129312/bisturi-mani-msl24_psckpu.webp",
-        "brand": "MANI",
-        "code": "MSL24",
-        "description": "DISPOSABLE 2.4MM SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "2.4MM SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129312/bisturi-mani-msl24_psckpu.webp",
+        "marca": "MANI",
+        "codigo": "MSL24",
+        "descripcion": "DISPOSABLE 2.4MM SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "2.6MM SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129316/bisturi-mani-msl26_hxuxzf.webp",
-        "brand": "MANI",
-        "code": "MSL26",
-        "description": "DISPOSABLE 2.6MM SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "2.6MM SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129316/bisturi-mani-msl26_hxuxzf.webp",
+        "marca": "MANI",
+        "codigo": "MSL26",
+        "descripcion": "DISPOSABLE 2.6MM SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "3.0MM SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129320/bisturi-mani-msl30_blo8uh.webp",
-        "brand": "MANI",
-        "code": "MSL30",
-        "description": "DISPOSABLE 3.0MM SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "3.0MM SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129320/bisturi-mani-msl30_blo8uh.webp",
+        "marca": "MANI",
+        "codigo": "MSL30",
+        "descripcion": "DISPOSABLE 3.0MM SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       },
       {
-        "name": "2.2MM SCALPEL MANI",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129313/bisturi-mani-msl22_fbbluj.webp",
-        "brand": "MANI",
-        "code": "MSL22",
-        "description": "DISPOSABLE 2.2MM SCALPEL, MANI BRAND, MADE IN JAPAN",
-        "category": "Scalpel"
+        "nombre": "2.2MM SCALPEL MANI",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725129313/bisturi-mani-msl22_fbbluj.webp",
+        "marca": "MANI",
+        "codigo": "MSL22",
+        "descripcion": "DISPOSABLE 2.2MM SCALPEL, MANI BRAND, MADE IN JAPAN",
+        "categoria": "Scalpel"
       }
     ]
   },
@@ -745,86 +745,86 @@
     "icon": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
     "title": "Intraocular Lens",
     "href": "/Intraocular_Lens",
-    "products": [
+    "productos": [
       {
-        "name": "AUROFLEX ASPHERIC LENS",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
-        "brand": "Aurolab",
-        "code": "FH5600SQ",
-        "description": "AUROFLEX ASPHERIC LENS, HYDROPHILIC 1-PIECE WITH INJECTOR, AUROLAB BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "AUROFLEX ASPHERIC LENS",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-auroflex_gdnoin.webp",
+        "marca": "Aurolab",
+        "codigo": "FH5600SQ",
+        "descripcion": "AUROFLEX ASPHERIC LENS, HYDROPHILIC 1-PIECE WITH INJECTOR, AUROLAB BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "AUROFLEX EV GOLD LENS",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
-        "brand": "Aurolab",
-        "code": "FH5600AY",
-        "description": "AUROFLEX EV GOLD LENS, ASPHERIC, HYDROPHILIC 1-PIECE WITH YELLOW FILTER, WITH INJECTOR, AUROLAB BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "AUROFLEX EV GOLD LENS",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolab-auroflex-gold.jpg_b8nixn.webp",
+        "marca": "Aurolab",
+        "codigo": "FH5600AY",
+        "descripcion": "AUROFLEX EV GOLD LENS, ASPHERIC, HYDROPHILIC 1-PIECE WITH YELLOW FILTER, WITH INJECTOR, AUROLAB BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "ANTERIOR CHAMBER LENS",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
-        "brand": "Aurolab",
-        "code": "A5530",
-        "description": "ANTERIOR CHAMBER LENS MADE OF PMMA, CTE 115.3, 5.5 MM, AUROLAB BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "ANTERIOR CHAMBER LENS",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724685417/msz-aurolab-aurolens-monofocal.jpg_de9nds.webp",
+        "marca": "Aurolab",
+        "codigo": "A5530",
+        "descripcion": "ANTERIOR CHAMBER LENS MADE OF PMMA, CTE 115.3, 5.5 MM, AUROLAB BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "AUROVUE EV GOLD LENS",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-aurovue-gold_uvgygo.webp",
-        "brand": "Aurolab",
-        "code": "HP760AY",
-        "description": "AUROVUE EV GOLD LENS, YELLOW HYDROPHOBIC PRELOADED, AUROLAB BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "AUROVUE EV GOLD LENS",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-aurovue-gold_uvgygo.webp",
+        "marca": "Aurolab",
+        "codigo": "HP760AY",
+        "descripcion": "AUROVUE EV GOLD LENS, YELLOW HYDROPHOBIC PRELOADED, AUROLAB BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "ARTIFLEX INSERTION SPATULA",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130096/msz-ophtec-artiflex-insertion-spatula_lznbxc.webp",
-        "brand": "Ophtec",
-        "code": "OD110",
-        "description": "INSERTION SPATULA FOR ARTISAN/ARTIFLEX LENS, MANUFACTURED BY OPHTEC",
-        "category": "Intraocular Lens"
+        "nombre": "ARTIFLEX INSERTION SPATULA",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130096/msz-ophtec-artiflex-insertion-spatula_lznbxc.webp",
+        "marca": "Ophtec",
+        "codigo": "OD110",
+        "descripcion": "INSERTION SPATULA FOR ARTISAN/ARTIFLEX LENS, MANUFACTURED BY OPHTEC",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "LIO 3-PIECE MATRIX 401",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130094/msz-medennium-matrix_mno6n9.webp",
-        "brand": "Medennium",
-        "code": "401",
-        "description": "HYDROPHOBIC 3-PIECE LENS, MATRIX 401, 6MM AND CTE 118.5, MEDENNIUM USA BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "LIO 3-PIECE MATRIX 401",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130094/msz-medennium-matrix_mno6n9.webp",
+        "marca": "Medennium",
+        "codigo": "401",
+        "descripcion": "HYDROPHOBIC 3-PIECE LENS, MATRIX 401, 6MM AND CTE 118.5, MEDENNIUM USA BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "BIFOCAL LENS SBL-2",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130092/msz-lenstec-sbl-2_brrzbz.webp",
-        "brand": "LENSTEC",
-        "code": "SBL-2",
-        "description": "BIFOCAL EDOF LENS, SBL-2, HYDROPHILIC, WITH 0.25 DIOP, LENSTEC USA BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "BIFOCAL LENS SBL-2",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130092/msz-lenstec-sbl-2_brrzbz.webp",
+        "marca": "LENSTEC",
+        "codigo": "SBL-2",
+        "descripcion": "BIFOCAL EDOF LENS, SBL-2, HYDROPHILIC, WITH 0.25 DIOP, LENSTEC USA BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "AUROVUE DFINE LENS",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-dfine_fhupos.webp",
-        "brand": "Aurolab",
-        "code": "HP760AD3",
-        "description": "AUROVUE DFINE MULTIFOCAL LENS, WITH ADD +3, HYDROPHOBIC, PRELOADED, AUROLAB BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "AUROVUE DFINE LENS",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130088/msz-aurolab-dfine_fhupos.webp",
+        "marca": "Aurolab",
+        "codigo": "HP760AD3",
+        "descripcion": "AUROVUE DFINE MULTIFOCAL LENS, WITH ADD +3, HYDROPHOBIC, PRELOADED, AUROLAB BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "ARTIFLEX MYOPIA LIO 401",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130098/msz-ophtec-lente-artiflex_bqf4my.webp",
-        "brand": "Ophtec",
-        "code": "401",
-        "description": "ARTIFLEX INTRAOCULAR LENS 401 FOR MYOPIA, OPHTEC BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "ARTIFLEX MYOPIA LIO 401",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130098/msz-ophtec-lente-artiflex_bqf4my.webp",
+        "marca": "Ophtec",
+        "codigo": "401",
+        "descripcion": "ARTIFLEX INTRAOCULAR LENS 401 FOR MYOPIA, OPHTEC BRAND",
+        "categoria": "Intraocular Lens"
       },
       {
-        "name": "IVISION LENS",
-        "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130090/msz-aurolab-ivision_dzkszj.webp",
-        "brand": "Aurolab",
-        "code": "FH560I",
-        "description": "MONOFOCAL HYDROPHILIC IVISION LENS, WITH INJECTOR, AUROLAB BRAND",
-        "category": "Intraocular Lens"
+        "nombre": "IVISION LENS",
+        "imagen": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725130090/msz-aurolab-ivision_dzkszj.webp",
+        "marca": "Aurolab",
+        "codigo": "FH560I",
+        "descripcion": "MONOFOCAL HYDROPHILIC IVISION LENS, WITH INJECTOR, AUROLAB BRAND",
+        "categoria": "Intraocular Lens"
       }
     ]
   },
