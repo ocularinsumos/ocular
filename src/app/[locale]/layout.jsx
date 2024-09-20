@@ -31,7 +31,7 @@ const RootLayout = async (props) => {
   return (
     <html lang={locale}>
       <head>
-        <title>OCULAR INSUMOS QUIRURGICOS</title>
+        <title>OCULAR INSUMOS QUIRURGICOS - cirugía Ocular</title>
         <meta name="description" content="Insumos quirurgicos para cirugias oftalmologicas, Ocular es una empresa con mas de 2 deadas de trayectoria en producotos descartables para la cirugia ocular" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
