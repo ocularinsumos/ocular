@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 export default function ProductosPage() {
 
   const pathId = usePathname().split('/')[2]?.toLowerCase();
-  console.log(pathId)
-  console.log('useMessages:',useMessages().producto)
+  //console.log(pathId)
+  //console.log('useMessages:',useMessages().producto)
   const foundProduct = useMessages().producto.find(
     (prod) => prod.id.toLowerCase() === `/${pathId}` || prod.id.toLowerCase() === pathId
    )
-   console.log(foundProduct.img)
+   //console.log(foundProduct.img)
    if (!foundProduct) {
      return <p>Product not found.</p>; 
    }

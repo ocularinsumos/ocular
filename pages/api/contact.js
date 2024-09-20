@@ -6,7 +6,7 @@ const { SENDER, PASSWORD, TO } = process.env;
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         try {
-            console.log('req:', req.body);
+            //console.log('req:', req.body);
 
             const transporter = nodemailer.createTransport({
                 host: "smtp.gmail.com",
@@ -36,7 +36,7 @@ export default async function handler(req, res) {
             };
 
             const info = await transporter.sendMail(mailData);
-            console.log('Correo enviado: %s', info.messageId);
+            //console.log('Correo enviado: %s', info.messageId);
 
             res.status(200).json({ message: 'Correo enviado exitosamente' });
         } catch (error) {

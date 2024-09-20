@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import CardCategoria from '../Card/CardCategoria';
 
 const OtrasCategorias = ({ cat }) => {
-  console.log('categorias en otras 1:', cat);
+  //console.log('categorias en otras 1:', cat);
 
   // Extract categories correctly from the cat array
   const categorias = [...new Set(cat.map((item) => item.categoria))];
-  console.log('categorias en otras2:', categorias);
+  //console.log('categorias en otras2:', categorias);
 
   // Set the first category as the default selected category
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(categorias[0]);

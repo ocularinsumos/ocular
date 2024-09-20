@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import SubCategorias from "./SubCategorias";
 
 export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono, prod }) {
-  console.log('servicio:', titulo, texto, imagen, texto2, texto3, icono);
+  //console.log('servicio:', titulo, texto, imagen, texto2, texto3, icono);
   const userData = useTranslations('userData');
   const productos = useTranslations('productos');
   const enviar = `https://wa.me/+${userData('codigoPais')}${userData('contact')}?text=${encodeURIComponent(userData('textoPredefinido'))}`;

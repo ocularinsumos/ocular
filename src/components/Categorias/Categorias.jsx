@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import OtrasCategorias from './OtrasCategorias'
 
  const Categorias = ({ titulo, imagen, icono, cat }) => {
-  console.log('categoria en cat:', titulo, imagen, icono, cat);
+  //console.log('categoria en cat:', titulo, imagen, icono, cat);
 
   const userData = useTranslations('userData');
   const categorias = useTranslations('categorias');
