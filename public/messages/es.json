@@ -121,7 +121,7 @@
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
         "title": "Cirugia de cataratas",
         "href": "/cataratas",
-        "texto": "¿Que es la catarata?",
+        "texto": "¿Que es la de catarata?",
         "texto2": "El cristalino es una lente natural que forma el sistema óptico del ser humano. Su funcion es enfocar los rayos de luz sobre la retina.",
         "texto3": "La catarata es la opacificación o pérdida de transparencia del cristalino que produce una perdida lenta y progresiva de la vision.",
         "productos":[
@@ -752,7 +752,6 @@
               "categoria": "Sutura"
             }
           ]
-          
         },
         {
           "id": "Bisturis",
