@@ -18,6 +18,8 @@ const PreguntasFrecuentes = () => {
       [accordionId]: !prevState[accordionId],
     }));
   };
+  console.log('Hola');
+  
 
   return (
     <div className="bg-background-secondary py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " style={{textAlign:"-webkit-center"}}>
