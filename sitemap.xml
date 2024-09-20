@@ -1,87 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Home page -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>1.00</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en"/>
+  </url>
 
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/cataratas</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/cornea</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/pterigion</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/retina</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/glaucoma</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Implantes</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Suturas</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Bisturis</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Lente_Intraocular</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Canulas</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Sustancias</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/es/categorias/Gases</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/docs/Tipos%20de%20Lentes%20Intraoculares%20y%20Sus%20Usos%20-%20OCULAR.pdf</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ocularinsumosquirurgicos.com/docs/ANMAT_OCULAR.pdf</loc>
-  <lastmod>2024-09-20T16:50:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- Cataratas -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/cataratas</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/cataratas"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/cataracts"/>
+  </url>
 
+  <!-- Cornea -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/cornea</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/cornea"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/cornea"/>
+  </url>
+
+  <!-- Pterigion -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/pterigion</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/pterigion"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/pterygium"/>
+  </url>
+
+  <!-- Retina -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/retina</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/retina"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/retina"/>
+  </url>
+
+  <!-- Glaucoma -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/glaucoma</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/glaucoma"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/glaucoma"/>
+  </url>
+
+  <!-- Categoría Implantes -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Implantes</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Implantes"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/implants"/>
+  </url>
+
+  <!-- Categoría Suturas -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Suturas</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Suturas"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/sutures"/>
+  </url>
+
+  <!-- Categoría Bisturís -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Bisturis</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Bisturis"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/scalpels"/>
+  </url>
+
+  <!-- Categoría Lentes Intraoculares -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Lente_Intraocular</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Lente_Intraocular"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/intraocular_lens"/>
+  </url>
+
+  <!-- Categoría Cánulas -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Canulas</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Canulas"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/cannulas"/>
+  </url>
+
+  <!-- Categoría Sustancias -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Sustancias</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Sustancias"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/substances"/>
+  </url>
+
+  <!-- Categoría Gases -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/es/categorias/Gases</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://ocularinsumosquirurgicos.com/es/categorias/Gases"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://ocularinsumosquirurgicos.com/en/categories/gases"/>
+  </url>
+
+  <!-- PDF Documents -->
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/docs/Tipos%20de%20Lentes%20Intraoculares%20y%20Sus%20Usos%20-%20OCULAR.pdf</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ocularinsumosquirurgicos.com/docs/ANMAT_OCULAR.pdf</loc>
+    <lastmod>2024-09-20T16:50:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 </urlset>
