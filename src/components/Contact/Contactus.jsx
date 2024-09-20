@@ -157,6 +157,8 @@ const Contactusform = ({ className = '' }) => {
                                                 alt="Sermar Logo"
                                                 width={200}
                                                 height={'auto'}
+                                                title='Logo de Ocular'
+                                                aria-label='Logo de Ocular'
                                             />
                                             <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>{t('title')}</p>
                                         </div>

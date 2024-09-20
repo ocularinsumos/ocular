@@ -19,7 +19,7 @@ export default function SobreMi() {
             <br />
             <p className="text-text-secondary text-lg indent-6">{t('valores')}</p>
           </div>
-          <img loading="lazy" width={100} style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }} className="hidden md:block md:w-full p-6 place-self-center z-10" src="images/sobreMi/ojo.webp" alt="ojo del logo" aria-label="ojo del logo" />
+          <img loading="lazy" width={100} style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }} className="hidden md:block md:w-full p-6 place-self-center z-10" src="images/sobreMi/ojo.webp" alt="ojo del logo" aria-label="ojo del logo" title="ojo del logo"/>
         </div>
       </article>
       

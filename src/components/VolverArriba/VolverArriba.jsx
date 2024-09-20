@@ -25,7 +25,7 @@ const VolverArriba = () => {
   return (
     <article>
       <button className="fixed bottom-28 right-9 rounded-md w-10 z-index-50 active:animate-ping hover:scale-110" style={{ visibility: isVisible ? 'visible' : 'hidden', }} onClick={scrollToTop}>
-        <img loading='lazy' src='/images/up-arrow.webp' alt="flecha-arriba" aria-label="Volver arriba"/>
+        <img loading='lazy' src='/images/up-arrow.webp' alt="flecha-arriba" aria-label="Volver arriba" title="Volver arriba"/>
       </button>
     </article>
   );

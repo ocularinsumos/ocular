@@ -30,7 +30,7 @@ export default function Footer() {
     <li key={index}>
       <Link href={red.href} target="_blank">
         <div className="w-14 h-9 p-2 hover:opacity-75 rounded-full flex items-center">
-          <img loading="lazy" src={red.icon} alt={red.name} aria-label={red.name}/>
+          <img loading="lazy" src={red.icon} alt={red.name} aria-label={red.name} title={red.name}/>
         </div>
       </Link>
     </li>

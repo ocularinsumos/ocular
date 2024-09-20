@@ -6,36 +6,36 @@
   "inicio": {
     "titulo": "Ocular",
     "subtitulo": "Creemos en lo que hacemos y nos apasiona.",
-    "descripcion": "Tenemos 23 Años en el mercado de Insumos Quirurgicos para Profesionales y Particulares."
+    "descripcion": "Más de 2 decadas en el mercado de Insumos quirúrgicos oftalmológicos para cirugía ocular."
   },
   "productos": {
     "titulo": "Productos",
-    "subtitulo": "Ingresa a cada patologia para ver nuestros insumos",
+    "subtitulo": "Ingresa en cada patología para ver los insumos necesarios para la cirugía ocular",
     "btnVolver": "Volver",
-    "tituloCat": "Categorias de Productos",
-    "subCat":" Ingrese a cada categoria para ver todos nuestros insumos"
+    "tituloCat": "Categorías de Productos",
+    "subCat": "Ingresa en cada categoría para ver todos nuestros insumos quirúrgicos para cirugía ocular."
   },
   "nosotros": {
     "titulo": "Nosotros",
-    "descripcion": "Ocular comienza en el año 2000 con el objetivo de brindar el mejor servicio de asesoramiento y venta de insumos quirúrgicos del mercado oftalmológico. En la actualidad brindamos tecnología, versatilidad y servicios a instituciones, profesionales y particulares de todo el país con la garantía de los productos en las distintas etapas de uso.",
-    "mision": "Nuestro compromiso es lograr la mayor satisfacción de nuestros clientes acompañando su crecimiento y cubriendo sus necesidades. En síntesis, Ocular es una empresa que día a día crece con solvencia, eficacia y resultados.",
-    "valores": "Creemos en lo que hacemos y por eso nos comprometemos a ayudar a más personas como usted todos los días. Para asegurarse que el proceso sea lo más transparente posible, existe variedad de productos. Elija a nuestro equipo para que le diseñe una solución verdaderamente única."
+    "descripcion": "Ocular comienza en el año 2000 con el objetivo de brindar el mejor servicio de asesoramiento y venta de insumos quirúrgicos para el mercado oftalmológico. En la actualidad, ofrecemos tecnología, versatilidad y servicios a instituciones, profesionales y particulares de todo el país, con la garantía de calidad en las distintas etapas de uso de nuestros productos.",
+    "mision": "Nuestro compromiso es lograr la máxima satisfacción de nuestros clientes, acompañando su crecimiento y cubriendo sus necesidades. En síntesis, Ocular es una empresa que, día a día, crece con solvencia, eficacia y resultados.",
+    "valores": "Creemos en lo que hacemos y, por eso, nos comprometemos a ayudar a más personas como usted cada día. Para asegurar que el proceso sea lo más transparente posible, ofrecemos una variedad de productos. Elija a nuestro equipo para que diseñe una solución verdaderamente única para usted."
   },
   "contacto": {
     "btn": "CONTACTO",
-    "title": "Contactanos por aca o comunícate por Whatsapp (+54)011-5237-1300",
+    "title": "Contáctanos por aquí o comunícate por WhatsApp (+54) 011-5237-1300",
     "nombre": "Nombre",
-    "telefono": "Telefono",
+    "telefono": "Teléfono",
     "email": "Tu Email",
     "motivo": "Motivo",
     "opciones": {
-      "opc1": "Seleccione una opción",
-      "opc2": "Consulta",
-      "opc3": "Presupuesto"
+        "opc1": "Seleccione una opción",
+        "opc2": "Consulta",
+        "opc3": "Presupuesto"
     },
     "msj": "Mensaje",
     "btnEnv": "ENVIAR",
-    "texto": "En Ocular, nos dedicamos a ofrecer productos de primera calidad para todas las necesidades quirúrgicas oftalmológicas. Sabemos lo importante que es contar con insumos confiables, y asesoramiento eficaz, por eso conta con nosotros."
+    "texto": "En Ocular, nos dedicamos a ofrecer productos de primera calidad para todas las necesidades quirúrgicas oftalmológicas. Sabemos lo importante que es contar con insumos confiables y asesoramiento eficaz para tu cirugía ocular; por eso, cuenta con nosotros."
   },
   "sociales": [
     {
@@ -45,39 +45,39 @@
     }
   ],
   "footer": {
-    "info": "Más de dos décadas en el mercado de Insumos Quirurgicos Oftalmológicos dedicados a profesionales, pacientes e instituciones."
+    "info": "Más de dos décadas en el mercado de insumos quirúrgicos oftalmológicos, dedicados a profesionales, pacientes e instituciones para la cirugía ocular."
   },
   "preguntas": {
     "titulo": "Preguntas frecuentes"
   },
   "faqData": [
     {
-      "id": 1,
-      "question": "¿Qué tipo de lente intraocular necesito para una cirugía de cataratas?",
-      "answer": "El tipo de lente intraocular adecuado depende de las necesidades visuales del paciente. Ofrecemos lentes monofocales, multifocales y tóricos, cada uno con características específicas. Consulta con tu oftalmólogo para determinar cuál es el mejor para vos.",
-      "linkText": "Ver más sobre nuestros lentes intraoculares",
-      "linkUrl": "/docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
+        "id": 1,
+        "question": "¿Qué tipo de lente intraocular necesito para una cirugía de cataratas?",
+        "answer": "El tipo de lente intraocular adecuado depende de las necesidades visuales del paciente. Ofrecemos lentes monofocales, multifocales y tóricos, cada uno con características específicas. Consulta con tu oftalmólogo para determinar cuál es el mejor para ti.",
+        "linkText": "Ver más sobre nuestros lentes intraoculares",
+        "linkUrl": "/docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf"
     },
     {
-      "id": 2,
-      "question": "¿Cómo garantizan la calidad de los insumos para cirugía oftalmológica?",
-      "answer": "Todos nuestros productos pasan por rigurosos controles de calidad y están aprobados por las principales agencias reguladoras. Trabajamos solo con proveedores confiables para asegurar la mejor calidad en cada insumo.",
-      "linkText": "Más información sobre nuestra garantía de calidad",
-      "linkUrl": "/docs/ANMAT_OCULAR.pdf"
+        "id": 2,
+        "question": "¿Cómo garantizan la calidad de los insumos para cirugía oftalmológica?",
+        "answer": "Todos nuestros productos pasan por rigurosos controles de calidad y están aprobados por las principales agencias reguladoras. Trabajamos solo con proveedores confiables para asegurar la mejor calidad en cada insumo.",
+        "linkText": "Más información sobre nuestra garantía de calidad",
+        "linkUrl": "/docs/ANMAT_OCULAR.pdf"
     },
     {
-      "id": 7,
-      "question": "¿Cómo puedo pedir un presupuesto de insumos para cirugía de cataratas?",
-      "answer": "Para solicitar un presupuesto de insumos para cirugía de cataratas, envía la receta por WhatsApp incluyendo el nombre y apellido del solicitante. Nuestro equipo te responderá con un presupuesto detallado lo antes posible.",
-      "linkText": "Contáctanos por WhatsApp",
-      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+        "id": 7,
+        "question": "¿Cómo puedo pedir un presupuesto de insumos para cirugía de cataratas?",
+        "answer": "Para solicitar un presupuesto de insumos para cirugía de cataratas, envía la receta por WhatsApp, incluyendo el nombre y apellido del solicitante. Nuestro equipo te responderá con un presupuesto detallado lo antes posible.",
+        "linkText": "Contáctanos por WhatsApp",
+        "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
     },
     {
-      "id": 10,
-      "question": "¿Cómo puedo solicitar asesoramiento sobre insumos para mi cirugía de la vista?",
-      "answer": "Para solicitar asesoramiento sobre insumos específicos para tu cirugía, contacta a nuestro equipo de expertos a través del formulario en nuestra web, por correo electrónico o whatsApp. Adjunta tu receta Proporciona detalles sobre el tipo de cirugía y tus requisitos, y te ofreceremos recomendaciones personalizadas.",
-      "linkText": "Contáctanos para asesoramiento sobre cirugía de la vista",
-      "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+        "id": 10,
+        "question": "¿Cómo puedo solicitar asesoramiento sobre insumos para mi cirugía de la vista?",
+        "answer": "Para solicitar asesoramiento sobre insumos específicos para tu cirugía, contacta a nuestro equipo de expertos a través del formulario en nuestra web, por correo electrónico o WhatsApp. Adjunta tu receta y proporciona detalles sobre el tipo de cirugía y tus requisitos, y te ofreceremos recomendaciones personalizadas.",
+        "linkText": "Contáctanos para asesoramiento sobre cirugía de la vista",
+        "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
     }
   ],
   "userData": {

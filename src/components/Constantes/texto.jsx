@@ -40,7 +40,7 @@ const texto = {
       {
           name: "instagram",
           href: "https://www.instagram.com/ocularinsumosquirurgicos/",
-          icon: <img loading='lazy'  src='images/redesSociales/instagra.webp' alt="Instagram" />,
+          icon: <img loading='lazy'  src='images/redesSociales/instagra.webp' alt="Logo de instagram" title="Logo de instagram" aria-label="Logo de instagram"/>,
       }
     ],
     footer:{

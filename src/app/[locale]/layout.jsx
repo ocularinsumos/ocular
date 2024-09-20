@@ -10,9 +10,10 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const meta = {
   title: "OCULAR INSUMOS QUIRURGICOS",
-  description: "Insumos quirurgicos para cirugias oftalmologicas",
+  description: "Insumos quirurgicos para cirugias oftalmologicas, Ocular es una empresa con mas de 2 deadas de trayectoria en producotos descartables para la cirugia ocular",
   manifest: "/manifest.json",
   type: "website",
+  author : "Matias Rozas, Gonzalo Torres Grau",
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#451F49',
   charSet: 'UTF-8',
@@ -36,6 +37,7 @@ const RootLayout = async (props) => {
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#007BC7" />
         <meta name="robots" content="follow, index" />
+        <meta name="author" content="Matias Rozas, Gonzalo Torres Grau" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS" />
         <meta property="og:description" content="Insumos quirurgicos para cirugias oftalmologicas" />
