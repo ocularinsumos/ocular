@@ -53,7 +53,7 @@ export default function Productos({ producto, texto, categorias }) {
           <Slider {...settings}>
             {categorias.map((categoria, i) => (
               <div key={i} className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 bg-primary overflow-hidden gap-2 border-white border-8 ">
-                <Link href={`/${locale}/categorias/${categoria.href}`} title={categoria.title}>
+                <Link href={`/${locale}/categorias${categoria.href}`} title={categoria.title}>
                   <img loading="lazy" width={150} height={150} src={categoria.img} alt={categoria.title} className="w-full object-cover" aria-label={categoria.title} title={categoria.title} />
                   <h2 className="text-background-primary p-2 w-full text-center rounded-b-md" aria-label={categoria.title}>
                     {categoria.title.toUpperCase()}
@@ -67,7 +67,7 @@ export default function Productos({ producto, texto, categorias }) {
         {/* Diseño de grid para pantallas más grandes */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {categorias.map((categoria, i) => (
-            <Link href={`/${locale}/categorias/${categoria.href}`} key={i} className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={categoria.title}>
+            <Link href={`/${locale}/categorias${categoria.href}`} key={i} className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={categoria.title}>
               <img loading="lazy" width={150} height={150} src={categoria.img} alt={categoria.title} className="w-full object-cover" aria-label={categoria.title} title={categoria.title}/>
               <h2 className="text-background-primary p-2 w-full text-center" aria-label={categoria.title}>
                 {categoria.title.toUpperCase()}
