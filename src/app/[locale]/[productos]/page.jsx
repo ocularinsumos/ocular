@@ -9,7 +9,7 @@ export default function ProductosPage() {
   //console.log(pathId)
   //console.log('useMessages:',useMessages().producto)
   const foundProduct = useMessages().producto.find(
-    (prod) => prod.id.toLowerCase() === `/${pathId}` || prod.id.toLowerCase() === pathId
+    (prod) => prod.id.toLowerCase() === `${pathId}` || prod.id.toLowerCase() === pathId
    )
    //console.log(foundProduct.img)
    if (!foundProduct) {
