@@ -18,7 +18,7 @@ const PreguntasFrecuentes = () => {
       [accordionId]: !prevState[accordionId],
     }));
   };
-  console.log('Hola');
+  //console.log('Hola');
   
 
   return (
