@@ -37,6 +37,7 @@ const RootLayout = async (props) => {
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#007BC7" />
         <meta name="robots" content="follow, index" />
+        <meta name="publisher" content="Ocular Cirugía oftalmológica"/>
         <meta name="author" content="Matias Rozas, Gonzalo Torres Grau" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
