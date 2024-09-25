@@ -112,6 +112,11 @@
       "name": "Ubicacion",
       "href": "#ubicacion",
       "current": false
+    },
+    {
+      "name": "Preguntas",
+      "href": "#preguntas",
+      "current": false
     }
   ],
 "producto": [
