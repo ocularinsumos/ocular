@@ -27,7 +27,7 @@ Disallow: /redirect-to-page/
 Disallow: /sobre-nosotros/
 Disallow: /contactenos/
 
-Allow: /es
+Allow: /es/
 Allow: /es/cataratas
 Allow: /es/cornea
 Allow: /es/pterigion
@@ -41,7 +41,7 @@ Allow: /es/categorias/Gases
 Allow: /es/categorias/Implantes
 Allow: /es/categorias/Canulas
 
-Allow: /en
+Allow: /en/
 Allow: /en/cataracts
 Allow: /en/cornea
 Allow: /en/pterygium
