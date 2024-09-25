@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const meta = {
   title: "OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica",
-  description: "Insumos quirurgicos para cirugias oftalmologicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular",
+  description: "Insumos quirurgicos para cirugía oftalmológicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular, ubicado en la ciudad de Buenos Aires, Argentina. Asesoramiento gratis sobre insumos para la cirugía ocular",
   manifest: "/manifest.json",
   type: "website",
   author : "Matias Rozas, Gonzalo Torres Grau",
@@ -32,7 +32,7 @@ const RootLayout = async (props) => {
     <html lang={locale}>
       <head>
         <title>OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica</title>
-        <meta name="description" content="Insumos quirurgicos para cirugias oftalmologicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular" />
+        <meta name="description" content="Insumos quirurgicos para cirugía oftalmológicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular, ubicado en la ciudad de Buenos Aires, Argentina. Asesoramiento gratis sobre insumos para la cirugía ocular" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#007BC7" />
@@ -40,7 +40,7 @@ const RootLayout = async (props) => {
         <meta name="author" content="Matias Rozas, Gonzalo Torres Grau" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
-        <meta property="og:description" content="Insumos quirurgicos para cirugias oftalmologicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular" />
+        <meta property="og:description" content="Insumos quirurgicos para cirugía oftalmológicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular, ubicado en la ciudad de Buenos Aires, Argentina. Asesoramiento gratis sobre insumos para la cirugía ocular" />
         <meta property="og:title" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
         <meta property="og:image" content="/favicon.ico" sizes="any" type="image/x-icon"/>
         <meta name="keywords" content="insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica, cirugía ocular" />
