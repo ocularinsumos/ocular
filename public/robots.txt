@@ -53,4 +53,4 @@ Allow: /en/categorias/Intraocular_Lens
 Allow: /en/categorias/Substances
 Allow: /en/categorias/Gases
 Allow: /en/categorias/Implantes
-Allow: en/categorias/Cannulas
+Allow: /en/categorias/Cannulas

@@ -33,7 +33,7 @@ const RootLayout = async (props) => {
     console.error("Error fetching messages:", error);
     messages = {};
   }
-  
+
   const schemaMarkup = {
     "@id": "https://ocularinsumosquirurgicos.com/es#productos",
     "@context": "https://schema.org",
