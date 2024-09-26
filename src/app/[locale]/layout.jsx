@@ -42,13 +42,6 @@ const RootLayout = async (props) => {
       "postalCode": "C1251ACB",
       "addressCountry": "Argentina"
     },
-    "serviceArea": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Argentina"
-      }
-    },
     "telephone": "+5491152371300",
     "url": "https://ocularinsumosquirurgicos.com",
     "description": "Ocular es una empresa de insumos quirúrgicos para cirugía ocular y productos descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual.",
