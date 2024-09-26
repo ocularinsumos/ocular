@@ -45,11 +45,10 @@ const RootLayout = async (props) => {
     "telephone": "+5491152371300",
     "url": "https://ocularinsumosquirurgicos.com",
     "description": "Ocular es una empresa de insumos quirúrgicos para cirugía ocular y descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual",
-    "openingHours": "Mo -Fr 07:00-15:00",
+    "openingHours": "Lunes - Viernes 07:00-15:00",
     "sameAs": [
       "https://wa.me/+5491152371300?text=%C2%A1Cont%C3%A1ctanos!",
-      "https://www.instagram.com/ocularinsumosquirurgicos/",
-      "ocularinsumosquirurgicos@gmail.com"
+      "https://www.instagram.com/ocularinsumosquirurgicos/"
     ]
   };
 
