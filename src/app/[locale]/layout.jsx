@@ -85,13 +85,13 @@ const RootLayout = async (props) => {
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHMWPKSR6"/>
         <script dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-KBHMWPKSR6');
-            `,}}
-        />
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KBHMWPKSR6');
+          `,
+        }} />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </head>
       <body className='bg-white text-gray-900'>
