@@ -26,7 +26,14 @@ export const meta = {
 const RootLayout = async (props) => {
   const { children, params: { locale } } = props;
 
-  const messages = await getMessages();
+  let messages;
+  try {
+    messages = await getMessages();
+  } catch (error) {
+    console.error("Error fetching messages:", error);
+    messages = {};
+  }
+  
   const schemaMarkup = {
     "@id": "https://ocularinsumosquirurgicos.com/es#productos",
     "@context": "https://schema.org",
@@ -50,7 +57,7 @@ const RootLayout = async (props) => {
       "https://wa.me/+5491152371300?text=%C2%A1Cont%C3%A1ctanos!",
       "https://www.instagram.com/ocularinsumosquirurgicos/"
     ]
-  };
+  }
 
   return (
     <html lang={locale}>
@@ -76,15 +83,13 @@ const RootLayout = async (props) => {
         <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,600&display=swap" rel="stylesheet" />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHMWPKSR6"/>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-KBHMWPKSR6');
-          `,
-        }} />
-        <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KBHMWPKSR6');`}
+        </script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
       </head>
       <body className='bg-white text-gray-900'>
         <NextIntlClientProvider messages={messages}>
