@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const meta = {
   title: "OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica",
-  description: "Insumos quirurgicos para cirugía oftalmológicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular, ubicado en la ciudad de Buenos Aires, Argentina. Asesoramiento gratis sobre insumos para la cirugía ocular",
+  description: "Ocular es una empresa de insumos quirúrgicos para cirugía ocular y productos descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual.",
   manifest: "/manifest.json",
   type: "website",
   author : "Matias Rozas, Gonzalo Torres Grau",
@@ -19,7 +19,7 @@ export const meta = {
   charSet: 'UTF-8',
   icon: '/favicon.ico',
   appleTouchIcon: '/icons/icon-192x192.png', // 180x180
-  keywords: 'insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica'
+  keywords: 'insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos,insumos oftalmologicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica'
 
 };
 
@@ -27,12 +27,44 @@ const RootLayout = async (props) => {
   const { children, params: { locale } } = props;
 
   const messages = await getMessages();
+  const schemaMarkup = {
+    "@id": "https://ocularinsumosquirurgicos.com/es#productos",
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica",
+    "logo": "https://ocularinsumosquirurgicos.com/favicon.ico",
+    "image": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724436814/salon_rgxwa4.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rincón 1203 esquina Av. San Juan",
+      "addressLocality": "Ciudad de Buenos Aires (CABA)",
+      "addressRegion": "Buenos Aires",
+      "postalCode": "C1251ACB",
+      "addressCountry": "Argentina"
+    },
+    "serviceArea": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Argentina"
+      }
+    },
+    "telephone": "+5491152371300",
+    "url": "https://ocularinsumosquirurgicos.com",
+    "description": "Ocular es una empresa de insumos quirúrgicos para cirugía ocular y productos descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual.",
+    "openingHours": "Lunes - Viernes 07:00-15:00",
+    "sameAs": [
+      "https://wa.me/+5491152371300?text=%C2%A1Cont%C3%A1ctanos!",
+      "https://www.instagram.com/ocularinsumosquirurgicos/",
+      "ocularinsumosquirurgicos@gmail.com"
+    ]
+  };
 
   return (
     <html lang={locale}>
       <head>
         <title>OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica</title>
-        <meta name="description" content="Insumos quirurgicos para cirugía oftalmológicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular, ubicado en la ciudad de Buenos Aires, Argentina. Asesoramiento gratis sobre insumos para la cirugía ocular" />
+        <meta name="description" content="Ocular es una empresa de insumos quirúrgicos para cirugía ocular y productos descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#007BC7" />
@@ -41,7 +73,7 @@ const RootLayout = async (props) => {
         <meta name="author" content="Matias Rozas, Gonzalo Torres Grau" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
-        <meta property="og:description" content="Insumos quirurgicos para cirugía oftalmológicas, Ocular es una empresa con mas de 2 decadas de trayectoria en productos descartables para la cirugía ocular, ubicado en la ciudad de Buenos Aires, Argentina. Asesoramiento gratis sobre insumos para la cirugía ocular" />
+        <meta property="og:description" content="Ocular es una empresa de insumos quirúrgicos para cirugía ocular y productos descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual." />
         <meta property="og:title" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
         <meta property="og:image" content="/favicon.ico" sizes="any" type="image/x-icon"/>
         <meta name="keywords" content="insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica, cirugía ocular" />
@@ -60,6 +92,7 @@ const RootLayout = async (props) => {
               gtag('config', 'G-KBHMWPKSR6');
             `,}}
         />
+        <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </head>
       <body className='bg-white text-gray-900'>
         <NextIntlClientProvider messages={messages}>
