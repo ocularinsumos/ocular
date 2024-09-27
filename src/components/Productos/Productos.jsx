@@ -21,7 +21,7 @@ export default function Productos({ producto, texto, categorias }) {
   return (
     <section id="productos">
       <article className="my-10 md:my-10 text-center">
-        <h2 className={`text-3xl md:text-[60px] leading-[80px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair ${robotoCondensed.className}`} aria-label={texto.titulo}>{texto.titulo}</h2>
+        <h2 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.titulo}>{texto.titulo}</h2>
         <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
       </article>
 
@@ -30,7 +30,7 @@ export default function Productos({ producto, texto, categorias }) {
         {producto.map((servicio, i) => (
           <Link href={`/${locale}${servicio.href}`} key={i} className="flex flex-col shadow-md items-center text-center mx-10 md:mx-2 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={servicio.title}>
             <img loading="lazy" width={150} height={150} src={servicio.img} alt={servicio.title} className="w-full object-cover" aria-label={servicio.title} title={servicio.title}/>
-            <h2 className="text-background-primary p-2 w-full text-center mb-10 mx-6 md:m-6 " aria-label={servicio.title}>
+            <h2 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
               {servicio.title.toUpperCase()}
             </h2>
           </Link>
@@ -39,7 +39,7 @@ export default function Productos({ producto, texto, categorias }) {
 
       {/* Sección de categorías */}
       <article className="my-10 md:my-10 text-center">
-        <h2 className={`text-3xl md:text-[60px] leading-[80px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair ${robotoCondensed.className}`} aria-label={texto.tituloCat}>
+        <h2 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.tituloCat}>
           {texto.tituloCat}
         </h2>
         <h3 className="text-primary p-2 " aria-label={texto.subCat}>

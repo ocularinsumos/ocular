@@ -9,14 +9,14 @@
   "descripcion": "More than two decades in the market of ophthalmic surgical supplies for eye surgery."
 },
 "productos": {
-  "titulo": "Products",
-  "subtitulo": "Enter each condition to see the necessary supplies for eye surgery",
+  "titulo": "Surgical Supplies for Eye Surgery",
+  "subtitulo": "Enter each condition to see all the necessary supplies for eye surgery you may need",
   "btnVolver": "Go back",
-  "tituloCat": "Product Categories",
-  "subCat": "Enter each category to see all our surgical supplies for eye surgery."
+  "tituloCat": "Disposable Products for Ophthalmic Surgery by Category",
+  "subCat": "Enter each category to see all the surgical supplies needed for eye surgery"
 },
 "nosotros": {
-  "titulo": "About Us",
+  "titulo": "History of Ocular",
   "descripcion": "Ocular started in the year 2000 with the goal of providing the best advisory and sales service for surgical supplies in the ophthalmic market. Today, we offer technology, versatility, and services to institutions, professionals, and individuals throughout the country, with quality assurance in the different stages of our product use.",
   "mision": "Our commitment is to achieve maximum customer satisfaction, supporting their growth and meeting their needs. In short, Ocular is a company that grows daily with solvency, efficiency, and results.",
   "valores": "We believe in what we do, and for that reason, we commit to helping more people like you every day. To ensure the process is as transparent as possible, we offer a variety of products. Choose our team to design a truly unique solution for you."
@@ -300,7 +300,7 @@
         "id": "pterygium",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034865/pterigion_zicnsn.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/pterigion_cmvtjm.webp",
-        "title": "Pterygium",
+        "title": "Pterygium Surgery",
         "href": "/pterygium",
         "texto": "What is Pterygium?",
         "texto2": "Pterygium is an abnormal growth of tissue on the conjunctiva that can extend onto the cornea.",
@@ -484,7 +484,7 @@
         "id": "glaucoma",
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725028281/glaucoma_fi5ckp.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680496/glaucoma_rucxwe.webp",
-        "title": "glaucoma",
+        "title": "Glaucoma Surgery",
         "href": "/glaucoma",
         "texto": "What is Glaucoma?",
         "texto2": "Glaucoma is an eye disease that causes progressive damage to the optic nerve, usually due to increased intraocular pressure.",
