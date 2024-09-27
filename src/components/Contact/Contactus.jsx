@@ -156,7 +156,7 @@ const Contactusform = ({ className = '' }) => {
                                                 src="images/logos/ocularFooter.webp"
                                                 alt="Sermar Logo"
                                                 width={200}
-                                                height={'auto'}
+                                                height={120}
                                                 title='Logo de Ocular'
                                                 aria-label='Logo de Ocular'
                                             />

@@ -45,7 +45,7 @@ export default function Navbar(contacto) {
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
                     <Link href="/" className="" title="Logo de empresa, volver a home">
-                      <img src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={'auto'} title="Logo de Ocular" />
+                      <img src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={100} title="Logo de Ocular" />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">

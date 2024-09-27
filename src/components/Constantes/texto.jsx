@@ -56,7 +56,7 @@ const texto = {
         answer:
           "El tipo de lente intraocular adecuado depende de las necesidades visuales del paciente. Ofrecemos lentes monofocales, multifocales y tóricos, cada uno con características específicas. Consulta con tu oftalmólogo para determinar cuál es el mejor para vos.",
         linkText: "Ver más sobre nuestros lentes intraoculares",
-        linkUrl: "./docs/Tipos de Lentes Intraoculares y Sus Usos - OCULAR.pdf",
+        linkUrl: "Tipos_Lentes_Intraoculares_y_Sus_Usos-OCULAR.pdf",
       },
       {
         id: 2,
@@ -64,7 +64,7 @@ const texto = {
         answer:
           "Todos nuestros productos pasan por rigurosos controles de calidad y están aprobados por las principales agencias reguladoras. Trabajamos solo con proveedores confiables para asegurar la mejor calidad en cada insumo.",
         linkText: "Más información sobre nuestra garantía de calidad",
-        linkUrl: "./docs/ANMAT - Ocular.pdf",
+        linkUrl: "./docs/ANMAT_OCULAR.pdf",
       },
       {
         id: 3,
@@ -120,7 +120,7 @@ const texto = {
         answer:
           "Puedes retirar los insumos quirúrgicos oftalmológicos de nuestra sucursal o elegir entre dos opciones de envío: podemos enviar el producto directamente al paciente o a la clínica. Para tu comodidad, también ofrecemos facturación electrónica para todas las compras. Al completar tu pedido, recibirás un correo con el detalle de la facturación y la confirmación del envío.",
         linkText: "Ver más sobre envío y facturación",
-        linkUrl: "./docs/Envios - Ocular.pdf",
+        linkUrl: "./docs/Envios_Ocular.pdf",
       },
       {
         id: 10,

@@ -8,21 +8,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Analytics } from "@vercel/analytics/react"
 
-export const meta = {
-  title: "OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica",
-  description: "Ocular es una empresa de insumos quirúrgicos para cirugía ocular y descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual",
-  manifest: "/manifest.json",
-  type: "website",
-  author : "Matias Rozas, Gonzalo Torres Grau",
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#451F49',
-  charSet: 'UTF-8',
-  icon: '/favicon.ico',
-  appleTouchIcon: '/icons/icon-192x192.png', // 180x180
-  keywords: 'insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos,insumos oftalmologicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica'
-
-};
-
 const RootLayout = async (props) => {
   const { children, params: { locale } } = props;
 
@@ -74,7 +59,7 @@ const RootLayout = async (props) => {
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
         <meta property="og:description" content="Ocular es una empresa de insumos quirúrgicos para cirugía ocular y descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual" />
         <meta property="og:title" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
-        <meta property="og:image" content="/favicon.ico" sizes="any" type="image/x-icon"/>
+        <meta property="og:image" content="/favicon.ico"/>
         <meta name="keywords" content="insumos, insumos quirúrgicos, oftalmología, cirugía oftalmológica, cirugía, cirugía de cataratas, retina, cataratas, equipos oftalmológicos, material quirúrgico, instrumentos oftalmológicos, lentes intraoculares, vitrectomía, microcirugía ocular, facoemulsificación, láser oftalmológico, insumos para cirugía refractiva, quirófano oftalmológico, desprendimiento de retina, glaucoma, insumos para cirugía de glaucoma, insumos para cirugía de retina, insumos para cirugía de córnea, anestesia oftalmológica, cirugía ocular" />
         <link rel="canonical" href="https://ocularinsumosquirurgicos.com/" />
         <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon"/>
