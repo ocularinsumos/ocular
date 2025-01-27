@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import Link from "next/link";
-import { robotoCondensed } from "@/Utils/fonts";
 import { useLocale } from "next-intl";
 import Slider from "react-slick";  // Importa el componente Slider de react-slick
 

@@ -24,6 +24,7 @@ export default function ProductosPage() {
         imagen={foundProduct.img}
         texto2={foundProduct.texto2} 
         texto3={foundProduct.texto3} 
+        texto4={foundProduct.texto4} 
         icono={foundProduct.icono}
         prod={foundProduct.productos}
       />

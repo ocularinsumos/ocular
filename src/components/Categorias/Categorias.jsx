@@ -7,7 +7,6 @@ import OtrasCategorias from './OtrasCategorias'
   //console.log('categoria en cat:', titulo, imagen, icono, cat);
 
   const userData = useTranslations('userData');
-  const categorias = useTranslations('categorias');
   const productos = useTranslations('productos');
 
   const enviar = `https://wa.me/+${userData('codigoPais')}${userData('contact')}?text=${encodeURIComponent(userData('textoPredefinido'))}`;

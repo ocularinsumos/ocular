@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import SubCategorias from "./SubCategorias";
 
-export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono, prod }) {
+export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono, prod, texto4 }) {
   //console.log('servicio:', titulo, texto, imagen, texto2, texto3, icono);
   const userData = useTranslations('userData');
   const productos = useTranslations('productos');
@@ -37,7 +37,13 @@ export default function Servicio({ titulo, texto, imagen, texto2, texto3, icono,
             <Link href='/#productos' className="bg-primary hover:bg-primary-hover active:bg-primary-active md:hidden text-text-tertiary mx-2 mt-8 px-4 py-2 rounded-lg text-center inline-block" aria-label={productos('btnVolver')} title={productos('btnVolver')}>
               {productos('btnVolver')}
             </Link>
-          </div>
+      </div>
+      <article className="items-center w-full col-span-1 md:col-span-3 p-2 place-items-center">
+        <div id="desarrolloProductos" className="max-w-6xl flex flex-col justify-center items-center">
+          <h2 className="text-2xl font-semibold text-[#007BC7]">{titulo.toUpperCase()}</h2>
+          {texto4 ? <p className="py-6 text-text-primary">{texto4}</p> : null}
+        </div>
+      </article>
     </section>
   );
 }
