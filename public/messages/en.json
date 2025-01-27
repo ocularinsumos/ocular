@@ -129,7 +129,7 @@
         "texto": "What is cataract?",
         "texto2": "The crystalline lens is a natural lens that is part of the human optical system. Its function is to focus light rays onto the retina.",
         "texto3": "Cataract is the clouding or loss of transparency of the lens, which causes a slow and progressive loss of vision.",
-        "text4": "We are specialists in **intraocular lenses (IOLs)** and **disposable materials for cataract surgery**. We offer a wide range of premium IOLs, designed to meet the needs of each patient, as well as high-quality disposable supplies that ensure safety and efficiency in every procedure. Additionally, we provide **free consultation** to help you choose the best materials and equipment for your surgeries. If you are looking for reliable suppliers of ophthalmic surgical supplies, contact us to learn more about our catalog and request a personalized quote.",
+        "texto4": "We are specialists in **intraocular lenses (IOLs)** and **disposable materials for cataract surgery**. We offer a wide range of premium IOLs, designed to meet the needs of each patient, as well as high-quality disposable supplies that ensure safety and efficiency in every procedure. Additionally, we provide **free consultation** to help you choose the best materials and equipment for your surgeries. If you are looking for reliable suppliers of ophthalmic surgical supplies, contact us to learn more about our catalog and request a personalized quote.",
         "productos": [
             {
                 "nombre": "VISCOELASTIC 2% AUROVISC",
@@ -346,7 +346,7 @@
         "img": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1725034503/retina_n2avcx.webp",
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680497/retina_g16sme.webp",
         "title": "Retina Surgery",
-        "href": "/retina",
+        "href": "/retinaSurgery",
         "texto": "What is the Retina?",
         "texto2": "The retina is a thin layer of tissue that lines the inside of the eye. It consists of light-sensitive cells that capture images and send them to the brain through the optic nerve.",
         "texto3": "Damage to the retina can significantly affect vision, causing problems like detachments or macular degeneration.",
