@@ -53,8 +53,9 @@ const RootLayout = async (props) => {
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#007BC7" />
         <meta name="robots" content="follow, index" />
-        <meta name="publisher" content="Ocular Cirugía oftalmológica"/>
+        <meta name="publisher" content="Gonzalo Torres Grau"/>
         <meta name="author" content="Matias Rozas, Gonzalo Torres Grau" />
+        <link rel="author" href="https://gonzalotorresgrau.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
         <meta property="og:description" content="Ocular es una empresa de insumos quirúrgicos para cirugía ocular y descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual" />
