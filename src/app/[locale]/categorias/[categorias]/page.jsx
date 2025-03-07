@@ -1,9 +1,11 @@
 'use client'
 import Categorias from "@/components/Categorias/Categorias";
+import Productos from "@/components/Productos/Productos";
 import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export default function ProductosPage() {
+  const messages = useMessages();
 
   const pathId = usePathname().split('/')[3]?.toLowerCase();
   //console.log(pathId)
@@ -24,6 +26,8 @@ export default function ProductosPage() {
         icono={foundProduct.icono}
         cat={foundProduct.productos}
       />
+      <Productos producto={messages.producto} texto={messages.productos} categorias={messages.categorias}/> 
+      
     </section>
   );
 }

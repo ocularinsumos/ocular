@@ -1,20 +1,20 @@
-'use client'
+'use client';
 import Servicio from "@/components/Servicio/Servicio";
+import Productos from "@/components/Productos/Productos";
 import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export default function ProductosPage() {
-
+  const messages = useMessages();
   const pathId = usePathname().split('/')[2]?.toLowerCase();
-  //console.log(pathId)
-  //console.log('useMessages:',useMessages().producto)
-  const foundProduct = useMessages().producto.find(
-    (prod) => prod.id.toLowerCase() === `${pathId}` || prod.id.toLowerCase() === pathId
-   )
-   //console.log(foundProduct.img)
-   if (!foundProduct) {
-     return <p>Product not found.</p>; 
-   }
+
+  const foundProduct = messages.producto.find(
+    (prod) => prod.id.toLowerCase() === pathId
+  );
+
+  if (!foundProduct) {
+    return <p>Product not found.</p>; 
+  }
 
   return (
     <section>
@@ -28,6 +28,7 @@ export default function ProductosPage() {
         icono={foundProduct.icono}
         prod={foundProduct.productos}
       />
+      <Productos producto={messages.producto} texto={messages.productos} categorias={messages.categorias}/> 
     </section>
   );
 }
