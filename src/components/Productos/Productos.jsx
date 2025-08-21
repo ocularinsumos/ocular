@@ -29,9 +29,9 @@ export default function Productos({ producto, texto, categorias }) {
         {producto.map((servicio, i) => (
           <Link href={`/${locale}${servicio.href}`} key={i} className="flex flex-col shadow-md items-center text-center mx-10 md:mx-2 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={servicio.title}>
             <img loading="lazy" width={150} height={150} src={servicio.img} alt={servicio.title} className="w-full object-cover" aria-label={servicio.title} title={servicio.title}/>
-            <h2 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
+            <h1 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
               {servicio.title.toUpperCase()}
-            </h2>
+            </h1>
           </Link>
         ))}
       </article>
