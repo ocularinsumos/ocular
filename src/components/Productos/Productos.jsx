@@ -3,10 +3,11 @@ import React from "react";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import Slider from "react-slick";  // Importa el componente Slider de react-slick
+import { usePathname } from "next/navigation";
 
 export default function Productos({ producto, texto, categorias }) {
   const locale = useLocale();
-
+ const path = usePathname().split('/')[3]?.toLowerCase();
   // Configuración para react-slick
   const settings = {
     dots: true,
@@ -20,8 +21,17 @@ export default function Productos({ producto, texto, categorias }) {
   return (
     <section id="productos">
       <article className="my-10 md:my-10 text-center">
-        <h2 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.titulo}>{texto.titulo}</h2>
-        <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
+            {path === '/es' || path === '/en' ? (
+              <>
+                <h1 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.titulo}>{texto.titulo}</h1>
+                <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
+              </>
+            ) : (
+              <>
+                <h2 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.titulo}>{texto.titulo}</h2>
+                <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
+              </>
+            )}
       </article>
 
       {/* Sección de productos */}
@@ -29,9 +39,14 @@ export default function Productos({ producto, texto, categorias }) {
         {producto.map((servicio, i) => (
           <Link href={`/${locale}${servicio.href}`} key={i} className="flex flex-col shadow-md items-center text-center mx-10 md:mx-2 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={servicio.title}>
             <img loading="lazy" width={150} height={150} src={servicio.img} alt={servicio.title} className="w-full object-cover" aria-label={servicio.title} title={servicio.title}/>
-            <h1 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
+            {path === '/es' || path === '/en'
+              ?<h1 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
               {servicio.title.toUpperCase()}
             </h1>
+            :<h2 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
+              {servicio.title.toUpperCase()}
+            </h2>
+          }
           </Link>
         ))}
       </article>

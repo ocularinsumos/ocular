@@ -2,8 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import OtrasCategorias from './OtrasCategorias'
+import { usePathname } from "next/navigation";
 
  const Categorias = ({ titulo, imagen, icono, cat }) => {
+  const path = usePathname().split('/')[3]?.toLowerCase();
   //console.log('categoria en cat:', titulo, imagen, icono, cat);
 
   const userData = useTranslations('userData');
@@ -17,7 +19,10 @@ import OtrasCategorias from './OtrasCategorias'
       <article className="md:flex md:flex-col grid-cols-1 justify-between text-center px-6 md:px-6 py-10 lg:pr-10 min-h-96">
         <div>
           <div className="flex justify-center items-center">
-            <h1 className="text-4xl text-black font-light italic font-playfair tracking-[-2px]">{titulo.toUpperCase()}</h1>
+            {path !== '/es' || path !== '/en'
+              ?<h1 className="text-4xl text-black font-light italic font-playfair tracking-[-2px]">{titulo.toUpperCase()}</h1>
+              :<h2 className="text-4xl text-black font-light italic font-playfair tracking-[-2px]">{titulo.toUpperCase()}</h2>
+            }
             {icono && (<img src={icono} loading="lazy" className="w-fit px-2" width={60} height="auto" alt={`Icono de ${titulo}`} title={`Icono de ${titulo}`} aria-label={`Icono de ${titulo}`} />)}
           </div>
           <div className="mx-auto">
