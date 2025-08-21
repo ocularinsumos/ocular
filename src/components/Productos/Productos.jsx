@@ -2,61 +2,106 @@
 import React from "react";
 import Link from "next/link";
 import { useLocale } from "next-intl";
-import Slider from "react-slick";  // Importa el componente Slider de react-slick
+import Slider from "react-slick";
 import { usePathname } from "next/navigation";
 
 export default function Productos({ producto, texto, categorias }) {
   const locale = useLocale();
- const path = usePathname().split('/')[3]?.toLowerCase();
-  // Configuración para react-slick
+  const pathname = usePathname();
+
+  // Es home si estás en "/" (sin prefijo) o en "/{locale}" (con o sin barra final)
+  const isHome =
+    pathname === "/" ||
+    pathname === `/${locale}` ||
+    pathname === `/${locale}/`;
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1.5,
     slidesToScroll: 1,
-    arrows: false, // Desactiva flechas si quieres un diseño más limpio
+    arrows: false,
   };
 
   return (
     <section id="productos">
       <article className="my-10 md:my-10 text-center">
-            {path === '/es' || path === '/en' ? (
-              <>
-                <h1 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.titulo}>{texto.titulo}</h1>
-                <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
-              </>
-            ) : (
-              <>
-                <h2 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.titulo}>{texto.titulo}</h2>
-                <h3 className="text-primary p-2 " aria-label={texto.subtitulo}>{texto.subtitulo}</h3>
-              </>
-            )}
+        {isHome ? (
+          <>
+            <h1
+              className="text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair"
+              aria-label={texto.titulo}
+            >
+              {texto.titulo}
+            </h1>
+            <h3 className="text-primary p-2" aria-label={texto.subtitulo}>
+              {texto.subtitulo}
+            </h3>
+          </>
+        ) : (
+          <>
+            <h2
+              className="text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair"
+              aria-label={texto.titulo}
+            >
+              {texto.titulo}
+            </h2>
+            <h3 className="text-primary p-2" aria-label={texto.subtitulo}>
+              {texto.subtitulo}
+            </h3>
+          </>
+        )}
       </article>
 
       {/* Sección de productos */}
       <article className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4 my-10 md:px-0 md:mx-10">
-        {producto.map((servicio, i) => (
-          <Link href={`/${locale}${servicio.href}`} key={i} className="flex flex-col shadow-md items-center text-center mx-10 md:mx-2 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={servicio.title}>
-            <img loading="lazy" width={150} height={150} src={servicio.img} alt={servicio.title} className="w-full object-cover" aria-label={servicio.title} title={servicio.title}/>
-            {path === '/es' || path === '/en'
-              ?<h1 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
-              {servicio.title.toUpperCase()}
-            </h1>
-            :<h2 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4 " aria-label={servicio.title}>
-              {servicio.title.toUpperCase()}
-            </h2>
-          }
+        {producto.map((servicio) => (
+          <Link
+            href={`/${locale}${servicio.href}`}
+            key={servicio.href || servicio.title}
+            className="flex flex-col shadow-md items-center text-center mx-10 md:mx-2 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden"
+            title={servicio.title}
+          >
+            <img
+              loading="lazy"
+              width={150}
+              height={150}
+              src={servicio.img}
+              alt={servicio.title}
+              className="w-full object-cover"
+              aria-label={servicio.title}
+              title={servicio.title}
+            />
+            {/* Evitamos múltiples <h1> por página; usamos h2 en home y h3 en internas */}
+            {isHome ? (
+              <h2
+                className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4"
+                aria-label={servicio.title}
+              >
+                {servicio.title.toLocaleUpperCase(locale)}
+              </h2>
+            ) : (
+              <h3
+                className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4"
+                aria-label={servicio.title}
+              >
+                {servicio.title.toLocaleUpperCase(locale)}
+              </h3>
+            )}
           </Link>
         ))}
       </article>
 
       {/* Sección de categorías */}
       <article className="my-10 md:my-10 text-center">
-        <h2 className={`text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair`} aria-label={texto.tituloCat}>
+        <h2
+          className="text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair"
+          aria-label={texto.tituloCat}
+        >
           {texto.tituloCat}
         </h2>
-        <h3 className="text-primary p-2 " aria-label={texto.subCat}>
+        <h3 className="text-primary p-2" aria-label={texto.subCat}>
           {texto.subCat}
         </h3>
       </article>
@@ -65,27 +110,62 @@ export default function Productos({ producto, texto, categorias }) {
         {/* Carrusel react-slick para móviles */}
         <div className="md:hidden">
           <Slider {...settings}>
-            {categorias.map((categoria, i) => (
-              <div key={i} className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 bg-primary overflow-hidden gap-2 border-white border-8 ">
-                <Link href={`/${locale}/categorias${categoria.href}`} title={categoria.title}>
-                  <img loading="lazy" width={150} height={150} src={categoria.img} alt={categoria.title} className="w-full object-cover" aria-label={categoria.title} title={categoria.title} />
-                  <h2 className="text-background-primary p-2 w-full text-center rounded-b-md" aria-label={categoria.title}>
-                    {categoria.title.toUpperCase()}
-                  </h2>
+            {categorias.map((categoria) => (
+              <div
+                key={categoria.href || categoria.title}
+                className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 bg-primary overflow-hidden gap-2 border-white border-8"
+              >
+                <Link
+                  href={`/${locale}/categorias${categoria.href}`}
+                  title={categoria.title}
+                >
+                  <img
+                    loading="lazy"
+                    width={150}
+                    height={150}
+                    src={categoria.img}
+                    alt={categoria.title}
+                    className="w-full object-cover"
+                    aria-label={categoria.title}
+                    title={categoria.title}
+                  />
+                  <h3
+                    className="text-background-primary p-2 w-full text-center rounded-b-md"
+                    aria-label={categoria.title}
+                  >
+                    {categoria.title.toLocaleUpperCase(locale)}
+                  </h3>
                 </Link>
               </div>
             ))}
           </Slider>
         </div>
 
-        {/* Diseño de grid para pantallas más grandes */}
+        {/* Grid para pantallas grandes */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {categorias.map((categoria, i) => (
-            <Link href={`/${locale}/categorias${categoria.href}`} key={i} className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden" title={categoria.title}>
-              <img loading="lazy" width={150} height={150} src={categoria.img} alt={categoria.title} className="w-full object-cover" aria-label={categoria.title} title={categoria.title}/>
-              <h2 className="text-background-primary p-2 w-full text-center" aria-label={categoria.title}>
-                {categoria.title.toUpperCase()}
-              </h2>
+          {categorias.map((categoria) => (
+            <Link
+              href={`/${locale}/categorias${categoria.href}`}
+              key={categoria.href || categoria.title}
+              className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden"
+              title={categoria.title}
+            >
+              <img
+                loading="lazy"
+                width={150}
+                height={150}
+                src={categoria.img}
+                alt={categoria.title}
+                className="w-full object-cover"
+                aria-label={categoria.title}
+                title={categoria.title}
+              />
+              <h3
+                className="text-background-primary p-2 w-full text-center"
+                aria-label={categoria.title}
+              >
+                {categoria.title.toLocaleUpperCase(locale)}
+              </h3>
             </Link>
           ))}
         </div>
