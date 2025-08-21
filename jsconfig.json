@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": { "@/*": ["src/*"] },
+    "types": ["node"]          // << fuerza solo estos tipos
+  },
+  "exclude": ["node_modules", ".next"]
 }

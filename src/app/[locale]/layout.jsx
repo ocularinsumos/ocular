@@ -6,6 +6,7 @@ import BotonWsp from "../../components/BotonWSP/BotonWsp";
 import TopBanner from '../../components/TopBanner/TopBanner';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { locales as supportedLocales, defaultLocale, withLocale } from '../../../i18n';
 import { Analytics } from "@vercel/analytics/react"
 
 const RootLayout = async (props) => {

@@ -1,17 +1,21 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { stripLocale, withLocale } from '../../../i18n';
 
 export default function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const currentLocale = useLocale();
-  const pathname = usePathname().slice(3); // Remover el idioma actual de la URL
+  const pathname = usePathname();
+  const router = useRouter();
 
   const handleLocaleChange = (locale) => {
-    setIsOpen(false); // Cierra el menú después de seleccionar un idioma
-    window.location.href = `/${locale}${pathname}`; // Forzar la recarga completa con el nuevo idioma
+    setIsOpen(false);
+    const target = withLocale(pathname, locale);
+    // Cambiamos de idioma usando navigation para mantener SPA cuando sea posible
+    router.push(target);
   };
 
   return (
