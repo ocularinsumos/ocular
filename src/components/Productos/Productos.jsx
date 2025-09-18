@@ -1,15 +1,16 @@
 'use client'
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import Slider from "react-slick";
 import { usePathname } from "next/navigation";
+import JsonLd from "../../components/Seo/JsonLd";
 
 export default function Productos({ producto, texto, categorias }) {
   const locale = useLocale();
   const pathname = usePathname();
 
-  // Es home si estás en "/" (sin prefijo) o en "/{locale}" (con o sin barra final)
   const isHome =
     pathname === "/" ||
     pathname === `/${locale}` ||
@@ -22,6 +23,34 @@ export default function Productos({ producto, texto, categorias }) {
     slidesToShow: 1.5,
     slidesToScroll: 1,
     arrows: false,
+  };
+
+  const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "");
+
+  // --- JSON-LD ItemList construido SOLO con lo que ya tenés ---
+  const itemListElements = producto.map((p, i) => {
+    const url = `${SITE}/${locale}${p.href || ""}`.replace(/([^:]\/)\/+/g, "$1");
+
+    // Convertimos imagen a absoluta si vino relativa
+    const image = p.img?.startsWith("http") ? p.img : `${SITE}${p.img || ""}`;
+
+    return {
+      "@type": "ListItem",
+      "position": i + 1,
+      "url": url,
+      "item": {
+        "@type": "Product",
+        "name": p.title,
+        ...(p.img ? { "image": [image] } : {})
+        // No agregamos brand/price/etc. porque no existen en tu data
+      }
+    };
+  });
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": itemListElements
   };
 
   return (
@@ -54,7 +83,7 @@ export default function Productos({ producto, texto, categorias }) {
         )}
       </article>
 
-      {/* Sección de productos */}
+      {/* Sección de productos (UI sin cambios) */}
       <article className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4 my-10 md:px-0 md:mx-10">
         {producto.map((servicio) => (
           <Link
@@ -63,17 +92,14 @@ export default function Productos({ producto, texto, categorias }) {
             className="flex flex-col shadow-md items-center text-center mx-10 md:mx-2 mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden"
             title={servicio.title}
           >
-            <img
-              loading="lazy"
-              width={150}
-              height={150}
-              src={servicio.img}
+            <Image
+              width={600}
+              height={400}
+              src={servicio.img.startsWith('http') ? servicio.img : `/${servicio.img.replace(/^\//,'')}`}
               alt={servicio.title}
-              className="w-full object-cover"
-              aria-label={servicio.title}
-              title={servicio.title}
+              className="w-full object-cover h-auto"
+              sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, 90vw"
             />
-            {/* Evitamos múltiples <h1> por página; usamos h2 en home y h3 en internas */}
             {isHome ? (
               <h2
                 className="text-background-primary p-2 w-full text-center font-semibold text-xl items-center mx-6 md:mx-4"
@@ -93,7 +119,7 @@ export default function Productos({ producto, texto, categorias }) {
         ))}
       </article>
 
-      {/* Sección de categorías */}
+      {/* Sección de categorías (tu UI) */}
       <article className="my-10 md:my-10 text-center">
         <h2
           className="text-3xl md:leading-[60px] text-text-primary font-normal italic px-2 mx-auto pt-3 font-playfair"
@@ -107,7 +133,7 @@ export default function Productos({ producto, texto, categorias }) {
       </article>
 
       <article className="my-10 md:px-0 md:mx-10">
-        {/* Carrusel react-slick para móviles */}
+        {/* Carrusel mobile */}
         <div className="md:hidden">
           <Slider {...settings}>
             {categorias.map((categoria) => (
@@ -119,20 +145,15 @@ export default function Productos({ producto, texto, categorias }) {
                   href={`/${locale}/categorias${categoria.href}`}
                   title={categoria.title}
                 >
-                  <img
-                    loading="lazy"
-                    width={150}
-                    height={150}
-                    src={categoria.img}
+                  <Image
+                    width={600}
+                    height={400}
+                    src={categoria.img.startsWith('http') ? categoria.img : `/${categoria.img.replace(/^\//,'')}`}
                     alt={categoria.title}
-                    className="w-full object-cover"
-                    aria-label={categoria.title}
-                    title={categoria.title}
+                    className="w-full object-cover h-auto"
+                    sizes="90vw"
                   />
-                  <h3
-                    className="text-background-primary p-2 w-full text-center rounded-b-md"
-                    aria-label={categoria.title}
-                  >
+                  <h3 className="text-background-primary p-2 w-full text-center rounded-b-md">
                     {categoria.title.toLocaleUpperCase(locale)}
                   </h3>
                 </Link>
@@ -141,7 +162,7 @@ export default function Productos({ producto, texto, categorias }) {
           </Slider>
         </div>
 
-        {/* Grid para pantallas grandes */}
+        {/* Grid desktop */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {categorias.map((categoria) => (
             <Link
@@ -150,26 +171,24 @@ export default function Productos({ producto, texto, categorias }) {
               className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden"
               title={categoria.title}
             >
-              <img
-                loading="lazy"
-                width={150}
-                height={150}
-                src={categoria.img}
+              <Image
+                width={600}
+                height={400}
+                src={categoria.img.startsWith('http') ? categoria.img : `/${categoria.img.replace(/^\//,'')}`}
                 alt={categoria.title}
-                className="w-full object-cover"
-                aria-label={categoria.title}
-                title={categoria.title}
+                className="w-full object-cover h-auto"
+                sizes="(min-width: 1280px) 20vw, (min-width: 768px) 33vw, 90vw"
               />
-              <h3
-                className="text-background-primary p-2 w-full text-center"
-                aria-label={categoria.title}
-              >
+              <h3 className="text-background-primary p-2 w-full text-center">
                 {categoria.title.toLocaleUpperCase(locale)}
               </h3>
             </Link>
           ))}
         </div>
       </article>
+
+      {/* JSON-LD SEO */}
+      <JsonLd data={itemListJsonLd} />
     </section>
   );
 }

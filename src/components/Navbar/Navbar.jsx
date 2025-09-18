@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
@@ -36,16 +37,16 @@ export default function Navbar(contacto) {
   };
   
   return (
-    <div className="py-8 md:py-11 bg-gray-400">
+    <div className="py-8 md:py-11 bg-gray-400 max-w-7xl">
       <Disclosure as="nav" className={classNames(`fixed top-9 left-0 right-0 sm:py-0 md:py-3 border-neutral-200 z-20 transition-colors duration-300 bg-background-primary text-text-tertiary  backdrop-blur-none shadow-lg ${isScrolled?'shadow-blue-200':''} `)}>
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-7xl px-4 py-1 md:py-0 sm:px-6 lg:px-8">
+            <div className="mx-auto  px-4 py-1 md:py-0 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-start md:justify-around">
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
                     <Link href="/" className="" title="Logo de empresa, volver a home">
-                      <img src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={100} title="Logo de Ocular" />
+                      <Image src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={100} priority />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">

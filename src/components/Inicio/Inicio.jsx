@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 
 const Carousel = (inicio) => {
@@ -51,7 +52,16 @@ const Carousel = (inicio) => {
         <div className="relative min-h-screen overflow-hidden rounded-lg md:h-96">
           {currentSlides.map((slide, index) => (
             <div key={index} className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0"}`}>
-              <img src={slide} className="block w-full h-full object-cover opacity-30" alt={`Slide ${index + 1}`} title={`Imagen del Local ${index + 1}`} aria-label={`Imagen del Local ${index + 1}`}/>
+              <Image
+                src={slide}
+                alt={`Imagen del Local ${index + 1}`}
+                title={`Imagen del Local ${index + 1}`}
+                aria-label={`Imagen del Local ${index + 1}`}
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="object-cover opacity-30"
+              />
             </div>
           ))}
 

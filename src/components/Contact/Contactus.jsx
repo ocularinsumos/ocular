@@ -11,11 +11,13 @@ const Contactusform = ({ className = '' }) => {
     let [isOpen, setIsOpen] = useState(false);
 
     const [inputValues, setInputValues] = useState({
-        input1: '',
-        input2: '',
-        input3: '',
-        input5: '',
+        input1: '', // Nombre (obligatorio)
+        input2: '', // Email (opcional)
+        input3: '', // Mensaje (obligatorio)
+        input5: '', // Teléfono (obligatorio)
     });
+
+    const [recetaFile, setRecetaFile] = useState(null);
 
     const [selectedOption, setSelectedOption] = useState('Consulta');
 
@@ -55,34 +57,52 @@ const Contactusform = ({ className = '' }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!inputValues.input2.match(emailPattern)) {
+        // Si hay email, validar formato. Si está vacío, permitir continuar.
+        if (inputValues.input2 && !emailPattern.test(inputValues.input2)) {
             alertError();
-        } else {
-            try {
-                alertLoading();
-                const response = await axios.post('/api/contact', {
-                    ...inputValues,
-                    input4: selectedOption,
-                });
-                Swal.close();
-                if (response.status === 200) {
-                    alert();
-                    setInputValues({
-                        input1: '',
-                        input2: '',
-                        input3: '',
-                        input5: ''
-                    });
-                    setSelectedOption('');
-                    setIsOpen(false);
-                }
-            } catch (error) {
-                console.error('Error:', error);
+            return;
+        }
+
+        try {
+            alertLoading();
+            const formData = new FormData();
+            formData.append('input1', inputValues.input1);
+            formData.append('input2', inputValues.input2);
+            formData.append('input3', inputValues.input3);
+            formData.append('input5', inputValues.input5);
+            formData.append('input4', selectedOption);
+            if (recetaFile) {
+                formData.append('receta', recetaFile);
             }
+
+            const response = await axios.post('/api/contact', formData, {
+                headers: { 'Content-Type': 'multipart/form-data' },
+            });
+
+            Swal.close();
+            if (response.status === 200) {
+                alert();
+                setInputValues({ input1: '', input2: '', input3: '', input5: '' });
+                setSelectedOption('');
+                setRecetaFile(null);
+                // Limpia el input de archivo si existe
+                const fileInput = document.getElementById('receta');
+                if (fileInput) fileInput.value = '';
+                setIsOpen(false);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            Swal.close();
+            Swal.fire({
+                text: 'Hubo un problema al enviar el mensaje. Intentalo nuevamente.',
+                icon: 'error',
+                confirmButtonText: 'Ok',
+            });
         }
     };
 
-    const isDisabled = Object.values(inputValues).some((value) => value === '');
+    // Deshabilitar solo si faltan los campos obligatorios: Nombre (input1), Teléfono (input5) y Mensaje (input3)
+    const isDisabled = !inputValues.input1 || !inputValues.input5 || !inputValues.input3;
 
     const closeModal = () => {
         setIsOpen(false);
@@ -162,9 +182,11 @@ const Contactusform = ({ className = '' }) => {
                                             />
                                             <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>{t('title')}</p>
                                         </div>
-                                        <form className="space-y-8" onSubmit={handleSubmit}>
+                                        <form className="space-y-3" onSubmit={handleSubmit}>
                                             <div>
-                                                <label id='nombreForm' htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">{t('nombre')}</label>
+                                                <label id='nombreForm' htmlFor="text" className="block mb-2 text-sm font-medium text-text-primary">
+                                                    {t('nombre')} <span className="text-red-500" aria-hidden="true">*</span>
+                                                </label>
                                                 <input
                                                     id="text"
                                                     name="input1"
@@ -178,21 +200,23 @@ const Contactusform = ({ className = '' }) => {
                                                 />
                                             </div>
                                             <div>
-                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">{t('email')}</label>
+                                                <label id='emailForm' htmlFor="email" className="block mb-2 text-sm font-medium text-text-primary">{t('email')} <span className="sr-only">(opcional)</span></label>
                                                 <input
                                                     id="email"
                                                     name="input2"
                                                     value={inputValues.input2}
                                                     onChange={handleChange}
                                                     type="email"
-                                                    required
+                                                    // Email opcional, validado si se completa
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     placeholder={`${t('email')}@email.com`}
                                                     aria-label="Ingresar correo electrónico"
                                                 />
                                             </div>
                                             <div>
-                                                <label id='telForm' htmlFor="telefono" className="block mb-2 text-sm font-medium text-text-primary">{t('telefono')}</label>
+                                                <label id='telForm' htmlFor="telefono" className="block mb-2 text-sm font-medium text-text-primary">
+                                                    {t('telefono')} <span className="text-red-500" aria-hidden="true">*</span>
+                                                </label>
                                                 <input
                                                     id="telefono"
                                                     name="input5"
@@ -202,7 +226,21 @@ const Contactusform = ({ className = '' }) => {
                                                     required
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     placeholder={`${t('telefono')}`}
-                                                    aria-label="Ingresar correo electrónico"
+                                                    aria-label="Ingresar teléfono"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label htmlFor="receta" className="block mb-2 text-sm font-medium text-text-primary">
+                                                    Receta (imagen)
+                                                </label>
+                                                <input
+                                                    id="receta"
+                                                    name="receta"
+                                                    type="file"
+                                                    accept="image/*"
+                                                    onChange={(e) => setRecetaFile(e.target.files && e.target.files[0] ? e.target.files[0] : null)}
+                                                    className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                    aria-label="Adjuntar imagen de receta"
                                                 />
                                             </div>
                                             <div>
@@ -230,7 +268,7 @@ const Contactusform = ({ className = '' }) => {
                                                     htmlFor="message"
                                                     className="block mb-2 text-sm font-medium text-text-primary"
                                                 >
-                                                    {t('msj')}
+                                                    {t('msj')} <span className="text-red-500" aria-hidden="true">*</span>
                                                 </label>
                                                 <textarea
                                                     id="message"
@@ -240,6 +278,7 @@ const Contactusform = ({ className = '' }) => {
                                                     className="relative block w-full appearance-none rounded-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                     placeholder="Dejar un comentario..."
                                                     aria-label="Escribir mensaje"
+                                                    required
                                                 ></textarea>
                                             </div>
                                             <button

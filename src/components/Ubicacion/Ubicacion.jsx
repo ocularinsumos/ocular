@@ -13,7 +13,7 @@ const Ubicacion = () => {
         <article className="flex flex-col items-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.20317250079708!2d-58.39513046627046!3d-34.62310290000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f75.1!3m3!1m2!1s0x95bccb1f8415c595%3A0xc60ce607280e2fa3!2sOcular%20Insumos%20Quir%C3%BArgicos!5e0!3m2!1sen!2sar!4v1723828574394!5m2!1sen!2sar"
-            className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] border-0 max-w-[780px] mx-auto pt-10"
+            className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] border-0 max-w-7xl mx-auto pt-10"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -22,7 +22,7 @@ const Ubicacion = () => {
           />
         </article>
         <article className="bg-white w-full">
-          <div className="bg-white w-full max-w-[780px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-10 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
+          <div className="bg-white w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-10 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
             <div className="">
               <h2 className="font-lato text-primary text-center">{i('btn')}</h2>
 

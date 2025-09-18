@@ -5,7 +5,7 @@ import withPWA from 'next-pwa';
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'ocualrinsumosquirurgicos.com', 'ocular-red.vercel.app'],
+    domains: ['localhost', 'ocularinsumosquirurgicos.com', 'ocular-red.vercel.app'],
     unoptimized: true,
   },
   async rewrites() {

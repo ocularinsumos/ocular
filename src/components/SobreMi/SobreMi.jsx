@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {useTranslations} from 'next-intl';
 
 
@@ -8,7 +9,7 @@ export default function SobreMi() {
 
   return (
     <section id="nosotros" className="relative z-10"> 
-      <article className="p-4 max-w-[780px] mx-auto mb-8 pb-8 md:pb-24 xl:pb-36">
+      <article className="p-4 max-w-7xl mx-auto mb-8 pb-8 md:pb-24 xl:pb-36">
 
         <h2 className="text-text-primary text-3xl m-4 items-center text-center font-roboto">{t('titulo')}</h2>
         <p className="text-text-secondary text-lg">{t('descripcion')}</p>
@@ -19,7 +20,15 @@ export default function SobreMi() {
             <br />
             <p className="text-text-secondary text-lg indent-6">{t('valores')}</p>
           </div>
-          <img loading="lazy" width={100} style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }} className="hidden md:block md:w-full p-6 place-self-center z-10" src="images/sobreMi/ojo.webp" alt="ojo del logo" aria-label="ojo del logo" title="ojo del logo"/>
+          <Image
+            src="/images/sobreMi/ojo.webp"
+            alt="ojo del logo"
+            width={600}
+            height={400}
+            className="hidden md:block p-6 place-self-center z-10 h-auto w-full md:w-1/2"
+            style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }}
+            sizes="(min-width: 768px) 600px, 100vw"
+          />
         </div>
       </article>
       

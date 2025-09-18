@@ -23,7 +23,7 @@ const PreguntasFrecuentes = () => {
 
   return (
       <section className="bg-background-secondary py-8 px-4  sm:py-16 lg:px-6 overflow-y-auto max-auto " id="preguntas" style={{textAlign:"-webkit-center"}}>
-        <div className="max-w-screen-md" >
+        <div className="max-w-7xl" >
           <div id="accordion-open" data-accordion="open">
             <h2 className={`text-text-primary text-3xl  m-4 items-center text-center ${robotoCondensed.className}`}>{t.preguntas.titulo}</h2>
             {t.faqData.map((faq) => (
