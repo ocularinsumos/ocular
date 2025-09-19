@@ -25,9 +25,10 @@ export default function Productos({ producto, texto, categorias }) {
     arrows: false,
   };
 
-  const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "");
+const SITE =
+  (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "") ||
+  (typeof window !== "undefined" ? window.location.origin : "");
 
-  // --- JSON-LD ItemList construido SOLO con lo que ya tenés ---
 const itemListElements = producto.map((p, i) => {
   const url = `${SITE}/${locale}${p.href || ""}`.replace(/([^:]\/)\/+/g, "$1");
   const image = p.img?.startsWith("http") ? p.img : `${SITE}${p.img || ""}`;
@@ -35,10 +36,8 @@ const itemListElements = producto.map((p, i) => {
   return {
     "@type": "ListItem",
     "position": i + 1,
-    "url": url,
     "item": {
-      "@context": "https://schema.org",
-      "@type": "Service",                // ← acá el cambio clave
+      "@type": "Service",
       "name": p.title,
       ...(p.img ? { "image": [image] } : {}),
       "url": url,
@@ -47,11 +46,12 @@ const itemListElements = producto.map((p, i) => {
   };
 });
 
-  const itemListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": itemListElements
-  };
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": itemListElements
+};
+
 
   return (
     <section id="productos">
