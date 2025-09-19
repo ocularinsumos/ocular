@@ -28,24 +28,24 @@ export default function Productos({ producto, texto, categorias }) {
   const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "");
 
   // --- JSON-LD ItemList construido SOLO con lo que ya tenés ---
-  const itemListElements = producto.map((p, i) => {
-    const url = `${SITE}/${locale}${p.href || ""}`.replace(/([^:]\/)\/+/g, "$1");
+const itemListElements = producto.map((p, i) => {
+  const url = `${SITE}/${locale}${p.href || ""}`.replace(/([^:]\/)\/+/g, "$1");
+  const image = p.img?.startsWith("http") ? p.img : `${SITE}${p.img || ""}`;
 
-    // Convertimos imagen a absoluta si vino relativa
-    const image = p.img?.startsWith("http") ? p.img : `${SITE}${p.img || ""}`;
-
-    return {
-      "@type": "ListItem",
-      "position": i + 1,
+  return {
+    "@type": "ListItem",
+    "position": i + 1,
+    "url": url,
+    "item": {
+      "@context": "https://schema.org",
+      "@type": "Service",                // ← acá el cambio clave
+      "name": p.title,
+      ...(p.img ? { "image": [image] } : {}),
       "url": url,
-      "item": {
-        "@type": "Product",
-        "name": p.title,
-        ...(p.img ? { "image": [image] } : {})
-        // No agregamos brand/price/etc. porque no existen en tu data
-      }
-    };
-  });
+      "provider": { "@id": "https://ocularinsumosquirurgicos.com/#org" }
+    }
+  };
+});
 
   const itemListJsonLd = {
     "@context": "https://schema.org",

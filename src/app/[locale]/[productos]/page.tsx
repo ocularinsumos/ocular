@@ -23,16 +23,16 @@ export default function ProductosPage() {
     : `${SITE}${foundProduct.img || ""}`;
 
   // JSON-LD mínimo de Product con TUS datos existentes
-  const productJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": foundProduct.title,
-    ...(foundProduct.img ? { "image": [imageAbs] } : {}),
-    "url": pageUrl,
-    // Si querés enlazar con tu organización sin agregar ofertas/precios:
-    // podés dejar solo el Product. "seller" se suele declarar dentro de "offers".
-    // Lo omitimos para no inventar datos.
-  };
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",                           // ← cambio
+  "serviceType": foundProduct.title,            // nombre del servicio
+  "name": foundProduct.title,
+  ...(foundProduct.img ? { "image": [imageAbs] } : {}),
+  "url": pageUrl,
+  "areaServed": "AR",
+  "provider": { "@id": "https://ocularinsumosquirurgicos.com/#org" }
+};
 
   return (
     <section>
@@ -53,7 +53,7 @@ export default function ProductosPage() {
       />
 
       {/* JSON-LD Product (solo con tus campos existentes) */}
-      <JsonLd data={productJsonLd} />
+      <JsonLd data={serviceJsonLd} />
     </section>
   );
 }
