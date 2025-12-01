@@ -23,8 +23,8 @@ export async function generateMetadata({ params: { locale } }) {
     : 'Leading ophthalmic surgical supplies company in Argentina. Specialists in cataract, retina, glaucoma and cornea surgery. +20 years experience. Free professional advice. ANMAT certified quality.';
 
   const keywords = isSpanish
-    ? 'insumos quirúrgicos oftalmológicos, cirugía de cataratas, lentes intraoculares, cirugía de retina, glaucoma, córnea, pterigion, insumos descartables, equipos oftalmológicos, Buenos Aires, Argentina, ANMAT'
-    : 'ophthalmic surgical supplies, cataract surgery, intraocular lenses, retina surgery, glaucoma, cornea, pterygium, disposable supplies, ophthalmic equipment, Buenos Aires, Argentina';
+    ? 'lentes intraoculares, lente intraocular, LIO, IOL, lentes para cataratas, lentes monofocales, lentes multifocales, lentes tóricos, insumos quirúrgicos oftalmológicos, cirugía de cataratas, cirugía de retina, glaucoma, córnea, pterigion, insumos descartables, equipos oftalmológicos, Buenos Aires, Argentina, ANMAT'
+    : 'intraocular lenses, intraocular lens, IOL, cataract lenses, monofocal lenses, multifocal lenses, toric lenses, ophthalmic surgical supplies, cataract surgery, retina surgery, glaucoma, cornea, pterygium, disposable supplies, ophthalmic equipment, Buenos Aires, Argentina';
 
   return {
     title,

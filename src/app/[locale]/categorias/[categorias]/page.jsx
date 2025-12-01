@@ -4,6 +4,7 @@ import Productos from "@/components/Productos/Productos";
 import JsonLd from "@/components/Seo/JsonLd";
 import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function ProductosPage() {
   const messages = useMessages();
@@ -83,6 +84,9 @@ export default function ProductosPage() {
     ]
   };
 
+  // Check if this is the cataratas category to add link to lenses page
+  const isCatarataSCategory = pathId === 'cataratas';
+
   return (
     <section>
       <Categorias 
@@ -91,6 +95,28 @@ export default function ProductosPage() {
         icono={foundProduct.icono}
         cat={foundProduct.productos}
       />
+      
+      {isCatarataSCategory && (
+        <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-12 px-6 md:px-12 mb-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {isSpanish ? '¿Necesitas lentes intraoculares para cirugía de cataratas?' : 'Do you need intraocular lenses for cataract surgery?'}
+            </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              {isSpanish 
+                ? 'Descubre nuestra selección completa de lentes intraoculares: monofocales, multifocales, tóricos y asféricos. Marcas premium con certificación ANMAT.'
+                : 'Discover our complete selection of intraocular lenses: monofocal, multifocal, toric and aspheric. Premium brands with ANMAT certification.'}
+            </p>
+            <Link 
+              href={`/${locale}/lentes-intraoculares`}
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              {isSpanish ? 'Ver catálogo de lentes intraoculares →' : 'View intraocular lenses catalog →'}
+            </Link>
+          </div>
+        </div>
+      )}
+      
       <Productos producto={messages.producto} texto={messages.productos} categorias={messages.categorias}/>
       
       {/* JSON-LD Schemas */}

@@ -78,6 +78,27 @@
         "answer": "Para solicitar asesoramiento sobre insumos específicos para tu cirugía, contacta a nuestro equipo de expertos a través del formulario en nuestra web, por correo electrónico o WhatsApp. Adjunta tu receta y proporciona detalles sobre el tipo de cirugía y tus requisitos, y te ofreceremos recomendaciones personalizadas.",
         "linkText": "Contáctanos para asesoramiento sobre cirugía de la vista",
         "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20queria%20consultar%20sobre%20&type=phone_number&app_absent=0"
+    },
+    {
+        "id": 11,
+        "question": "¿Cuánto cuesta un lente intraocular?",
+        "answer": "El precio de los lentes intraoculares varía según el tipo (monofocal, multifocal, tórico), la marca y las características específicas. Contáctanos para recibir una cotización personalizada según tus necesidades. Ofrecemos lentes de marcas premium como Aurolab y Ophtec con la mejor relación calidad-precio del mercado.",
+        "linkText": "Solicitar cotización de lentes intraoculares",
+        "linkUrl": "https://api.whatsapp.com/send/?phone=%2B5491152371300&text=%C2%A1Hola%21%20quiero%20cotizar%20lentes%20intraoculares&type=phone_number&app_absent=0"
+    },
+    {
+        "id": 12,
+        "question": "¿Qué marcas de lentes intraoculares ofrecen?",
+        "answer": "Ofrecemos lentes intraoculares de marcas líderes mundiales: Aurolab (incluyendo Auroflex Asférico y Auroflex EV Gold) y Ophtec (Artiflex y Artisan). Todas nuestras lentes cuentan con certificación ANMAT y garantía de calidad internacional. Tenemos opciones para todos los presupuestos sin comprometer la calidad.",
+        "linkText": "Ver catálogo de lentes intraoculares",
+        "linkUrl": "/lentes-intraoculares"
+    },
+    {
+        "id": 13,
+        "question": "¿Cuál es la diferencia entre lentes monofocales y multifocales?",
+        "answer": "Los lentes intraoculares monofocales proporcionan visión clara a una sola distancia (generalmente de lejos), requiriendo anteojos para leer. Los lentes multifocales permiten ver a múltiples distancias (cerca, intermedia y lejos), reduciendo significativamente la dependencia de anteojos. La elección depende del estilo de vida y necesidades de cada paciente.",
+        "linkText": "Conoce más sobre tipos de lentes intraoculares",
+        "linkUrl": "/lentes-intraoculares"
     }
   ],
   "userData": {
@@ -126,10 +147,10 @@
         "icono": "https://res.cloudinary.com/dz2c7o9z6/image/upload/v1724680498/cataratas_rwml2j.webp",
         "title": "Cirugía de cataratas",
         "href": "/cataratas",
-        "texto": "¿Que es la de catarata?",
-        "texto2": "El cristalino es una lente natural que forma el sistema óptico del ser humano. Su funcion es enfocar los rayos de luz sobre la retina.",
-        "texto3": "La catarata es la opacificación o pérdida de transparencia del cristalino que produce una perdida lenta y progresiva de la vision.",
-        "texto4": "Somos especialistas en **lentes intraoculares (LIOs)** y **materiales descartables para cirugía de cataratas**. Ofrecemos una amplia gama de LIOs premium, diseñados para adaptarse a las necesidades de cada paciente, así como insumos descartables de alta calidad que garantizan la seguridad y eficiencia en cada procedimiento. Además, brindamos **asesoramiento gratuito** para ayudarte a elegir los mejores materiales y equipos para tus cirugías. Si buscas proveedores confiables de insumos oftalmológicos, contáctanos para conocer nuestro catálogo y solicitar una cotización personalizada.",
+        "texto": "¿Que es la catarata y qué lentes intraoculares necesitas?",
+        "texto2": "El cristalino es una lente natural que forma el sistema óptico del ser humano. Su función es enfocar los rayos de luz sobre la retina. Durante la cirugía de cataratas, este cristalino opacificado se reemplaza con un lente intraocular (LIO).",
+        "texto3": "La catarata es la opacificación o pérdida de transparencia del cristalino que produce una pérdida lenta y progresiva de la visión. El tratamiento consiste en reemplazar el cristalino afectado por un lente intraocular de calidad que restaura la visión del paciente.",
+        "texto4": "Somos **especialistas en lentes intraoculares (LIOs)** para cirugía de cataratas en Argentina. Ofrecemos una amplia gama de **lentes intraoculares premium**: lentes monofocales, multifocales, tóricos y asféricos de marcas reconocidas como **Aurolab** (Auroflex, Auroflex EV Gold) y **Ophtec** (Artiflex, Artisan). Cada lente intraocular está diseñado para necesidades visuales específicas, garantizando los mejores resultados postoperatorios. Además de lentes intraoculares, proveemos **materiales descartables de alta calidad** con certificación ANMAT. Ofrecemos **asesoramiento gratuito especializado** para ayudarte a elegir el lente intraocular más adecuado para cada paciente. Si buscas proveedores confiables de lentes intraoculares y equipos oftalmológicos, contáctanos para conocer nuestro catálogo completo y solicitar una cotización personalizada.",
         "productos":[
           {
             "nombre":"VISCOELASTICO 2% AUROVISC",

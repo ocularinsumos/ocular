@@ -15,12 +15,12 @@ export async function generateMetadata({ params: { locale } }) {
     : 'OCULAR SURGICAL SUPPLIES | Ophthalmic Surgery - Cataract, Retina, Glaucoma';
   
   const description = isSpanish
-    ? 'Empresa líder en insumos quirúrgicos oftalmológicos en Argentina. Más de 20 años de experiencia en cirugía de cataratas, retina, glaucoma y córnea. Lentes intraoculares, productos descartables certificados ANMAT. Asesoramiento profesional gratuito en Buenos Aires.'
-    : 'Leading ophthalmic surgical supplies company in Argentina. Over 20 years of experience in cataract, retina, glaucoma and cornea surgery. Intraocular lenses, ANMAT certified disposable products. Free professional advice in Buenos Aires.';
+    ? 'Especialistas en lentes intraoculares (LIO) y cirugía de cataratas en Argentina. Ofrecemos lentes monofocales, multifocales y tóricos de marcas premium: Aurolab, Ophtec. Más de 20 años de experiencia. Insumos quirúrgicos oftalmológicos certificados ANMAT. Asesoramiento profesional gratuito en Buenos Aires.'
+    : 'Specialists in intraocular lenses (IOL) and cataract surgery in Argentina. We offer monofocal, multifocal and toric lenses from premium brands: Aurolab, Ophtec. Over 20 years of experience. ANMAT certified ophthalmic surgical supplies. Free professional advice in Buenos Aires.';
 
   const keywords = isSpanish
-    ? 'insumos quirúrgicos oftalmológicos, cirugía de cataratas Buenos Aires, lentes intraoculares Argentina, cirugía de retina, cirugía de glaucoma, córnea, pterigion, productos descartables oftalmológicos, equipos oftalmológicos, ANMAT, insumos oculares, cirugía ocular Argentina'
-    : 'ophthalmic surgical supplies, cataract surgery Buenos Aires, intraocular lenses Argentina, retina surgery, glaucoma surgery, cornea, pterygium, ophthalmic disposable products, ophthalmic equipment, eye surgery Argentina';
+    ? 'insumos quirúrgicos oftalmológicos, cirugía de cataratas Buenos Aires, lentes intraoculares, lente intraocular, LIO, IOL, lentes para cataratas Argentina, lentes monofocales, lentes multifocales, lentes tóricos, cirugía de retina, cirugía de glaucoma, córnea, pterigion, productos descartables oftalmológicos, equipos oftalmológicos, ANMAT, insumos oculares, cirugía ocular Argentina'
+    : 'ophthalmic surgical supplies, cataract surgery Buenos Aires, intraocular lenses, intraocular lens, IOL, cataract lenses Argentina, monofocal lenses, multifocal lenses, toric lenses, retina surgery, glaucoma surgery, cornea, pterygium, ophthalmic disposable products, ophthalmic equipment, eye surgery Argentina';
 
   return {
     title,
