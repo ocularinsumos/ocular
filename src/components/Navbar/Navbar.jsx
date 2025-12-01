@@ -45,8 +45,8 @@ export default function Navbar(contacto) {
               <div className="relative flex h-16 items-center justify-start md:justify-around">
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
-                    <Link href="/" className="" title="Logo de empresa, volver a home">
-                      <Image src="/images/logos/ocularNav.webp" alt="Ocular" className="py-4" aria-label="Logo Ocular" width={160} height={100} priority />
+                    <Link href="/" className="" title="Logo de empresa, volver a home" aria-label="Ir al inicio">
+                      <Image src="/images/logos/ocularNav.webp" alt="Logo Ocular Insumos Quirúrgicos" className="py-4" aria-label="Logo Ocular" width={160} height={100} priority title="Logo Ocular Insumos Quirúrgicos" />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">

@@ -25,8 +25,8 @@ const VolverArriba = () => {
 
   return (
     <article>
-      <button className="fixed bottom-28 right-9 rounded-md w-10 z-index-50 active:animate-ping hover:scale-110" style={{ visibility: isVisible ? 'visible' : 'hidden', }} onClick={scrollToTop}>
-        <Image src="/images/up-arrow.webp" alt="Volver arriba" width={40} height={40} />
+      <button className="fixed bottom-28 right-9 rounded-md w-10 z-index-50 active:animate-ping hover:scale-110" style={{ visibility: isVisible ? 'visible' : 'hidden', }} onClick={scrollToTop} aria-label="Volver arriba" title="Volver arriba">
+        <Image src="/images/up-arrow.webp" alt="Volver arriba" width={40} height={40} title="Flecha para volver arriba" aria-label="Flecha para volver arriba" />
       </button>
     </article>
   );

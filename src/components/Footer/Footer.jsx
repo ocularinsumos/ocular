@@ -36,7 +36,7 @@ export default function Footer() {
         ))}
       </ul>
 
-          <Link href='https://programundo.dev' title="Web de programundo">
+          <Link href='https://gonzalotorresgrau.com' title="Web de programundo">
             <small className="text-sm text-gray-300 sm:text-center">© 2024 - MATIGON. All Rights Reserved.</small>
           </Link>
         </div>

@@ -54,9 +54,9 @@ const Carousel = (inicio) => {
             <div key={index} className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === activeIndex ? "opacity-100" : "opacity-0"}`}>
               <Image
                 src={slide}
-                alt={`Imagen del Local ${index + 1}`}
-                title={`Imagen del Local ${index + 1}`}
-                aria-label={`Imagen del Local ${index + 1}`}
+                alt={`Imagen del Local de Ocular ${index + 1}`}
+                title={`Imagen del Local de Ocular ${index + 1}`}
+                aria-label={`Imagen del Local de Ocular ${index + 1}`}
                 fill
                 priority={index === 0}
                 sizes="100vw"

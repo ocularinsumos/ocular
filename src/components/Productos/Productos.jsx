@@ -99,6 +99,8 @@ const itemListJsonLd = {
               alt={servicio.title}
               className="w-full object-cover h-auto"
               sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, 90vw"
+              title={`Imagen de ${servicio.title}`}
+              aria-label={`Imagen de ${servicio.title}`}
             />
             {isHome ? (
               <h2
@@ -152,6 +154,8 @@ const itemListJsonLd = {
                     alt={categoria.title}
                     className="w-full object-cover h-auto"
                     sizes="90vw"
+                    title={`Categoría ${categoria.title}`}
+                    aria-label={`Categoría ${categoria.title}`}
                   />
                   <h3 className="text-background-primary p-2 w-full text-center rounded-b-md">
                     {categoria.title.toLocaleUpperCase(locale)}
@@ -178,6 +182,8 @@ const itemListJsonLd = {
                 alt={categoria.title}
                 className="w-full object-cover h-auto"
                 sizes="(min-width: 1280px) 20vw, (min-width: 768px) 33vw, 90vw"
+                title={`Categoría ${categoria.title}`}
+                aria-label={`Categoría ${categoria.title}`}
               />
               <h3 className="text-background-primary p-2 w-full text-center">
                 {categoria.title.toLocaleUpperCase(locale)}

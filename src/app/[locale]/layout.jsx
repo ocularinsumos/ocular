@@ -7,8 +7,76 @@ import TopBanner from '../../components/TopBanner/TopBanner';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Analytics } from "@vercel/analytics/react";
-import JsonLdDefault from "../../components/Seo/JsonLdDefault"; // 👈 importar TU default
+import JsonLdDefault from "../../components/Seo/JsonLdDefault";
 import { robotoCondensed } from "../../Utils/fonts";
+
+export async function generateMetadata({ params: { locale } }) {
+  const SITE_URL = 'https://ocularinsumosquirurgicos.com';
+  const isSpanish = locale === 'es';
+  
+  const title = isSpanish 
+    ? 'OCULAR INSUMOS QUIRURGICOS - Cirugía Oftalmológica | Buenos Aires, Argentina'
+    : 'OCULAR SURGICAL SUPPLIES - Ophthalmic Surgery | Buenos Aires, Argentina';
+  
+  const description = isSpanish
+    ? 'Empresa líder en insumos quirúrgicos oftalmológicos en Argentina. Especialistas en cirugía de cataratas, retina, glaucoma y córnea. +20 años de experiencia. Asesoramiento profesional gratuito. Calidad certificada ANMAT.'
+    : 'Leading ophthalmic surgical supplies company in Argentina. Specialists in cataract, retina, glaucoma and cornea surgery. +20 years experience. Free professional advice. ANMAT certified quality.';
+
+  const keywords = isSpanish
+    ? 'insumos quirúrgicos oftalmológicos, cirugía de cataratas, lentes intraoculares, cirugía de retina, glaucoma, córnea, pterigion, insumos descartables, equipos oftalmológicos, Buenos Aires, Argentina, ANMAT'
+    : 'ophthalmic surgical supplies, cataract surgery, intraocular lenses, retina surgery, glaucoma, cornea, pterygium, disposable supplies, ophthalmic equipment, Buenos Aires, Argentina';
+
+  return {
+    title,
+    description,
+    keywords,
+    authors: [{ name: 'Ocular Insumos Quirúrgicos' }],
+    creator: 'Gonzalo Torres Grau',
+    publisher: 'Ocular Insumos Quirúrgicos',
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    alternates: {
+      canonical: `${SITE_URL}/${locale}`,
+      languages: {
+        'es': `${SITE_URL}/es`,
+        'en': `${SITE_URL}/en`,
+        'x-default': SITE_URL,
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: locale === 'es' ? 'es_AR' : 'en_US',
+      url: `${SITE_URL}/${locale}`,
+      siteName: 'Ocular Insumos Quirúrgicos',
+      title,
+      description,
+      images: [{
+        url: `${SITE_URL}/images/logos/logo.webp`,
+        width: 1200,
+        height: 630,
+        alt: 'Ocular Insumos Quirúrgicos',
+      }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`${SITE_URL}/images/logos/logo.webp`],
+    },
+    verification: {
+      google: 'G-KBHMWPKSR6',
+    },
+  };
+}
 
 const RootLayout = async (props) => {
   const { children, params: { locale } } = props;
@@ -24,26 +92,11 @@ const RootLayout = async (props) => {
   return (
     <html lang={locale}>
       <head>
-        <title>OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica</title>
-        <meta name="description" content="Ocular es una empresa de insumos quirúrgicos para cirugía ocular y descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
         <meta name="theme-color" content="#007BC7" />
-        <meta name="robots" content="follow, index" />
-        <meta name="publisher" content="Gonzalo Torres Grau"/>
-        <meta name="author" content="Matias Rozas, Gonzalo Torres Grau" />
-        <link rel="author" href="https://gonzalotorresgrau.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
-        <meta property="og:description" content="Ocular es una empresa de insumos quirúrgicos para cirugía ocular y descartables para cirugías oftalmológicas de cataratas, retina y glaucoma. Venta de equipos oftalmológicos de alta calidad con asesoramiento gratuito personalizado. En la Ciudad Buenos Aires, Argentina, somos referentes en el sector de la salud visual" />
-        <meta property="og:title" content="OCULAR INSUMOS QUIRURGICOS - Cirugía oftalmológica" />
-        {/* Recomendado: usar una imagen ABSOLUTA para og:image */}
-        <meta property="og:image" content="https://ocularinsumosquirurgicos.com/favicon.ico" />
-        <link rel="canonical" href="https://ocularinsumosquirurgicos.com/" />
         <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon"/>
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
-  {/** Fuente principal gestionada por next/font (ver Utils/fonts.js) */}
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHMWPKSR6" />
         <script
@@ -52,12 +105,13 @@ const RootLayout = async (props) => {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-KBHMWPKSR6');
+              gtag('config', 'G-KBHMWPKSR6', {
+                page_path: window.location.pathname,
+              });
             `,
           }}
         />
-        {/* 👇 Tu JSON-LD de negocio, una sola vez por página */}
-        <JsonLdDefault />
+        <JsonLdDefault locale={locale} />
       </head>
   <body className={`bg-white text-gray-900 `}>
         <NextIntlClientProvider messages={messages}>

@@ -28,6 +28,8 @@ export default function SobreMi() {
             className="hidden md:block p-6 place-self-center z-10 h-auto w-full md:w-1/2"
             style={{ filter: 'drop-shadow(0 4px 25px rgba(0, 123, 199))' }}
             sizes="(min-width: 768px) 600px, 100vw"
+            title="Ojo del logo de Ocular"
+            aria-label="Ojo del logo de Ocular"
           />
         </div>
       </article>

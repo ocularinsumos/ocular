@@ -9,30 +9,96 @@ export default function ProductosPage() {
   const messages = useMessages() as any;
   const pathname = usePathname();
   const pathId = (pathname ?? '').split('/')[2]?.toLowerCase();
+  const locale = (pathname ?? '').split('/')[1] || 'es';
+  const isSpanish = locale === 'es';
 
   const foundProduct = messages.producto.find(
     (prod: any) => prod.id.toLowerCase() === pathId
   );
 
-  if (!foundProduct) return <p>Product not found.</p>;
+  if (!foundProduct) return <p>{isSpanish ? 'Producto no encontrado.' : 'Product not found.'}</p>;
 
-  const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "");
-  const pageUrl = `${SITE}${pathname}`.replace(/([^:]\/)\/+/g, "$1"); // Evita dobles slashes
+  const SITE = 'https://ocularinsumosquirurgicos.com';
+  const pageUrl = `${SITE}${pathname}`.replace(/([^:]\/)\/+/g, "$1");
   const imageAbs = foundProduct.img?.startsWith("http")
     ? foundProduct.img
-    : `${SITE}${foundProduct.img || ""}`;
+    : `${SITE}/${foundProduct.img?.replace(/^\//, '') || ""}`;
 
-  // JSON-LD mínimo de Product con TUS datos existentes
-const serviceJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",                           // ← cambio
-  "serviceType": foundProduct.title,            // nombre del servicio
-  "name": foundProduct.title,
-  ...(foundProduct.img ? { "image": [imageAbs] } : {}),
-  "url": pageUrl,
-  "areaServed": "AR",
-  "provider": { "@id": "https://ocularinsumosquirurgicos.com/#org" }
-};
+  // Enhanced Medical Service JSON-LD
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "@id": pageUrl,
+    "name": foundProduct.title,
+    "alternateName": foundProduct.title,
+    "description": [foundProduct.texto, foundProduct.texto2, foundProduct.texto3, foundProduct.texto4]
+      .filter(Boolean)
+      .join(' '),
+    "image": imageAbs,
+    "url": pageUrl,
+    "procedureType": "Ophthalmic Surgery",
+    "medicationUsed": foundProduct.productos?.map((p: any) => ({
+      "@type": "Drug",
+      "name": p.title || p.name
+    })) || [],
+    "bodyLocation": {
+      "@type": "AnatomicalStructure",
+      "name": "Eye"
+    },
+    "medicalSpecialty": "Ophthalmology",
+    "availableService": {
+      "@type": "MedicalTherapy",
+      "name": foundProduct.title,
+      "availableIn": {
+        "@type": "Country",
+        "name": "Argentina"
+      }
+    }
+  };
+
+  // Medical Product Offering
+  const productOfferSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `${isSpanish ? 'Insumos para' : 'Supplies for'} ${foundProduct.title}`,
+    "description": `${isSpanish ? 'Lista de productos quirúrgicos para' : 'List of surgical products for'} ${foundProduct.title}`,
+    "itemListElement": foundProduct.productos?.map((prod: any, index: number) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "MedicalDevice",
+        "name": prod.title || prod.name,
+        "description": prod.description || `${isSpanish ? 'Insumo quirúrgico para' : 'Surgical supply for'} ${foundProduct.title}`,
+        "medicalSpecialty": "Ophthalmology"
+      }
+    })) || []
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": isSpanish ? "Inicio" : "Home",
+        "item": `${SITE}/${locale}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": isSpanish ? "Productos" : "Products",
+        "item": `${SITE}/${locale}#productos`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": foundProduct.title,
+        "item": pageUrl
+      }
+    ]
+  };
 
   return (
     <section>
@@ -52,8 +118,10 @@ const serviceJsonLd = {
         categorias={messages.categorias}
       />
 
-      {/* JSON-LD Product (solo con tus campos existentes) */}
+      {/* Enhanced JSON-LD Schemas */}
       <JsonLd data={serviceJsonLd} />
+      <JsonLd data={productOfferSchema} />
+      <JsonLd data={breadcrumbSchema} />
     </section>
   );
 }

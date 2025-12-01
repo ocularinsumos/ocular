@@ -174,11 +174,11 @@ const Contactusform = ({ className = '' }) => {
                                             <img
                                                 className="h-48px w-48px lg:block"
                                                 src="images/logos/ocularFooter.webp"
-                                                alt="Sermar Logo"
+                                                alt="Logo Ocular Insumos Quirúrgicos"
                                                 width={200}
                                                 height={120}
-                                                title='Logo de Ocular'
-                                                aria-label='Logo de Ocular'
+                                                title="Logo Ocular Insumos Quirúrgicos"
+                                                aria-label="Logo Ocular Insumos Quirúrgicos"
                                             />
                                             <p className={`mb-6 lg:mb-16 mt-4 font-light text-center ${className}`}>{t('title')}</p>
                                         </div>
