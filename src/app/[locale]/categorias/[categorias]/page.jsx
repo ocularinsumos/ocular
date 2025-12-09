@@ -97,7 +97,7 @@ export default function ProductosPage() {
       />
       
       {isCatarataSCategory && (
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-12 px-6 md:px-12 mb-12">
+        <div className="bg-linear-to-r from-blue-50 to-blue-100 py-12 px-6 md:px-12 mb-12">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {isSpanish ? '¿Necesitas lentes intraoculares para cirugía de cataratas?' : 'Do you need intraocular lenses for cataract surgery?'}
