@@ -11,7 +11,7 @@ export default function JsonLdDefault({ locale = 'es' }) {
     "@type": ["MedicalBusiness", "LocalBusiness", "MedicalSupplyStore"],
     "@id": `${SITE_URL}/#organization`,
     "name": "Ocular Insumos Quirúrgicos",
-    "alternateName": "Ocular",
+    "alternateName": ["Ocular", "Ocular Argentina", "Ocular Insumos"],
     "url": SITE_URL,
     "logo": {
       "@type": "ImageObject",
@@ -21,8 +21,8 @@ export default function JsonLdDefault({ locale = 'es' }) {
     },
     "image": `${SITE_URL}/images/logos/logo.webp`,
     "description": isSpanish
-      ? "Empresa líder en insumos quirúrgicos oftalmológicos en Argentina. Más de 20 años proveyendo productos de calidad para cirugía de cataratas, retina, glaucoma y córnea."
-      : "Leading ophthalmic surgical supplies company in Argentina. Over 20 years providing quality products for cataract, retina, glaucoma and cornea surgery.",
+      ? "Empresa líder en venta de insumos quirúrgicos oftalmológicos en Argentina. Más de 20 años proveyendo lentes intraoculares y productos de calidad para cirugía de cataratas, retina, glaucoma y córnea. Distribuidor oficial de Aurolab y Ophtec. Certificación ANMAT."
+      : "Leading ophthalmic surgical supplies company in Argentina. Over 20 years providing intraocular lenses and quality products for cataract, retina, glaucoma and cornea surgery. Official distributor of Aurolab and Ophtec. ANMAT certified.",
     "foundingDate": "2000",
     "telephone": "+54-11-5237-1300",
     "email": "ocularinsumosquirurgicos@gmail.com",
@@ -91,6 +91,42 @@ export default function JsonLdDefault({ locale = 'es' }) {
       },
       "geoRadius": "1000000"
     },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": isSpanish ? "Catálogo de Insumos Quirúrgicos Oftalmológicos" : "Ophthalmic Surgical Supplies Catalog",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": isSpanish ? "Lentes Intraoculares" : "Intraocular Lenses",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": isSpanish ? "Lentes Intraoculares Monofocales" : "Monofocal Intraocular Lenses",
+                "description": isSpanish ? "Lentes monofocales premium para cirugía de cataratas" : "Premium monofocal lenses for cataract surgery"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": isSpanish ? "Lentes Intraoculares Multifocales" : "Multifocal Intraocular Lenses",
+                "description": isSpanish ? "Lentes multifocales para visión a múltiples distancias" : "Multifocal lenses for multiple distance vision"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": isSpanish ? "Lentes Intraoculares Tóricos" : "Toric Intraocular Lenses",
+                "description": isSpanish ? "Lentes tóricos para corrección de astigmatismo" : "Toric lenses for astigmatism correction"
+              }
+            }
+          ]
+        }
+      ]
+    },
     "knowsAbout": [
       "Ophthalmic Surgery",
       "Cataract Surgery",
@@ -98,7 +134,26 @@ export default function JsonLdDefault({ locale = 'es' }) {
       "Glaucoma Surgery",
       "Corneal Surgery",
       "Intraocular Lenses",
-      "Medical Supplies"
+      "IOL",
+      "LIO",
+      "Medical Supplies",
+      "Surgical Instruments",
+      "Aurolab",
+      "Ophtec"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": isSpanish ? "Venta de Lentes Intraoculares en Argentina" : "Intraocular Lens Sales in Argentina",
+          "description": isSpanish ? "Distribución de lentes intraoculares premium para cirugía de cataratas" : "Distribution of premium intraocular lenses for cataract surgery"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Argentina"
+        }
+      }
     ],
     "aggregateRating": {
       "@type": "AggregateRating",

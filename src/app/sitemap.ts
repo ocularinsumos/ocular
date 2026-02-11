@@ -42,6 +42,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/sobre-mi',
   ];
 
+  // High priority pages for SEO
+  const highPriorityPages = [
+    '/lentes-intraoculares',
+  ];
+
   const entries: MetadataRoute.Sitemap = [];
 
   // Add base pages with locales
@@ -52,6 +57,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date(),
         changeFrequency: page === '' ? 'daily' : 'monthly',
         priority: page === '' ? 1.0 : 0.6,
+        alternates: {
+          languages: {
+            es: `${SITE_URL}/es${page}`,
+            en: `${SITE_URL}/en${page}`,
+          },
+        },
+      });
+    }
+  }
+
+  // Add high priority pages for SEO - Lentes Intraoculares
+  for (const page of highPriorityPages) {
+    for (const locale of LOCALES) {
+      entries.push({
+        url: `${SITE_URL}/${locale}${page}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.95,
         alternates: {
           languages: {
             es: `${SITE_URL}/es${page}`,

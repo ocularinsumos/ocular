@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: '/',
         disallow: ['/Admin/', '/api/', '/_next/', '/private/'],
+        crawlDelay: 0,
       },
       {
         userAgent: 'Googlebot',
@@ -19,8 +20,17 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Googlebot-Image',
         allow: '/',
       },
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+        disallow: ['/Admin/', '/api/'],
+      },
     ],
-    sitemap: `${SITE}/sitemap.xml`,
+    sitemap: [
+      `${SITE}/sitemap.xml`,
+      `${SITE}/es/sitemap.xml`,
+      `${SITE}/en/sitemap.xml`,
+    ],
     host: SITE,
   };
 }
