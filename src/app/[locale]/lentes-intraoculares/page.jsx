@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/Seo/JsonLd';
 import Productos from '@/components/Productos/Productos';
+import ContactButton from '@/components/Contact/ContactButton';
 
 export async function generateMetadata({ params: { locale } }) {
   const SITE_URL = 'https://ocularinsumosquirurgicos.com';
@@ -38,7 +39,7 @@ export async function generateMetadata({ params: { locale } }) {
       url: `${SITE_URL}/${locale}/lentes-intraoculares`,
       siteName: 'Ocular Insumos Quirúrgicos',
       locale: locale === 'es' ? 'es_AR' : 'en_US',
-      type: 'product',
+      type: 'website',
       images: [{
         url: `${SITE_URL}/images/servicios/lentes-intraoculares.webp`,
         width: 1200,
@@ -355,6 +356,15 @@ export default async function LentesIntraocularesPage({ params: { locale } }) {
   return (
     <>
       <article className="max-w-7xl mx-auto px-4 py-12">
+        {/* Breadcrumbs */}
+        <div className="flex items-center gap-2 text-sm text-gray-600 mb-8">
+          <Link href={`/${locale}`} className="hover:text-primary">
+            {isSpanish ? 'Inicio' : 'Home'}
+          </Link>
+          <span>/</span>
+          <span className="text-primary font-medium">{isSpanish ? 'Lentes Intraoculares' : 'Intraocular Lenses'}</span>
+        </div>
+
         {/* Header Section */}
         <header className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
@@ -549,12 +559,14 @@ export default async function LentesIntraocularesPage({ params: { locale } }) {
               : 'Contact us for free personalized advice, intraocular lens quotes and consultation about the best IOL for your cataract surgery. We serve Buenos Aires and ship throughout Argentina.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href={`/${locale}#contacto`}
+            <ContactButton 
               className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
+              initialMessage={isSpanish ? 'Consulta sobre lentes intraoculares' : 'Inquiry about intraocular lenses'}
+              locale={locale}
+              isSpanish={isSpanish}
             >
               {isSpanish ? 'Solicitar Presupuesto Gratis' : 'Request Free Quote'}
-            </Link>
+            </ContactButton>
             <a 
               href="https://wa.me/5491152371300?text=Hola,%20quiero%20comprar%20lentes%20intraoculares%20en%20Argentina"
               target="_blank"

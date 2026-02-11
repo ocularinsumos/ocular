@@ -1,21 +1,35 @@
 'use client'
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { IoClose } from 'react-icons/io5';
 import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 
-const Contactusform = ({ className = '' }) => {
+const Contactusform = ({ className = '', initialMessage = '', isOpenExternal = false, onCloseExternal = null }) => {
     const t = useTranslations('contacto')
     let [isOpen, setIsOpen] = useState(false);
+    const path = usePathname();
 
     const [inputValues, setInputValues] = useState({
         input1: '', // Nombre (obligatorio)
         input2: '', // Email (opcional)
-        input3: '', // Mensaje (obligatorio)
+        input3: initialMessage || '', // Mensaje (obligatorio)
         input5: '', // Teléfono (obligatorio)
     });
+
+    useEffect(() => {
+        if (isOpenExternal !== undefined) {
+            setIsOpen(isOpenExternal);
+        }
+    }, [isOpenExternal]);
+
+    useEffect(() => {
+        if (initialMessage) {
+            setInputValues(prev => ({ ...prev, input3: initialMessage }));
+        }
+    }, [initialMessage]);
 
     const [recetaFile, setRecetaFile] = useState(null);
 
@@ -82,13 +96,17 @@ const Contactusform = ({ className = '' }) => {
             Swal.close();
             if (response.status === 200) {
                 alert();
-                setInputValues({ input1: '', input2: '', input3: '', input5: '' });
+                setInputValues({ input1: '', input2: '', input3: initialMessage || '', input5: '' });
                 setSelectedOption('');
                 setRecetaFile(null);
                 // Limpia el input de archivo si existe
                 const fileInput = document.getElementById('receta');
                 if (fileInput) fileInput.value = '';
-                setIsOpen(false);
+                if (onCloseExternal) {
+                    onCloseExternal();
+                } else {
+                    setIsOpen(false);
+                }
             }
         } catch (error) {
             console.error('Error:', error);
@@ -105,35 +123,46 @@ const Contactusform = ({ className = '' }) => {
     const isDisabled = !inputValues.input1 || !inputValues.input5 || !inputValues.input3;
 
     const closeModal = () => {
-        setIsOpen(false);
+        if (onCloseExternal) {
+            onCloseExternal();
+        } else {
+            setIsOpen(false);
+        }
     };
 
     const openModal = () => {
+        if (onCloseExternal) {
+            // Controlado externamente
+            return;
+        }
         setIsOpen(true);
     };
 
     return (
         <>
-            <div className={`flex items-center ${className}`}>
-                <button 
-                    type="button"
-                    className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink"
-                    onClick={openModal}
-                    aria-label="Abrir formulario de contacto"
-                >
-                    {t('btn')}
-                </button>
-                <div className="hidden md:block">
+            {/* Solo mostrar botones si NO está siendo controlado externamente */}
+            {onCloseExternal === null && (
+                <div className={`flex items-center ${className}`}>
                     <button 
-                        type="button" 
-                        className="text-15px space-links" 
+                        type="button"
+                        className="flex justify-center text-base w-full rounded-full bg-transparent text-pink py-2 px-4 md:hidden lg:px-8 navbutton hover:text-white hover:bg-pink"
                         onClick={openModal}
                         aria-label="Abrir formulario de contacto"
                     >
-                    {t('btn')}
+                        {t('btn')}
                     </button>
+                    <div className="hidden md:block">
+                        <button 
+                            type="button" 
+                            className="text-15px space-links" 
+                            onClick={openModal}
+                            aria-label="Abrir formulario de contacto"
+                        >
+                        {t('btn')}
+                        </button>
+                    </div>
                 </div>
-            </div>
+            )}
 
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={closeModal}>

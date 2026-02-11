@@ -45,6 +45,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // High priority pages for SEO
   const highPriorityPages = [
     '/lentes-intraoculares',
+    '/marcas',
+    '/productos/aurolab-auroflex',
+    '/productos/aurolab-auroflex-ev-gold',
+    '/productos/aurolab-aurovisc',
+    '/productos/aurolab-auroblue',
+    '/productos/ophtec-artiflex',
+    '/productos/ophtec-artisan',
   ];
 
   const entries: MetadataRoute.Sitemap = [];

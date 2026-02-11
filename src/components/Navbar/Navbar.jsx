@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { generateHref } from "@/Utils/generateHref";
 import Contactusform from "../Contact/Contactus";
-import { useMessages } from "next-intl";
+import { useMessages, useLocale } from "next-intl";
 import LanguageSelector from "./SelectIdioma/SelectIdioma";
 
 function classNames(...classes) {
@@ -15,6 +15,7 @@ function classNames(...classes) {
 
 export default function Navbar(contacto) {
   const Links = useMessages().Links;
+  const locale = useLocale();
   const [activeLink, setActiveLink] = useState(""); 
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -46,13 +47,13 @@ export default function Navbar(contacto) {
                 <div className="flex flex-1 items-center justify-start md:justify-around">
                   <div className="flex flex-shrink-0 items-center mr-10">
                     <Link href="/" className="" title="Logo de empresa, volver a home" aria-label="Ir al inicio">
-                      <Image src="/images/logos/ocularNav.webp" alt="Logo Ocular Insumos Quirúrgicos" className="py-4" aria-label="Logo Ocular" width={160} height={100} priority title="Logo Ocular Insumos Quirúrgicos" />
+                      <Image src="/images/logos/ocularNav.webp" alt="Logo Ocular Insumos Quirúrgicos" className="py-4" aria-label="Logo Ocular" width={160} height={100} style={{ height: 'auto' }} priority title="Logo Ocular Insumos Quirúrgicos" />
                     </Link>
                   </div>
                   <div className="hidden md:flex md:ml-6">
                     <div className="flex space-x-5 items-center">
                       {Links.map((item) => {
-                        const href = generateHref(null, item.href);
+                        const href = generateHref(null, item.href, locale);
                         if (!href) return null; // Don't render if href is undefined
                         return (
                           <Link key={item.name} href={href} className={classNames(activeLink === item.href ? "relative inline-block group text-lg font-semibold text-text-secondary" : "relative inline-block group text-text-link font-bold")} aria-current={activeLink === item.href ? "page" : undefined} 
@@ -85,7 +86,7 @@ export default function Navbar(contacto) {
               <div className="space-y-1 px-4 pt-2 pb-3 min-h-screen border-t border-[#807f6c] bg-primary">
                 <LanguageSelector  />
                 {Links.map((item) => {
-                  const href = generateHref(null, item.href);
+                  const href = generateHref(null, item.href, locale);
                   if (!href) return null; // Don't render if href is undefined
                   return (
                     <Disclosure.Button 

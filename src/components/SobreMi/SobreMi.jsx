@@ -1,15 +1,26 @@
 import React from "react";
 import Image from "next/image";
-import {useTranslations} from 'next-intl';
+import Link from "next/link";
+import {useTranslations, useLocale} from 'next-intl';
 
 
 
 export default function SobreMi() {
   const t = useTranslations('nosotros');
+  const locale = useLocale();
+  const isSpanish = locale === 'es';
 
   return (
     <section id="nosotros" className="relative z-10"> 
       <article className="p-4 max-w-7xl mx-auto mb-8 pb-8 md:pb-24 xl:pb-36">
+        {/* Breadcrumbs */}
+        <div className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+          <Link href={`/${locale}`} className="hover:text-primary">
+            {isSpanish ? 'Inicio' : 'Home'}
+          </Link>
+          <span>/</span>
+          <span className="text-primary font-medium">{isSpanish ? 'Nosotros' : 'About Us'}</span>
+        </div>
 
         <h2 className="text-text-primary text-3xl m-4 items-center text-center font-roboto">{t('titulo')}</h2>
         <p className="text-text-secondary text-lg">{t('descripcion')}</p>

@@ -125,6 +125,16 @@
       "current": false
     },
     {
+      "name": "Lentes Intraoculares",
+      "href": "/lentes-intraoculares",
+      "current": false
+    },
+    {
+      "name": "Marcas",
+      "href": "/marcas",
+      "current": false
+    },
+    {
       "name": "Nosotros",
       "href": "#nosotros",
       "current": false
