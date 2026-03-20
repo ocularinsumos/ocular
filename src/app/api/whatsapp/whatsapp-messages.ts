@@ -1,4 +1,4 @@
-import { MENU_OPTIONS, type MenuOption } from '../whatsapp-menu';
+import { MENU_OPTIONS, type MenuOption } from './whatsapp-menu';
 
 export function buildEnglishNoticeText() {
   return `Hi there! 👋 This bot is only available in *Spanish*.
