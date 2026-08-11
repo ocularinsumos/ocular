@@ -248,8 +248,8 @@ export default async function AurolabAurobluePage({ params: { locale } }) {
         acceptedAnswer: {
           '@type': 'Answer',
           text: isSpanish
-            ? 'Ocular Insumos Quirúrgicos es distribuidor oficial de Aurolab en Argentina. Mantenemos stock permanente de Auroblue en Buenos Aires con disponibilidad inmediata. Realizamos envíos urgentes a todo el país con tracking. Contáctenos: WhatsApp +54 9 11 5237-1300, Email: ocularinsumosquirurgicos@gmail.com. Visítenos en Rincón 1203 esq. Av. San Juan, CABA. Horario: Lunes a Viernes 7:00-15:00hs. Ofrecemos asesoramiento técnico sin cargo y programas especiales para instituciones.'
-            : 'Ocular Insumos Quirúrgicos is the official Aurolab distributor in Argentina. We maintain permanent stock of Auroblue in Buenos Aires with immediate availability. We make urgent shipments nationwide with tracking. Contact us: WhatsApp +54 9 11 5237-1300, Email: ocularinsumosquirurgicos@gmail.com. Visit us at Rincón 1203 corner Av. San Juan, CABA. Hours: Monday to Friday 7:00-15:00hs. We offer free technical advice and special programs for institutions.',
+            ? 'Ocular Insumos Quirúrgicos es distribuidor oficial de Aurolab en Argentina. Mantenemos stock permanente de Auroblue en Buenos Aires con disponibilidad inmediata. Realizamos envíos urgentes a todo el país con tracking. Contáctenos: WhatsApp +54 9 11 5237-1300, Email: info@ocularinsumos.com. Visítenos en Rincón 1203 esq. Av. San Juan, CABA. Horario: Lunes a Viernes 7:00-15:00hs. Ofrecemos asesoramiento técnico sin cargo y programas especiales para instituciones.'
+            : 'Ocular Insumos Quirúrgicos is the official Aurolab distributor in Argentina. We maintain permanent stock of Auroblue in Buenos Aires with immediate availability. We make urgent shipments nationwide with tracking. Contact us: WhatsApp +54 9 11 5237-1300, Email: info@ocularinsumos.com. Visit us at Rincón 1203 corner Av. San Juan, CABA. Hours: Monday to Friday 7:00-15:00hs. We offer free technical advice and special programs for institutions.',
         },
       },
     ],

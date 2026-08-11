@@ -248,8 +248,8 @@ export default async function AurolabAuroviscPage({ params: { locale } }) {
         acceptedAnswer: {
           '@type': 'Answer',
           text: isSpanish
-            ? 'Ocular Insumos Quirúrgicos es distribuidor oficial de Aurolab en Argentina. Tenemos stock permanente de Aurovisc en Buenos Aires y realizamos envíos a todo el país. Contáctenos: WhatsApp +54 9 11 5237-1300, Email: ocularinsumosquirurgicos@gmail.com. Visitanos en Rincón 1203 esq. Av. San Juan, CABA. Horario: Lunes a Viernes 7:00-15:00hs.'
-            : 'Ocular Insumos Quirúrgicos is the official Aurolab distributor in Argentina. We have permanent stock of Aurovisc in Buenos Aires and ship nationwide. Contact us: WhatsApp +54 9 11 5237-1300, Email: ocularinsumosquirurgicos@gmail.com. Visit us at Rincón 1203 corner Av. San Juan, CABA. Hours: Monday to Friday 7:00-15:00hs.',
+            ? 'Ocular Insumos Quirúrgicos es distribuidor oficial de Aurolab en Argentina. Tenemos stock permanente de Aurovisc en Buenos Aires y realizamos envíos a todo el país. Contáctenos: WhatsApp +54 9 11 5237-1300, Email: info@ocularinsumos.com. Visitanos en Rincón 1203 esq. Av. San Juan, CABA. Horario: Lunes a Viernes 7:00-15:00hs.'
+            : 'Ocular Insumos Quirúrgicos is the official Aurolab distributor in Argentina. We have permanent stock of Aurovisc in Buenos Aires and ship nationwide. Contact us: WhatsApp +54 9 11 5237-1300, Email: info@ocularinsumos.com. Visit us at Rincón 1203 corner Av. San Juan, CABA. Hours: Monday to Friday 7:00-15:00hs.',
         },
       },
     ],

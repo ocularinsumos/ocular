@@ -17,7 +17,7 @@ export const siteConfig = {
   contact: {
     phone: '+54-11-5237-1300',
     phoneDisplay: '(+54) 11 5237-1300',
-    email: 'ocularinsumosquirurgicos@gmail.com',
+    email: 'info@ocularinsumos.com',
   },
   address: {
     street: 'Rincón 1203, esquina Av. San Juan',

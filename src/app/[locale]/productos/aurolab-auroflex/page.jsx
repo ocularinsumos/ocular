@@ -561,7 +561,7 @@ export default async function AurolabAuroflexPage({ params: { locale } }) {
                 isSpanish={isSpanish}
               />
           <p className="mt-6 text-sm opacity-80">
-            📞 (+54) 11 5237-1300 | ✉️ ocularinsumosquirurgicos@gmail.com
+            📞 (+54) 11 5237-1300 | ✉️ info@ocularinsumos.com
           </p>
         </section>
 

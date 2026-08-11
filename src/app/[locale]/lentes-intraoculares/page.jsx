@@ -577,7 +577,7 @@ export default async function LentesIntraocularesPage({ params: { locale } }) {
             </a>
           </div>
           <p className="mt-6 text-sm">
-            {isSpanish ? '📍 Buenos Aires, Argentina | 📞 (+54) 11 5237-1300 | ✉️ ocularinsumosquirurgicos@gmail.com' : '📍 Buenos Aires, Argentina | 📞 (+54) 11 5237-1300 | ✉️ ocularinsumosquirurgicos@gmail.com'}
+            {isSpanish ? '📍 Buenos Aires, Argentina | 📞 (+54) 11 5237-1300 | ✉️ info@ocularinsumos.com' : '📍 Buenos Aires, Argentina | 📞 (+54) 11 5237-1300 | ✉️ info@ocularinsumos.com'}
           </p>
         </section>
 

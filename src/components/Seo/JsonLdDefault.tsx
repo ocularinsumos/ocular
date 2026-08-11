@@ -25,7 +25,7 @@ export default function JsonLdDefault({ locale = 'es' }) {
       : "Leading ophthalmic surgical supplies company in Argentina. Over 20 years providing intraocular lenses and quality products for cataract, retina, glaucoma and cornea surgery. Official distributor of Aurolab and Ophtec. ANMAT certified.",
     "foundingDate": "2000",
     "telephone": "+54-11-5237-1300",
-    "email": "ocularinsumosquirurgicos@gmail.com",
+    "email": "info@ocularinsumos.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rincón 1203, esquina Av. San Juan",
@@ -52,7 +52,7 @@ export default function JsonLdDefault({ locale = 'es' }) {
         "@type": "ContactPoint",
         "contactType": "customer support",
         "telephone": "+54-11-5237-1300",
-        "email": "ocularinsumosquirurgicos@gmail.com",
+        "email": "info@ocularinsumos.com",
         "areaServed": "AR",
         "availableLanguage": ["Spanish", "English"],
         "contactOption": "TollFree",
