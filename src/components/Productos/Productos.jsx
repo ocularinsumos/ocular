@@ -25,9 +25,8 @@ export default function Productos({ producto, texto, categorias }) {
     arrows: false,
   };
 
-const SITE =
-  (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/\/$/, "") ||
-  (typeof window !== "undefined" ? window.location.origin : "");
+// Constante (antes dependía de window/env y generaba URLs distintas en server y cliente)
+const SITE = "https://ocularinsumosquirurgicos.com";
 
 const itemListElements = producto.map((p, i) => {
   const url = `${SITE}/${locale}${p.href || ""}`.replace(/([^:]\/)\/+/g, "$1");
@@ -41,7 +40,7 @@ const itemListElements = producto.map((p, i) => {
       "name": p.title,
       ...(p.img ? { "image": [image] } : {}),
       "url": url,
-      "provider": { "@id": "https://ocularinsumosquirurgicos.com/#org" }
+      "provider": { "@id": "https://ocularinsumosquirurgicos.com/#organization" }
     }
   };
 });
@@ -64,9 +63,9 @@ const itemListJsonLd = {
             >
               {texto.titulo}
             </h1>
-            <h3 className="text-primary p-2" aria-label={texto.subtitulo}>
+            <p className="text-primary p-2">
               {texto.subtitulo}
-            </h3>
+            </p>
           </>
         ) : (
           <>
@@ -76,9 +75,9 @@ const itemListJsonLd = {
             >
               {texto.titulo}
             </h2>
-            <h3 className="text-primary p-2" aria-label={texto.subtitulo}>
+            <p className="text-primary p-2">
               {texto.subtitulo}
-            </h3>
+            </p>
           </>
         )}
       </article>
@@ -129,9 +128,9 @@ const itemListJsonLd = {
         >
           {texto.tituloCat}
         </h2>
-        <h3 className="text-primary p-2" aria-label={texto.subCat}>
+        <p className="text-primary p-2">
           {texto.subCat}
-        </h3>
+        </p>
       </article>
 
       <article className="my-10 md:px-0 md:mx-10">
@@ -157,9 +156,10 @@ const itemListJsonLd = {
                     title={`Categoría ${categoria.title}`}
                     aria-label={`Categoría ${categoria.title}`}
                   />
-                  <h3 className="text-background-primary p-2 w-full text-center rounded-b-md">
+                  {/* Carrusel mobile duplica el grid desktop: sin heading para no repetir h3 */}
+                  <p className="text-background-primary p-2 w-full text-center rounded-b-md">
                     {categoria.title.toLocaleUpperCase(locale)}
-                  </h3>
+                  </p>
                 </Link>
               </div>
             ))}

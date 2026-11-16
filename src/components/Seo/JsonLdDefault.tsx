@@ -55,7 +55,6 @@ export default function JsonLdDefault({ locale = 'es' }) {
         "email": "info@ocularinsumos.com",
         "areaServed": "AR",
         "availableLanguage": ["Spanish", "English"],
-        "contactOption": "TollFree",
         "hoursAvailable": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
@@ -154,14 +153,9 @@ export default function JsonLdDefault({ locale = 'es' }) {
           "name": "Argentina"
         }
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "120",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
+    ]
+    // Se quitó aggregateRating: eran valores inventados (4.8 / 120 reseñas) sin reseñas
+    // visibles en el sitio; viola las políticas de datos estructurados de Google.
   };
 
   // Website Schema
@@ -177,15 +171,8 @@ export default function JsonLdDefault({ locale = 'es' }) {
     "publisher": {
       "@id": `${SITE_URL}/#organization`
     },
-    "inLanguage": ["es-AR", "en-US"],
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": `${SITE_URL}/?s={search_term_string}`
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": ["es-AR", "en-US"]
+    // Se quitó SearchAction: el sitio no tiene buscador (/?s= no existe).
   };
 
   // Breadcrumb Schema for Homepage

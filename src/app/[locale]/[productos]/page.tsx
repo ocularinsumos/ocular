@@ -4,6 +4,7 @@ import Productos from "../../../components/Productos/Productos";
 import JsonLd from "../../../components/Seo/JsonLd";
 import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
+import { getFaq } from "../../../lib/faq";
 
 export default function ProductosPage() {
   const messages = useMessages() as any;
@@ -74,6 +75,20 @@ export default function ProductosPage() {
     })) || []
   };
 
+  // FAQPage Schema (mismo contenido que se muestra en la página)
+  const faq = getFaq(locale, pathId);
+  const faqSchema = faq.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faq.map((item) => ({
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": { "@type": "Answer", "text": item.a }
+        }))
+      }
+    : null;
+
   // Breadcrumb Schema
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -110,6 +125,7 @@ export default function ProductosPage() {
         texto4={foundProduct.texto4}
         icono={foundProduct.icono}
         prod={foundProduct.productos}
+        faq={faq}
       />
 
       <Productos
@@ -122,6 +138,7 @@ export default function ProductosPage() {
       <JsonLd data={serviceJsonLd} />
       <JsonLd data={productOfferSchema} />
       <JsonLd data={breadcrumbSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
     </section>
   );
 }
