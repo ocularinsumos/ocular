@@ -7,6 +7,13 @@ import TopBanner from '../../components/TopBanner/TopBanner';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Analytics } from "@vercel/analytics/react";
+import Script from 'next/script';
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#007BC7',
+};
 import JsonLdDefault from "../../components/Seo/JsonLdDefault";
 import { robotoCondensed } from "../../Utils/fonts";
 
@@ -44,18 +51,16 @@ export async function generateMetadata({ params: { locale } }) {
         'max-snippet': -1,
       },
     },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}`,
-      languages: {
-        'es': `${SITE_URL}/es`,
-        'en': `${SITE_URL}/en`,
-        'x-default': SITE_URL,
-      },
+    // canonical/hreflang/og:url se definen en cada página (page.jsx o layout de ruta).
+    // Un canonical global aquí hacía que todas las páginas apuntaran a la home.
+    icons: {
+      icon: [{ url: '/favicon.ico', sizes: 'any' }],
+      apple: '/icons/icon-192x192.png',
     },
+    manifest: '/manifest.json',
     openGraph: {
       type: 'website',
       locale: locale === 'es' ? 'es_AR' : 'en_US',
-      url: `${SITE_URL}/${locale}`,
       siteName: 'Ocular Insumos Quirúrgicos',
       title,
       description,
@@ -90,30 +95,18 @@ const RootLayout = async (props) => {
   }
 
   return (
-    <html lang={locale}>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#007BC7" />
-        <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon"/>
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-        <link rel="manifest" href="/manifest.json" />
+    <>
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBHMWPKSR6" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-KBHMWPKSR6', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-KBHMWPKSR6" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KBHMWPKSR6', { page_path: window.location.pathname });
+          `}
+        </Script>
         <JsonLdDefault locale={locale} />
-      </head>
-  <body className={`bg-white text-gray-900 `}>
         <NextIntlClientProvider messages={messages}>
           <TopBanner />
           <nav><Navbar /></nav>
@@ -125,8 +118,7 @@ const RootLayout = async (props) => {
           </footer>
           <Analytics />
         </NextIntlClientProvider>
-      </body>
-    </html>
+    </>
   );
 };
 
