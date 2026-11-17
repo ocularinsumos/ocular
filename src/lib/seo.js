@@ -1,21 +1,17 @@
-import fs from 'fs';
-import path from 'path';
+import es from '../../public/messages/es.json';
+import en from '../../public/messages/en.json';
 
 export { categorySlug } from './slug';
 
 export const SITE_URL = 'https://ocularinsumosquirurgicos.com';
 export const LOCALES = ['es', 'en'];
 
-const cache = {};
+// Los JSON se importan (quedan en el bundle). Leerlos con fs desde public/ en runtime
+// falla en Vercel (500): public/ no está disponible para las funciones serverless.
+const MESSAGES = { es, en };
 
-// Lee public/messages/{locale}.json (servidor). Cacheado por proceso.
 export function readMessages(locale) {
-  const l = LOCALES.includes(locale) ? locale : 'es';
-  if (!cache[l]) {
-    const file = path.join(process.cwd(), 'public', 'messages', `${l}.json`);
-    cache[l] = JSON.parse(fs.readFileSync(file, 'utf8'));
-  }
-  return cache[l];
+  return MESSAGES[locale] || MESSAGES.es;
 }
 
 // Recorta texto a un largo apto para meta description
