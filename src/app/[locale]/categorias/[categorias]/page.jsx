@@ -5,16 +5,17 @@ import JsonLd from "@/components/Seo/JsonLd";
 import { useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { categorySlug } from "@/lib/slug";
 
 export default function ProductosPage() {
   const messages = useMessages();
   const pathname = usePathname();
-  const pathId = pathname.split('/')[3]?.toLowerCase();
+  const pathId = categorySlug(pathname.split('/')[3] || '');
   const locale = pathname.split('/')[1] || 'es';
   const isSpanish = locale === 'es';
 
   const foundProduct = messages.categorias.find(
-    (cat) => cat.id.toLowerCase() === `/${pathId}` || cat.id.toLowerCase() === pathId
+    (cat) => categorySlug(cat.id) === pathId
    )
 
    if (!foundProduct) {

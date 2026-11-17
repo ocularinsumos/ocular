@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
+export { categorySlug } from './slug';
+
 export const SITE_URL = 'https://ocularinsumosquirurgicos.com';
 export const LOCALES = ['es', 'en'];
 

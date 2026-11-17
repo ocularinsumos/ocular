@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { readMessages, pathologySlug, SITE_URL } from '../lib/seo';
+import { readMessages, pathologySlug, categorySlug, SITE_URL } from '../lib/seo';
 
 // Sitemap único. Solo URLs que responden 200 y son indexables (sin redirects ni 404).
 // Sin lastModified/changeFrequency inventados: Google los ignora si no son confiables.
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Categorías: mismo prefijo /categorias en ambos idiomas
   es.categorias.forEach((item: any, i: number) => {
-    add(`/es/categorias/${item.id}`, `/en/categorias/${en.categorias[i].id}`, 0.7);
+    add(`/es/categorias/${categorySlug(item.id)}`, `/en/categorias/${categorySlug(en.categorias[i].id)}`, 0.7);
   });
 
   return entries;
