@@ -1,10 +1,10 @@
 import { notFound } from 'next/navigation';
-import { readMessages, toDescription, buildPageMetadata } from '@/lib/seo';
+import { readMessages, toDescription, buildPageMetadata, categorySlug } from '@/lib/seo';
 
 function resolve(locale, slug) {
   const list = readMessages(locale).categorias;
-  const key = String(slug).toLowerCase();
-  const index = list.findIndex((c) => c.id.toLowerCase() === key);
+  const key = categorySlug(slug);
+  const index = list.findIndex((c) => categorySlug(c.id) === key);
   return { index, item: index >= 0 ? list[index] : null };
 }
 
@@ -15,7 +15,7 @@ export async function generateMetadata({ params: { locale, categorias } }) {
   const urls = {};
   for (const l of ['es', 'en']) {
     const counterpart = readMessages(l).categorias[index];
-    if (counterpart) urls[l] = `/${l}/categorias/${counterpart.id}`;
+    if (counterpart) urls[l] = `/${l}/categorias/${categorySlug(counterpart.id)}`;
   }
 
   const isEs = locale === 'es';

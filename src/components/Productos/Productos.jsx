@@ -6,6 +6,7 @@ import { useLocale } from "next-intl";
 import Slider from "react-slick";
 import { usePathname } from "next/navigation";
 import JsonLd from "../../components/Seo/JsonLd";
+import { categorySlug } from "../../lib/slug";
 
 export default function Productos({ producto, texto, categorias }) {
   const locale = useLocale();
@@ -143,7 +144,7 @@ const itemListJsonLd = {
                 className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 bg-primary overflow-hidden gap-2 border-white border-8"
               >
                 <Link
-                  href={`/${locale}/categorias${categoria.href}`}
+                  href={`/${locale}/categorias/${categorySlug(categoria.id)}`}
                   title={categoria.title}
                 >
                   <Image
@@ -170,7 +171,7 @@ const itemListJsonLd = {
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {categorias.map((categoria) => (
             <Link
-              href={`/${locale}/categorias${categoria.href}`}
+              href={`/${locale}/categorias/${categorySlug(categoria.id)}`}
               key={categoria.href || categoria.title}
               className="flex flex-col shadow-md items-center text-center mb-10 transform transition-transform duration-300 hover:scale-110 hover:shadow-xl active:scale-110 active:duration-75 rounded-lg bg-primary overflow-hidden"
               title={categoria.title}

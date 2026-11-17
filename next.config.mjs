@@ -5,8 +5,9 @@ import withPWA from 'next-pwa';
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'ocularinsumosquirurgicos.com', 'ocular-red.vercel.app'],
-    unoptimized: true,
+    // Cloudinary hace la optimización (f_auto,q_auto,w_*); ver src/lib/imageLoader.js
+    loader: 'custom',
+    loaderFile: './src/lib/imageLoader.js',
   },
   async rewrites() {
     return [
@@ -20,77 +21,77 @@ const nextConfig = {
     return [
       {
         source: '/Cannulas',
-        destination: '/en/categorias/Cannulas',
+        destination: '/en/categorias/cannulas',
         permanent: true,
       },
       {
         source: '/Intraocular_Lens',
-        destination: '/en/categorias/Intraocular_Lens',
+        destination: '/en/categorias/intraocular-lens',
         permanent: true,
       },
       {
         source: '/Implantes',
-        destination: '/en/categorias/Implantes',
+        destination: '/en/categorias/implantes',
         permanent: true,
       },
       {
         source: '/Sutures',
-        destination: '/en/categorias/Sutures',
+        destination: '/en/categorias/sutures',
         permanent: true,
       },
       {
         source: '/Gases',
-        destination: '/en/categorias/Gases',
+        destination: '/en/categorias/gases',
         permanent: true,
       },
       {
         source: '/Scalpels',
-        destination: '/en/categorias/Scalpels',
+        destination: '/en/categorias/scalpels',
         permanent: true,
       },
       {
         source: '/Substances',
-        destination: '/en/categorias/Substances',
+        destination: '/en/categorias/substances',
         permanent: true,
       },
       {
         source: '/Lente_Intraocular',
-        destination: '/es/categorias/Lente_Intraocular',
+        destination: '/es/categorias/lente-intraocular',
         permanent: true,
       },
       {
         source: '/Implantes',
-        destination: '/es/categorias/Implantes',
+        destination: '/es/categorias/implantes',
         permanent: true,
       },
       {
         source: '/Canulas',
-        destination: '/es/categorias/Canulas',
+        destination: '/es/categorias/canulas',
         permanent: true,
       },
       {
         source: '/Suturas',
-        destination: '/es/categorias/Suturas',
+        destination: '/es/categorias/suturas',
         permanent: true,
       },
       {
         source: '/Gases',
-        destination: '/es/categorias/Gases',
+        destination: '/es/categorias/gases',
         permanent: true,
       },
       {
         source: '/Bisturis',
-        destination: '/es/categorias/Bisturis',
+        destination: '/es/categorias/bisturis',
         permanent: true,
       },
       {
         source: '/Sustancias',
-        destination: '/es/categorias/Sustancias',
+        destination: '/es/categorias/sustancias',
         permanent: true,
       },
       {
         source: '/es/categorias/Substances',
-        destination: '/es/categorias/Sustancias',
+        destination: '/es/categorias/sustancias',
         permanent: true,
       },
       {
@@ -105,7 +106,7 @@ const nextConfig = {
       },
       {
         source: '/en/categorias/Canulas',
-        destination: '/es/categorias/Canulas',
+        destination: '/es/categorias/canulas',
         permanent: true,
       },
       {
