@@ -1,133 +1,42 @@
-import { MetadataRoute } from 'next';
-import fs from 'fs';
-import path from 'path';
+import type { MetadataRoute } from 'next';
+import { readMessages, pathologySlug, SITE_URL } from '../lib/seo';
 
-const SITE_URL = 'https://ocularinsumosquirurgicos.com';
-const DEFAULT_LOCALE = 'es';
-const LOCALES = ['es', 'en'];
+// Sitemap único. Solo URLs que responden 200 y son indexables (sin redirects ni 404).
+// Sin lastModified/changeFrequency inventados: Google los ignora si no son confiables.
+const STATIC_PAGES = [
+  { path: '', priority: 1 },
+  { path: '/lentes-intraoculares', priority: 0.9 },
+  { path: '/marcas', priority: 0.8 },
+  { path: '/productos/aurolab-auroflex', priority: 0.8 },
+  { path: '/productos/aurolab-auroflex-ev-gold', priority: 0.8 },
+  { path: '/productos/aurolab-aurovisc', priority: 0.8 },
+  { path: '/productos/aurolab-auroblue', priority: 0.8 },
+  { path: '/productos/ophtec-artiflex', priority: 0.8 },
+  { path: '/productos/ophtec-artisan', priority: 0.8 },
+];
 
-async function getProductSlugs() {
-  try {
-    const file = path.join(process.cwd(), 'src', 'components', 'Constantes', 'productos.json');
-    const raw = await fs.promises.readFile(file, 'utf8');
-    const items = JSON.parse(raw);
-    return Array.isArray(items) ? items.map(i => i?.href).filter(Boolean) : [];
-  } catch {
-    return [];
-  }
-}
-
-async function getCategorySlugs() {
-  try {
-    const file = path.join(process.cwd(), 'public', 'messages', `${DEFAULT_LOCALE}.json`);
-    const raw = await fs.promises.readFile(file, 'utf8');
-    const json = JSON.parse(raw);
-    if (Array.isArray(json?.categorias)) {
-      return json.categorias.map((c: any) => c?.href).filter(Boolean);
-    }
-  } catch {}
-  return [];
-}
-
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [products, categories] = await Promise.all([
-    getProductSlugs(),
-    getCategorySlugs(),
-  ]);
-
-  const basePages = [
-    '',
-    '/contacto',
-    '/politica-de-privacidad',
-    '/sobre-mi',
-  ];
-
-  // High priority pages for SEO
-  const highPriorityPages = [
-    '/lentes-intraoculares',
-    '/marcas',
-    '/productos/aurolab-auroflex',
-    '/productos/aurolab-auroflex-ev-gold',
-    '/productos/aurolab-aurovisc',
-    '/productos/aurolab-auroblue',
-    '/productos/ophtec-artiflex',
-    '/productos/ophtec-artisan',
-  ];
-
+export default function sitemap(): MetadataRoute.Sitemap {
+  const es = readMessages('es');
+  const en = readMessages('en');
   const entries: MetadataRoute.Sitemap = [];
 
-  // Add base pages with locales
-  for (const page of basePages) {
-    for (const locale of LOCALES) {
-      entries.push({
-        url: `${SITE_URL}/${locale}${page}`,
-        lastModified: new Date(),
-        changeFrequency: page === '' ? 'daily' : 'monthly',
-        priority: page === '' ? 1.0 : 0.6,
-        alternates: {
-          languages: {
-            es: `${SITE_URL}/es${page}`,
-            en: `${SITE_URL}/en${page}`,
-          },
-        },
-      });
-    }
-  }
+  const add = (urlEs: string, urlEn: string, priority: number) => {
+    const languages = { es: `${SITE_URL}${urlEs}`, en: `${SITE_URL}${urlEn}` };
+    entries.push({ url: languages.es, alternates: { languages }, priority });
+    entries.push({ url: languages.en, alternates: { languages }, priority });
+  };
 
-  // Add high priority pages for SEO - Lentes Intraoculares
-  for (const page of highPriorityPages) {
-    for (const locale of LOCALES) {
-      entries.push({
-        url: `${SITE_URL}/${locale}${page}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.95,
-        alternates: {
-          languages: {
-            es: `${SITE_URL}/es${page}`,
-            en: `${SITE_URL}/en${page}`,
-          },
-        },
-      });
-    }
-  }
+  for (const p of STATIC_PAGES) add(`/es${p.path}`, `/en${p.path}`, p.priority);
 
-  // Add product pages
-  for (const productSlug of products) {
-    for (const locale of LOCALES) {
-      entries.push({
-        url: `${SITE_URL}/${locale}${productSlug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.8,
-        alternates: {
-          languages: {
-            es: `${SITE_URL}/es${productSlug}`,
-            en: `${SITE_URL}/en${productSlug}`,
-          },
-        },
-      });
-    }
-  }
+  // Patologías: es/en comparten orden pero tienen slugs distintos (cataratas / cataracts)
+  es.producto.forEach((item: any, i: number) => {
+    add(`/es/${pathologySlug(item)}`, `/en/${pathologySlug(en.producto[i])}`, 0.9);
+  });
 
-  // Add category pages
-  for (const categorySlug of categories) {
-    for (const locale of LOCALES) {
-      const catPath = locale === 'es' ? '/categorias' : '/categories';
-      entries.push({
-        url: `${SITE_URL}/${locale}${catPath}${categorySlug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.7,
-        alternates: {
-          languages: {
-            es: `${SITE_URL}/es/categorias${categorySlug}`,
-            en: `${SITE_URL}/en/categories${categorySlug}`,
-          },
-        },
-      });
-    }
-  }
+  // Categorías: mismo prefijo /categorias en ambos idiomas
+  es.categorias.forEach((item: any, i: number) => {
+    add(`/es/categorias/${item.id}`, `/en/categorias/${en.categorias[i].id}`, 0.7);
+  });
 
   return entries;
 }

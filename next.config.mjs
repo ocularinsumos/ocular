@@ -119,8 +119,13 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/en/Retina',
-        destination: '/en/retina',
+        source: '/en/retina',
+        destination: '/en/retinasurgery',
+        permanent: true,
+      },
+      {
+        source: '/en/cataratas',
+        destination: '/en/cataracts',
         permanent: true,
       }
     ]
